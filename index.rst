@@ -1,6 +1,6 @@
-#################################################
-Regole Tecniche circa ARGOMENTO DELLE LINEE GUIDA
-#################################################
+################################################################################################
+Regole Tecniche circa la sottoscrizione elettronica di documenti tramite SPID ex art. 20 del CAD
+################################################################################################
 
 Capoverso/i introduttivo/i alle Linee Guida.
 
@@ -9,4 +9,4 @@ Capoverso/i introduttivo/i alle Linee Guida.
    :numbered:
    :maxdepth: 3
 
-   NOME_FILE_RST_PRINCIPALE.rst
+   Firma-SPID.rst
