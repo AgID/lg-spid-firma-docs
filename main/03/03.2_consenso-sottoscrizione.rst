@@ -3,55 +3,58 @@ Consenso alla sottoscrizione (presso l’IdP)
 
 L’IdP:
 
-4.  Il SP predispone il documento, apponendovi un proprio sigillo
-    elettronico qualificato, secondo quanto prescritto tecnicamente nel
-    §4.1, sottoponendolo, presso la propria piattaforma, all’utente
-    affinché possa essere visionato, eventualmente scaricato e
-    conservato.
-
-5.  Procede con l’autenticazione dell’utente con credenziali di livello
-    2 o superiore.
-
-6.  Informa l’utente che il processo di autenticazione è volto alla
-    sottoscrizione, comunicando all’utente:
-
-    - il nome del SP che sta richiedendo la sottoscrizione del
-      documento,
-
-    - il nome del file contenente il documento in oggetto.
-
-7.  Consente all’utente di visionare il documento e scaricarlo.
-
-8.  Propone all’utente di procedere con la sottoscrizione. Il dissenso
-    alla sottoscrizione da parte dell’utente comporta l’invio di una
-    risposta di autenticazione con esito negativo al SP e il termine del
-    processo.
-
-9.  Visualizza la pagina destinata a contenere il contenuto grafico del
-    sigillo elettronico qualificato informando l’utente in merito alla
-    obbligatorietà o facoltatività della firma.
-
-10. Acquisisce il consenso dell’utente ad apporre la firma.
-
-11. Procede alla apposizione del sigillo elettronico qualificato (o di
-    più sigilli nel caso siano previste più firme), secondo quanto
-    prescritto al §4.2.
-
-12. Propone all’utente di inviargli il documento firmato con SPID via
-    posta elettronica, e/o di scaricarne una copia, e/o di
-    conservarglielo e renderglielo disponibile nella propria area
-    riservata in base al servizio di cui al §9.
-
-13. Invia al SP il documento firmato con SPID con le modalità descritte
-    nel §5.2.
-
-14. Invia al SP la risposta di autenticazione della firma SPID recante
-    l’esito positivo della procedura reindirizzando l’utente presso il
-    SP. Nel caso in cui il punto precedente non abbia successo, l’IdP
-    informa l’SP e l’utente in merito al mancato successo del processo
-    di firma.
-
-Il processo di cui ai punti 8 e 9 è reiterato per ogni firma.
+.. topic:: Procedura
+   :class: procedure
+   
+   4.  Il SP predispone il documento, apponendovi un proprio sigillo
+       elettronico qualificato, secondo quanto prescritto tecnicamente nel
+       §4.1, sottoponendolo, presso la propria piattaforma, all’utente
+       affinché possa essere visionato, eventualmente scaricato e
+       conservato.
+   
+   5.  Procede con l’autenticazione dell’utente con credenziali di livello
+       2 o superiore.
+   
+   6.  Informa l’utente che il processo di autenticazione è volto alla
+       sottoscrizione, comunicando all’utente:
+   
+       - il nome del SP che sta richiedendo la sottoscrizione del
+         documento,
+   
+       - il nome del file contenente il documento in oggetto.
+   
+   7.  Consente all’utente di visionare il documento e scaricarlo.
+   
+   8.  Propone all’utente di procedere con la sottoscrizione. Il dissenso
+       alla sottoscrizione da parte dell’utente comporta l’invio di una
+       risposta di autenticazione con esito negativo al SP e il termine del
+       processo.
+   
+   9.  Visualizza la pagina destinata a contenere il contenuto grafico del
+       sigillo elettronico qualificato informando l’utente in merito alla
+       obbligatorietà o facoltatività della firma.
+   
+   10. Acquisisce il consenso dell’utente ad apporre la firma.
+   
+   11. Procede alla apposizione del sigillo elettronico qualificato (o di
+       più sigilli nel caso siano previste più firme), secondo quanto
+       prescritto al §4.2.
+   
+   12. Propone all’utente di inviargli il documento firmato con SPID via
+       posta elettronica, e/o di scaricarne una copia, e/o di
+       conservarglielo e renderglielo disponibile nella propria area
+       riservata in base al servizio di cui al §9.
+   
+   13. Invia al SP il documento firmato con SPID con le modalità descritte
+       nel §5.2.
+   
+   14. Invia al SP la risposta di autenticazione della firma SPID recante
+       l’esito positivo della procedura reindirizzando l’utente presso il
+       SP. Nel caso in cui il punto precedente non abbia successo, l’IdP
+       informa l’SP e l’utente in merito al mancato successo del processo
+       di firma.
+   
+   Il processo di cui ai punti 8 e 9 è reiterato per ogni firma.
 
 Al termine del processo qui descritto, salvo che l’utente non abbia
 scelto di avvalersi dei servizi di conservazione dei documenti firmati
