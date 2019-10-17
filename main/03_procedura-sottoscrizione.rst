@@ -1,7 +1,7 @@
-Procedura di sottoscrizione ex articolo 20 comma 1\ *bis* del CAD
-=================================================================
+Procedura di sottoscrizione ex articolo 20 comma 1-bis del CAD
+===============================================================
 
-Il processo di cui all’articolo 20 comma 1*-bis* del CAD non può essere
+Il processo di cui all’articolo 20 comma 1\ *-bis* del CAD non può essere
 adoperato utilizzando identità digitali SPID per persona giuridica;
 possono essere utilizzate esclusivamente le identità digitali della
 persona fisica e le identità digitali per uso professionale.
