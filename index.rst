@@ -41,4 +41,4 @@ Versione Data        Determinazione Tipologia modifica
    :name: glossary_toc
    :hidden:
 
-   main/01_definizioni.rst
+   main/01_glossario.rst
