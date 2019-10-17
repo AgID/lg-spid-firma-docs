@@ -7,3 +7,7 @@ garantirne tutte le caratteristiche di confidenzialità, integrità e
 disponibilità, si impegnano a non conservare né i documenti ricevuti né
 i documenti firmati con SPID che sono depositati presso i propri
 sistemi, rimuovendoli in modo sicuro al termine del trattamento.
+
+.. discourse::
+
+:topic_identifier: 666
