@@ -9,3 +9,7 @@ Prima di apporre il proprio QSeal, il SP predispone il documento
 prevedendo adeguato spazio per contenere la componente grafica (o più
 componenti se richiede più firme) del QSeal che verrà apposto dall’IDP,
 il cui testo (cfr. §4.4) deve essere agevolmente leggibile.
+
+.. discourse::
+
+:topic_identifier: 666
