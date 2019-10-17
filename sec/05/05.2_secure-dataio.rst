@@ -22,13 +22,13 @@ sicuro, i cui dettagli sono dati in §5.2.1.
    protetto logicamente affinché solamente gli enti federati possano
    trasferire file mediante uno dei seguenti due flussi:
 
-  a. il sistema dell’IdP è configurato per la sola ricezione di evidenze
-     informatiche provenienti dagli SP in modalità *push* (cioè con
-     trasferimenti iniziati in *upstream* dal SP);
+   a. il sistema dell’IdP è configurato per la sola ricezione di evidenze
+      informatiche provenienti dagli SP in modalità *push* (cioè con
+      trasferimenti iniziati in *upstream* dal SP);
 
-  b. il sistema del SP è configurato per la sola ricezione di evidenze
-     informatiche provenienti dagli IdP in modalità *push* (cioè con
-     trasferimenti iniziati in *upstream* dall’IDP).
+   b. il sistema del SP è configurato per la sola ricezione di evidenze
+      informatiche provenienti dagli IdP in modalità *push* (cioè con
+      trasferimenti iniziati in *upstream* dall’IDP).
 
 2.  SP e IdP controllano che ogni file creato presso il proprio storage
     soddisfi quanto prescritto nel §4.2. Non sono permessi file non
