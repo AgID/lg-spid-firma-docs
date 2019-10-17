@@ -55,3 +55,8 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
    versione 2.0, pubblicato da OASIS;
 
 -  **SPID**: il Sistema Pubblico di Identità Digitale.
+
+
+.. discourse::
+
+:topic_identifier: 666
