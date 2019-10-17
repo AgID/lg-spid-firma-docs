@@ -22,28 +22,28 @@ sicuro, i cui dettagli sono dati in §5.2.1.
    protetto logicamente affinché solamente gli enti federati possano
    trasferire file mediante uno dei seguenti due flussi:
 
-a. il sistema dell’IdP è configurato per la sola ricezione di evidenze
-   informatiche provenienti dagli SP in modalità *push* (cioè con
-   trasferimenti iniziati in *upstream* dal SP);
+  a. il sistema dell’IdP è configurato per la sola ricezione di evidenze
+     informatiche provenienti dagli SP in modalità *push* (cioè con
+     trasferimenti iniziati in *upstream* dal SP);
 
-b. il sistema del SP è configurato per la sola ricezione di evidenze
-   informatiche provenienti dagli IdP in modalità *push* (cioè con
-   trasferimenti iniziati in *upstream* dall’IDP).
+  b. il sistema del SP è configurato per la sola ricezione di evidenze
+     informatiche provenienti dagli IdP in modalità *push* (cioè con
+     trasferimenti iniziati in *upstream* dall’IDP).
 
-8.  SP e IdP controllano che ogni file creato presso il proprio storage
+2.  SP e IdP controllano che ogni file creato presso il proprio storage
     soddisfi quanto prescritto nel §4.2. Non sono permessi file non
     conformi a quanto prescritto.
 
-9.  L’IdP rimuove dallo storage i file ricevuti per i quali non sia
+3.  L’IdP rimuove dallo storage i file ricevuti per i quali non sia
     pervenuta, entro un tempo limite di **10 secondi**, una richiesta di
     autenticazione proveniente dal SP.
 
-10. IdP e SP verificano l’integrità dei documenti ricevuti
+4.  IdP e SP verificano l’integrità dei documenti ricevuti
     ricalcolandone l’impronta e confrontandola con quella contenuta,
     rispettivamente, nella richiesta e nella risposta di autenticazione
     che le accompagnano.
 
-11. IdP e SP verificano l’autenticità dei QSeal della controparte e
+5.  IdP e SP verificano l’autenticità dei QSeal della controparte e
     l’integrità del documento ricevuto.
 
 Interfaccia applicativa
@@ -75,7 +75,7 @@ scambiati durante i flussi a e b sono chiamate, rispettivamente,
 L’intestazione (*header*) comune ai pacchetti di andata e ritorno
 contiene i seguenti parametri obbligatori:
 
--  ``typ`` — valorizzato con la stringa "``JOSE``";
+-  `typ` — valorizzato con la stringa "``JOSE``";
 
 -  ``alg`` — valorizzato con l’identificativo JWA dell’algoritmo
    crittografico utilizzato per la firma del pacchetto JWS, secondo
