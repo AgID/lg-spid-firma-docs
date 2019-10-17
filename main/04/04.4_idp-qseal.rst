@@ -61,3 +61,7 @@ o sigilli elettronici qualificati, o può già essere stato oggetto di
 altri processi di sottoscrizione come previsti dalle presenti Linee
 guida. Il documento può richiedere più di una firma, in tal caso l’IdP
 appone più sigilli.
+
+.. discourse::
+
+:topic_identifier: 666
