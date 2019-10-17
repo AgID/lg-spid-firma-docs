@@ -8,7 +8,7 @@ facoltativa] variabili (indicate in corsivo), più l’estensione del file
 
 .. code-block::
 
- SPuid_dataTora.pdf
+   SPuid_dataTora.pdf
 
 In particolare:
 
