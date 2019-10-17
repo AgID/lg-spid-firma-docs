@@ -8,5 +8,5 @@ prescritto dal Regolamento GDPR e dal D.Lgs. №101/2018.
   :maxdepth: 3
   :caption: Indice dei contenuti
 
-  obblighi-degli-enti-federati/obblighi-in-capo-agli-identity-provider.rst
-  obblighi-degli-enti-federati/obblighi-in-capo-ai-service-provider.rst
+  08_obblighi/obblighi-in-capo-agli-identity-provider.rst
+  08_obblighi/obblighi-in-capo-ai-service-provider.rst
