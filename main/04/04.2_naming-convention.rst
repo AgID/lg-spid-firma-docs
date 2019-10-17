@@ -42,3 +42,7 @@ Il nome del **documento firmato con SPID** (cfr. §1) resta immutato.
 A titolo di esempio, il documento PDF, predisposto per la firma
 dall’Agenzia per l’Italia Digitale (acronimo: “``AgID``”) all’ora
 locale 08:34:10, è “``AgID_20190321T083410.pdf``”.
+
+.. discourse::
+
+:topic_identifier: 666
