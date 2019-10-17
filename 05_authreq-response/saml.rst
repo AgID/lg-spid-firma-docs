@@ -32,7 +32,12 @@ sottoscrizione.
 
 .. code-block:: xml
 
- <saml2p:AuthnRequest  xmlns:enc="http://www.w3.org/2001/04/xmlenc#"  […]  Destination="https://url-IdP-destinatario"  ID="id-SessionId"  […]>
+ <saml2p:AuthnRequest 
+       xmlns:enc="http://www.w3.org/2001/04/xmlenc#"
+       […]
+       Destination="https://url-IdP-destinatario"
+       ID="id-SessionId"
+     […]>
      <saml:Issuer […]>https://url-SP-inviante</saml:Issuer>
      […]
      <saml2p:Extensions>
@@ -51,7 +56,13 @@ metadati del documento firmato con SPID).
 
 .. code-block:: xml
 
- <saml2p:Response  xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"  […]  Destination="https://url-SP-destinatario"  ID="_ResponseID"  InResponseTo="id-SessionID"  […]>
+ <saml2p:Response 
+       xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+       […]
+       Destination="https://url-SP-destinatario"
+       ID="_ResponseID"
+       InResponseTo="id-SessionID"
+     […]>
      <saml:Issuer […]>https://url-IdP-inviante</saml:Issuer>
      […]
      <saml2p:Extensions>
@@ -72,6 +83,8 @@ genericamente indicati come ``<Element>`` di *namespace*
 
 .. code-block:: xml
 
- <ns:Element […] xmlns:spid="http://spid.gov.it/saml-extensions" […]>
+ <ns:Element 
+        xmlns:spid="http://spid.gov.it/saml-extensions"
+     […]>
      […]
  </ns:Element>
