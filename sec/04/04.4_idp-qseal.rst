@@ -6,54 +6,54 @@ documento, che è graficamente localizzato nello spazio previsto dal SP e
 indicato nella richiesta di autenticazione (cfr. §5). La componente
 visibile del sigillo contiene il seguente testo:
 
-::
-
-   Il %data% alle %ora%, %firmatario% ha confermato la volonta' di apporre qui la propria sottoscrizione ai sensi dell'art. 20, comma 1-bis, del CAD.
+:: code-block
+ Il %data% alle %ora%, %firmatario% ha confermato la volonta' di apporre qui la propria sottoscrizione 
+ ai sensi dell'art. 20, comma 1-bis, del CAD.
 
 Dove:
 
--  La parte variabile ``%``\ ``firmatario``\ ``%`` è così costituita in
+-  La parte variabile ``%firmatario%`` è così costituita in
    base alla seguente alternativa:
 
    -  nel caso sia stata utilizzata un’identità digitale **non ad uso
       professionale**: il nome e cognome del firmatario (separati fra
       loro da uno spazio – esadecimale 0x20), seguiti da uno *slash*
-      ascendente ‘\ ``/``\ ’ (esadecimale 0x2F) seguito dalla stringa
-      ‘\ ``TINIT-``\ ’, seguito dal codice fiscale del firmatario; ad
-      esempio: “\ ``Mario Rossi/TINIT-RSSMR064T30H501H``\ ”;
+      ascendente ‘``/``’ (esadecimale 0x2F) seguito dalla stringa
+      ‘``TINIT-``’, seguito dal codice fiscale del firmatario; ad
+      esempio: “``Mario Rossi/TINIT-RSSMR064T30H501H``”;
 
    -  nel caso sia stata utilizzata un’identità digitale **per uso
       professionale**: il nome e il cognome del firmatario (fra di loro
       separati da uno spazio) seguiti da uno slash ascendente
-      ‘\ ``/``\ ’, seguiti dalla denominazione dell’organizzazione,
-      seguita da un altro *slash* ascendente ‘\ ``/``\ ’, seguito da un
+      ‘``/``’, seguiti dalla denominazione dell’organizzazione,
+      seguita da un altro *slash* ascendente ‘``/``’, seguito da un
       identificativo unico dell’organizzazione valorizzato seguendo le
-      alternative proposte nel §4.5. , punto 15.a. Ad esempio, in caso
+      alternative proposte nel §4.5, punto 15.a. Ad esempio, in caso
       di soggetto operante per conto di un’organizzazione dotata di
       partita IVA:
-      “\ ``Mario Rossi/Agenzia per l'Italia Digitale/TINIT-97735020584``\ ”.
+      “``Mario Rossi/Agenzia per l'Italia Digitale/TINIT-97735020584``”.
 
 -  La parte variabile ``%data%`` contiene la data di sottoscrizione,
    espressa come una stringa di 8 caratteri numerici separati in tre
-   gruppi da uno *slash* ascendente ‘\ ``/``\ ’ e ripartiti come:
+   gruppi da uno *slash* ascendente ‘``/``’ e ripartiti come:
 
-   -  due cifre per giorno del mese (da “\ ``01``\ ” a “\ ``31``\ ”),
+   -  due cifre per giorno del mese (da “``01``” a “``31``”),
 
-   -  due cifre per il mese dell’anno (da “\ ``01``\ ” a “\ ``12``\ ”),
+   -  due cifre per il mese dell’anno (da “``01``” a “``12``”),
 
-   -  quattro cifre per l’anno solare (da “\ ``2019``\ ” in poi).
+   -  quattro cifre per l’anno solare (da “``2019``” in poi).
 
--  La parte variabile ``%``\ ``ore``\ ``%`` contiene l’ora di
+-  La parte variabile ``%ore%`` contiene l’ora di
    sottoscrizione (*sempre riportata al fuso orario italiano*), espressa
    come una stringa di 8 caratteri numerici separati in tre gruppi da
-   due-punti ‘\ ``:``\ ’ e ripartiti come:
+   due-punti ‘``:``’ e ripartiti come:
 
    -  due cifre per l’ora nell’arco delle ventiquattrore (da
-      “\ ``00``\ ” per la mezzanotte a “\ ``23``\ ”),
+      “``00``” per la mezzanotte a “``23``”),
 
-   -  due cifre per il minuto primo (da “\ ``01``\ ” a “\ ``59``\ ”),
+   -  due cifre per il minuto primo (da “``01``” a “``59``”),
 
-   -  due cifre per il minuto secondo (da “\ ``01``\ ” a “\ ``59``\ ”).
+   -  due cifre per il minuto secondo (da “``01``” a “``59``”).
 
 Il documento può contenere già una o più firme elettroniche qualificate
 o sigilli elettronici qualificati, o può già essere stato oggetto di
