@@ -13,3 +13,7 @@ informatica del suo autore,
 Le presenti Linee guida regolano le modalità atte a garantire la
 sicurezza, integrità e immodificabilità del documento e, in maniera
 manifesta e inequivoca, la sua riconducibilità all’autore.
+
+.. discourse::
+
+:topic_identifier: 666
