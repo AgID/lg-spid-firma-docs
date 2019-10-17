@@ -8,5 +8,5 @@ prescritto dal Regolamento GDPR e dal D.Lgs. №101/2018.
   :maxdepth: 3
   :caption: Indice dei contenuti
 
-  sec/08/08.1_obblighi-IdP.rst
-  sec/08/08.2_obblighi-SP.rst
+  sec/08/08.1_obblighi-idp.rst
+  sec/08/08.2_obblighi-sp.rst
