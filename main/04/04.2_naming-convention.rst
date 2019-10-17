@@ -6,39 +6,39 @@ facoltativa] variabili (indicate in corsivo), più l’estensione del file
 (in tondo, dato che è necessariamente ``.pdf``), più delle parti fisse
 (in tondo):
 
-::
+.. code-block::
 
-   SPuid_dataTora.pdf
+ SPuid_dataTora.pdf
 
 In particolare:
 
--  ``SP``\ ``uid`` — È un identificativo unico del SP che forma il
+-  ``SPuid`` — È un identificativo unico del SP che forma il
    documento. È una stringa costituita da un minimo di 3 a un massimo di
    8 caratteri a scelta tra i seguenti caratteri puramente alfanumerici:
-   “\ ``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ``\ ”.
+   “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ``”.
 
 -  ``data`` — È la data di formazione rispetto al fuso orario italiano.
-   È una stringa di 8 caratteri numerici così ripartiti
+   È una stringa di 8 caratteri numerici così ripartiti:
 
-   -  quattro cifre per l’anno solare (da “\ ``2019``\ ” in poi),
+   -  quattro cifre per l’anno solare (da “``2019``” in poi),
 
-   -  due cifre per il mese dell’anno (da “\ ``01``\ ” a “\ ``12``\ ”),
+   -  due cifre per il mese dell’anno (da “``01``” a “``12``”),
 
-   -  due cifre per giorno del mese (da “\ ``01``\ ” a “\ ``31``\ ”);
+   -  due cifre per giorno del mese (da “``01``” a “``31``”);
 
 -  ``ora`` — È l’ora di formazione rispetto all’orario di sistema
    dell’ente federato, eventualmente riportata al fuso orario italiano
    corrente. È una stringa di 6 caratteri numerici così ripartiti:
 
    -  due cifre per l’ora nell’arco delle ventiquattrore (da
-      “\ ``00``\ ” per la mezzanotte a “\ ``23``\ ”),
+      “``00``” per la mezzanotte a “``23``”),
 
-   -  due cifre per il minuto primo (da “\ ``01``\ ” a “\ ``59``\ ”),
+   -  due cifre per il minuto primo (da “``01``” a “``59``”),
 
-   -  due cifre per il minuto secondo (da “\ ``01``\ ” a “\ ``59``\ ”);
+   -  due cifre per il minuto secondo (da “``01``” a “``59``”);
 
 Il nome del **documento firmato con SPID** (cfr. §1) resta immutato.
 
 A titolo di esempio, il documento PDF, predisposto per la firma
-dall’Agenzia per l’Italia Digitale (acronimo: “\ ``AgID``\ ”) all’ora
-locale 08:34:10, è “\ ``AgID_20190321T083410.pdf``\ ”.
+dall’Agenzia per l’Italia Digitale (acronimo: “``AgID``”) all’ora
+locale 08:34:10, è “``AgID_20190321T083410.pdf``”.
