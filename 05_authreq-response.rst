@@ -42,5 +42,5 @@ sintassi descritta nei seguenti paragrafi.
   :maxdepth: 3
   :caption: Indice dei contenuti
 
-  richieste-e-risposte-di-autenticazione-per-la-firma/saml.rst
-  richieste-e-risposte-di-autenticazione-per-la-firma/sistema-di-trasferimento-sicuro-dei-documenti.rst
+  05_authreq-response/saml.rst
+  05_authreq-response/sistema-di-trasferimento-sicuro-dei-documenti.rst
