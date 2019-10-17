@@ -2,6 +2,10 @@
 Regole Tecniche circa la sottoscrizione elettronica di documenti tramite SPID ex art. 20 del CAD
 ################################################################################################
 
+.. highlights ::
+
+  Linee Guida ex art. 71 del CAD
+
 .. admonition:: consultation
    La consultazione pubblica relativa al presente documento è attiva dal **GG
    MESE** al **GG MESE 2019**. Questo documento raccoglie il testo delle
@@ -15,10 +19,11 @@ Versione Data        Determinazione Tipologia modifica
 ======== =========== ============== =====================================
 0.1      GG/mes/2019                Adeguamento al formato di riferimento
 ======== =========== ============== =====================================
+
 .. toctree::
-   :caption: Sommario
    :numbered:
    :maxdepth: 3
+   :caption: Indice dei contenuti
 
    01_definizioni.rst
    02_scopo-e-ambito.rst
