@@ -12,3 +12,7 @@ La tabella contiene:
    nel campo ``Detail`` della risposta verso il SP;
 
 -  il codice di risposta HTTP.
+
+.. discourse::
+
+:topic_identifier: 666
