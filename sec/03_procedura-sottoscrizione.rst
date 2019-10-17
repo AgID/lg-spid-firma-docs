@@ -27,5 +27,5 @@ scelta dell’IdP, il SP mostra solo gli IdP che offrono tale servizio.
   :maxdepth: 3
   :caption: Indice dei contenuti
 
-  sec/03/03.1_predisposizione-alla-sottoscrizione-presso-il-sp.rst
-  sec/03/03.2_/consenso-alla-sottoscrizione-presso-lidp.rst
+  sec/03/03.1_predisposizione-doc.rst
+  sec/03/03.2_consenso-sottoscrizione.rst
