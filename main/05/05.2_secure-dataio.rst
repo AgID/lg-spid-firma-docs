@@ -273,3 +273,7 @@ Esempio di pacchetto di ritorno:
      ],
      "payload" : " BlobDocumento-2 + […] + codificatoBase64 "
  }
+
+.. discourse::
+
+:topic_identifier: 666
