@@ -58,3 +58,7 @@ scelto di avvalersi dei servizi di conservazione dei documenti firmati
 (cfr. §9), l’IdP rimuove dai propri sistemi il documento oggetto della
 sottoscrizione, nel pieno rispetto di quanto disposto dal Regolamento
 GDPR.
+
+.. discourse::
+
+:topic_identifier: 666
