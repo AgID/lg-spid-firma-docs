@@ -7,7 +7,7 @@ aggiuntivi:
 
 1. il nome del file del documento;
 
-2. l’impronta dell’evidenza informatica ottenuta calcolando l’\ *hash*
+2. l’impronta dell’evidenza informatica ottenuta calcolando l’*hash*
    del file di cui al punto 1;
 
 3. l’identificativo della funzione di *hash* crittografico utilizzato al
@@ -42,5 +42,5 @@ sintassi descritta nei seguenti paragrafi.
   :maxdepth: 3
   :caption: Indice dei contenuti
 
-  sec/05/05.1_saml.rst
-  sec/05/05.2_secure-dataio.rst
+  main/05/05.1_saml.rst
+  main/05/05.2_secure-dataio.rst
