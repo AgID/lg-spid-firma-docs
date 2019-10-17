@@ -3,25 +3,28 @@ Predisposizione alla sottoscrizione (presso il SP)
 
 Il processo prevede quanto segue:
 
-1. Il SP predispone il documento, apponendovi un proprio sigillo
-   elettronico qualificato, secondo quanto prescritto tecnicamente nel
-   §4.1, sottoponendolo, presso la propria piattaforma, all’utente
-   affinché possa essere visionato, eventualmente scaricato e
-   conservato.
+.. topic:: Procedura
+   :class: procedure
 
-2. Il SP richiede all’utente conferma della volontà di procedere alla
-   sottoscrizione del documento di cui al punto 1, rendendo manifesto
-   che il processo prevede l’invio del documento all’IDP prescelto,
-   acquisendo quindi il consenso dell’utente. L’utente è avvisato in
-   modo chiaro e manifesto che tale documento gli sarà reso
-   successivamente disponibile dal proprio IdP e gli viene consigliato
-   di leggerlo nuovamente in tale occasione.
-
-3. Il SP inoltra la sessione dell’utente all’IdP con una nuova richiesta
-   di autenticazione speciale (di livello pari almeno a 2), denominata
-   “**firma SPID**”, conforme alle caratteristiche tecniche di cui
-   al §5 e invia il documento predisposto al punto 1 all’IdP con le
-   modalità descritte nel §5.2.
+   1. Il SP predispone il documento, apponendovi un proprio sigillo
+      elettronico qualificato, secondo quanto prescritto tecnicamente nel
+      §4.1, sottoponendolo, presso la propria piattaforma, all’utente
+      affinché possa essere visionato, eventualmente scaricato e
+      conservato.
+   
+   2. Il SP richiede all’utente conferma della volontà di procedere alla
+      sottoscrizione del documento di cui al punto 1, rendendo manifesto
+      che il processo prevede l’invio del documento all’IDP prescelto,
+      acquisendo quindi il consenso dell’utente. L’utente è avvisato in
+      modo chiaro e manifesto che tale documento gli sarà reso
+      successivamente disponibile dal proprio IdP e gli viene consigliato
+      di leggerlo nuovamente in tale occasione.
+   
+   3. Il SP inoltra la sessione dell’utente all’IdP con una nuova richiesta
+      di autenticazione speciale (di livello pari almeno a 2), denominata
+      “**firma SPID**”, conforme alle caratteristiche tecniche di cui
+      al §5 e invia il documento predisposto al punto 1 all’IdP con le
+      modalità descritte nel §5.2.
 
 .. discourse::
 
