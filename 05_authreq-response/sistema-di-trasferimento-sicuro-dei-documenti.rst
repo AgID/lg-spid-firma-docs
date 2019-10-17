@@ -91,29 +91,15 @@ contiene i seguenti parametri obbligatori:
 
 Un esempio di intestazione sopra definita è:
 
-::
+.. code-block:: json
 
-   {
+ {
+     "typ" : "JOSE",
+     "alg" : "ES256",
+     "x5c" : "Certificato/codificato+Base64",
+     "crit": ["x5c"]
+ }
 
-::
-
-       "typ" : "JOSE",
-
-::
-
-       "alg" : "ES256",
-
-::
-
-       "x5c" : "Certificato/codificato+Base64",
-
-::
-
-       "crit": ["x5c"]
-
-::
-
-   }
 
 Il *payload* dei pacchetti di andata e ritorno contiene i seguenti
 parametri obbligatori:
