@@ -1,6 +1,10 @@
 Codici di errore
 ================
 
+.. highlights:
+
+   Elenco dei messaggi di stato (ed errrore) restituiti al termine della procedura.
+
 Gli errori sono normalizzati e pubblicati in apposita tabella disponibile sul sito dell’Agenzia.
 La tabella contiene:
 
