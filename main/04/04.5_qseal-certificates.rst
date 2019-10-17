@@ -1,4 +1,4 @@
-Certificati di sigillo elettronico qualificato
+Certificati di sigillo elettronico qualificato../../main/04/
 ==============================================
 
 SP e IdP si dotano, presso un QTSP, di un certificato elettronico
@@ -17,7 +17,7 @@ informazioni aggiuntive:
 
       -  la partita IVA indicata con il prefisso ‘``VAT``’, come
          prescritto dal §5.1.4 punto 1 della norma ETSI `EN
-         319-\ 412-1 <http://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.01.01_60/en_31941201v010101p.pdf>`__
+         319-**412**-1 <http://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.01.01_60/en_31941201v010101p.pdf>`__
          (es. “``VATIT-12345678901``”);
 
       -  il codice fiscale indicato con il prefisso ‘``CF:``’, come
@@ -36,15 +36,15 @@ informazioni aggiuntive:
       mediante un elemento di tipo ``dNSName``, il nome di dominio –
       privo di qualsiasi carattere *wildcard* – di cui al punto 5.
 
-3. Il campo ``CertificatePolicies`` (OID `2.5.29.32 <http://http/oid-info.com/get/2.5.29.32>`__), contenente i
+2. Il campo ``CertificatePolicies`` (OID `2.5.29.32 <http://http/oid-info.com/get/2.5.29.32>`__), contenente i
    seguenti attributi:
 
-   c. ``PolicyIdentifier`` (OID `2.5.4.3 <http://http/oid-info.com/get/2.5.4.3>`__) — valorizzato
+   a. ``PolicyIdentifier`` (OID `2.5.4.3 <http://http/oid-info.com/get/2.5.4.3>`__) — valorizzato
       come:
 
       -  ``spidSignature`` (OID `1.3.76.16.4.11 <http://http/oid-info.com/get/1.3.76.16.4.11>`__);
 
-   d. una limitazione d’uso indicata mediante la presenza di un campo
+   b. una limitazione d’uso indicata mediante la presenza di un campo
       ``userNotice`` (OID `2.5.29.49 <http://http/oid-info.com/get/2.5.29.49>`__), di tipo
       ``explicitText``, valorizzato con la seguente stringa bilingue:
       “``Certificato usabile solo per il processo di sottoscrizione ex art.20 del CAD/This certificate may be used only for digital subscription pursuant to Digital Administration Code, art.20.``”.
