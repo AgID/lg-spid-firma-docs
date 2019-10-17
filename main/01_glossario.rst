@@ -85,6 +85,9 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
       standard `*Security Assertion Markup Language* <http://docs.oasis-open.org/security/saml/v2.0/saml-2.0-os.zip>`__,
    versione 2.0, pubblicato da OASIS;
 
+   SP
+     prestatore di servizi nel contesto della federazione SPID;
+
    SPID
       il Sistema Pubblico di Identità Digitale.
 
