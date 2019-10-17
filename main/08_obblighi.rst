@@ -6,7 +6,6 @@ prescritto dal Regolamento GDPR e dal D.Lgs. №101/2018.
 
 .. toctree::
   :maxdepth: 3
-  :caption: Indice dei contenuti
 
   main/08/08.1_obblighi-idp.rst
   main/08/08.2_obblighi-sp.rst
