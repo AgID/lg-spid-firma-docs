@@ -75,7 +75,7 @@ scambiati durante i flussi a e b sono chiamate, rispettivamente,
 L’intestazione (*header*) comune ai pacchetti di andata e ritorno
 contiene i seguenti parametri obbligatori:
 
--  ``typ`` — valorizzato con la stringa “\ ``JOSE``\ ”;
+-  ``typ`` — valorizzato con la stringa “``JOSE``”;
 
 -  ``alg`` — valorizzato con l’identificativo JWA dell’algoritmo
    crittografico utilizzato per la firma del pacchetto JWS, secondo
@@ -86,7 +86,7 @@ contiene i seguenti parametri obbligatori:
    `RFC-4648 <https://tools.ietf.org/html/rfc4648>`__);
 
 -  ``crit`` — valorizzato con una lista di un unico elemento
-   “\ ``x5c``\ ”, ad indicare che la convalida del certificato di cui al
+   “``x5c``”, ad indicare che la convalida del certificato di cui al
    punto precedente è obbligatoria;
 
 Un esempio di intestazione sopra definita è:
@@ -110,7 +110,7 @@ parametri obbligatori:
    pacchetti di andata e di ritorno, si trova rispettivamente
    nell’attributo:
 
-   -  ``ID`` dell’elemento SAML ``<``\ ``AuthnRequest``\ ``>`` per il
+   -  ``ID`` dell’elemento SAML ``<`` ** ``AuthnRequest`` ** ``>`` per il
       flusso a (andata), *ovvero*
 
    -  ``InResponseTo`` dell’elemento SAML ``<Response>`` per il flusso b
