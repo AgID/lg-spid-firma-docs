@@ -1,4 +1,4 @@
-Certificati di sigillo elettronico qualificato../../main/04/
+Certificati di sigillo elettronico qualificato
 ==============================================
 
 SP e IdP si dotano, presso un QTSP, di un certificato elettronico
