@@ -35,7 +35,7 @@ Ai fini delle presenti Linee guida, oltre ad applicarsi le definizioni di cui al
    *LL.GG. sulle misure minime di sicurezza*
       Circolare AgID №1/2017 e successive modificazioni, recante *Misure minime di sicurezza ICT per le pubbliche amministrazioni*, emanata con DPCM del 24 ottobre 2014;
 
-   OpenAPI:sup:`®`
+   OpenAPI
       *OpenAPI Specification* (OAS), versione 3.0;
 
    registro SPID
