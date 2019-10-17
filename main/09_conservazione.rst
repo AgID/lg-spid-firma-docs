@@ -1,6 +1,11 @@
 Servizio di conservazione dei documenti firmati
 ===============================================
 
+.. highlights:
+
+   Descrizione dei servizi opzionali che possono essere offerti dagli IdP,
+   quali ad esempio la conservazione dei documenti firmati con SPID.
+
 Gli IdP possono offrire ai firmatari servizi aggiuntivi di conservazione
 dei documenti firmati con SPID resi accessibili all’utente attraverso
 apposito servizio.
