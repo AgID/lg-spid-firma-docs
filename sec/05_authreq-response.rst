@@ -42,5 +42,5 @@ sintassi descritta nei seguenti paragrafi.
   :maxdepth: 3
   :caption: Indice dei contenuti
 
-  05_authreq-response/saml.rst
-  05_authreq-response/sistema-di-trasferimento-sicuro-dei-documenti.rst
+  sec/05/05.1_saml.rst
+  sec/05/05.2_sistema-di-trasferimento-sicuro-dei-documenti.rst
