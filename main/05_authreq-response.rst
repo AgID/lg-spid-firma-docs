@@ -40,7 +40,6 @@ sintassi descritta nei seguenti paragrafi.
 
 .. toctree::
   :maxdepth: 3
-  :caption: Indice dei contenuti
 
   main/05/05.1_saml.rst
   main/05/05.2_secure-dataio.rst
