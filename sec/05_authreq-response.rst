@@ -18,7 +18,7 @@ obbligatoriamente i seguenti metadati:
 
 4. il nome del file del documento firmato con SPID
 
-5. l’impronta dell’evidenza ottenuta calcolando l’\ *hash* del file di
+5. l’impronta dell’evidenza ottenuta calcolando l’*hash* del file di
    cui al punto 4, calcolata dall’IdP ai sensi del §6;
 
 6. l’identificativo della funzione di *hash* crittografico utilizzato al
@@ -43,4 +43,4 @@ sintassi descritta nei seguenti paragrafi.
   :caption: Indice dei contenuti
 
   sec/05/05.1_saml.rst
-  sec/05/05.2_sistema-di-trasferimento-sicuro-dei-documenti.rst
+  sec/05/05.2_secure-dataio.rst
