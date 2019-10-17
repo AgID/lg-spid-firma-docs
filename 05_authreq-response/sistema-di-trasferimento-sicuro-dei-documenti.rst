@@ -1,0 +1,438 @@
+Sistema di trasferimento sicuro dei documenti
+=============================================
+
+Ogni ente federato si dota di un sistema di trasferimento dedicato ai
+documenti oggetto delle presenti Linee guida, costituito da uno storage
+dedicato, un protocollo di comunicazione sicura che garantisce un
+adeguato livello di confidenzialità, integrità e disponibilità, e da un
+sistema di gestione dei file ricevuti.
+
+L’interfaccia applicativa fornita dal protocollo di comunicazione per il
+trasferimento di documenti dall’esterno è reso noto da ciascun ente
+federato verso tutti gli enti federati, mediante l’URL che l’ente
+medesimo pubblica nel metadata SPID e il cui dominio è contestualmente
+riportato nei campi ``commonName`` e ``subjectAltName`` del proprio
+certificato qualificato di sigillo elettronico, di cui al §4.5. , punti
+14.b e 5. Tale URL indica esplicitamente il protocollo di comunicazione
+sicuro, i cui dettagli sono dati in §5.2.1.
+
+1. Il sistema di trasferimento è, nella sua interezza, protetto da
+   misure di sicurezza logica e fisica conformi almeno alle *LL.GG.
+   sulle misure minime di sicurezza*. Esso è inoltre adeguatamente
+   protetto logicamente affinché solamente gli enti federati possano
+   trasferire file mediante uno dei seguenti due flussi:
+
+a. il sistema dell’IdP è configurato per la sola ricezione di evidenze
+   informatiche provenienti dagli SP in modalità *push* (cioè con
+   trasferimenti iniziati in *upstream* dal SP);
+
+b. il sistema del SP è configurato per la sola ricezione di evidenze
+   informatiche provenienti dagli IdP in modalità *push* (cioè con
+   trasferimenti iniziati in *upstream* dall’IDP).
+
+8.  SP e IdP controllano che ogni file creato presso il proprio storage
+    soddisfi quanto prescritto nel §4.2. . Non sono permessi file non
+    conformi a quanto prescritto.
+
+9.  L’IdP rimuove dallo storage i file ricevuti per i quali non sia
+    pervenuta, entro un tempo limite di **10 secondi**, una richiesta di
+    autenticazione proveniente dal SP.
+
+10. IdP e SP verificano l’integrità dei documenti ricevuti
+    ricalcolandone l’impronta e confrontandola con quella contenuta,
+    rispettivamente, nella richiesta e nella risposta di autenticazione
+    che le accompagnano.
+
+11. IdP e SP verificano l’autenticità dei QSeal della controparte e
+    l’integrità del documento ricevuto.
+
+Interfaccia applicativa
+-----------------------
+
+SP e IdP si scambiano evidenze informatiche in formato JWS, in accordo
+con le specifiche OpenAPI su canale HTTPS, formate mediate la seguente
+procedura:
+
+1. predisposizione di una struttura JSON contenente sia il **dato**
+   (cioè il documento oggetto di sottoscrizione) che i suoi
+   **metadati**, di seguito elencati:
+
+2. codifica del messaggio di cui al punto 1 in un pacchetto JWT;
+
+3. conversione del pacchetto di cui al punto 2 in JWS, mediante il
+   metodo Compact Serialization (cfr.
+   `RFC-7515 <https://tools.ietf.org/html/rfc7515>`__), mediante
+   creazione di apposito QSeal.
+
+Gli algoritmi crittografici utilizzati lungo l’intera procedura sopra
+descritta sono definiti in §6. I pacchetti JWS sono caratterizzati dalla
+presenza degli identificativi unici di sessione (cfr. §5).
+
+Le strutture JSON in base alle quali sono prodotti i pacchetti JWS
+scambiati durante i flussi a e b sono chiamate, rispettivamente,
+**pacchetto di andata** e **pacchetto di ritorno**.
+
+L’intestazione (*header*) comune ai pacchetti di andata e ritorno
+contiene i seguenti parametri obbligatori:
+
+-  ``typ`` — valorizzato con la stringa “\ ``JOSE``\ ”;
+
+-  ``alg`` — valorizzato con l’identificativo JWA dell’algoritmo
+   crittografico utilizzato per la firma del pacchetto JWS, secondo
+   quanto indicato al §6;
+
+-  ``x5c`` — valorizzato con il certificato qualificato di sigillo
+   elettronico dell’ente inviante (codificato in *Base64*, cfr.
+   `RFC-4648 <https://tools.ietf.org/html/rfc4648>`__);
+
+-  ``crit`` — valorizzato con una lista di un unico elemento
+   “\ ``x5c``\ ”, ad indicare che la convalida del certificato di cui al
+   punto precedente è obbligatoria;
+
+Un esempio di intestazione sopra definita è:
+
+::
+
+   {
+
+::
+
+       "typ" : "JOSE",
+
+::
+
+       "alg" : "ES256",
+
+::
+
+       "x5c" : "Certificato/codificato+Base64",
+
+::
+
+       "crit": ["x5c"]
+
+::
+
+   }
+
+Il *payload* dei pacchetti di andata e ritorno contiene i seguenti
+parametri obbligatori:
+
+-  ``jti`` — valorizzato con l’identificativo unico della sessione, così
+   come dichiarato nella richiesta di autenticazione per firma SPID,
+   epurato del prefisso “\ ``id-``\ ” – coincide con il valore che, nei
+   pacchetti di andata e di ritorno, si trova rispettivamente
+   nell’attributo:
+
+   -  ``ID`` dell’elemento SAML ``<``\ ``AuthnRequest``\ ``>`` per il
+      flusso a (andata), *ovvero*
+
+   -  ``InResponseTo`` dell’elemento SAML ``<Response>`` per il flusso b
+      (ritorno).
+
+-  ``iss`` — valorizzato con l’\ ``entityId`` (URL con schema HTTPS)
+   dell’ente federato inviante; coincide con il valore dell’elemento
+   ``<``\ ``Issuer``\ ``>``:
+
+-  ``aud`` — valorizzato con l’\ ``entityId`` (URL con schema HTTPS)
+   dell’ente federato destinatario; coincide con il valore
+   dell’attributo ``Destination``, rispettivamente, dell’elemento SAML:
+
+   -  ``<``\ ``AuthnRequest``\ ``>`` per il pacchetto di andata (flusso
+      a), *ovvero*
+
+   -  ``<Response>`` per il pacchetto di ritorno (flusso b).
+
+-  ``iat`` — valorizzato con l’orario in cui il messaggio è generato e
+   inviato (rispetto al fuso orario italiano), codificato come campo
+   JSON di tipo *NumericDate*;
+
+-  ``filename`` — valorizzato con il nome del file del documento
+   inviato; coincide con il valore dell’elemento
+   ``<``\ ``Filename``\ ``>`` come specificato nel §4.2. ;
+
+-  ``cty`` — valorizzato con la tipologia MIME del documento di cui al
+   punto precedente (quindi come “\ ``pdf``\ ”, come da normativa
+   `RFC-7515 <https://tools.ietf.org/html/rfc7515>`__);
+
+-  ``payload`` — valorizzato con l’evidenza del documento informatico da
+   trasferire, codificato in *Base64* (cfr.
+   `RFC-4648 <https://tools.ietf.org/html/rfc4648>`__);
+
+-  ``hash`` — valorizzato con una struttura JSON così costituita:
+
+   -  ``method`` — valorizzato con la codifica W3C della funzione di
+      *hash* utilizzata per il calcolo delle impronte dei documenti e
+      coincidente con il valore dell’emento SAML
+      ``<``\ ``DigestMethod``\ ``>``,
+
+   -  ``digest`` — valorizzato con l’impronta del documento trasferito e
+      coincidente con il valore dell’elemento SAML
+      ``<``\ ``DigestValue``\ ``>``.
+
+Nel pacchetto di andata:
+
+-  ``signatures`` — valorizzato con un *array* JSON contenente tanti
+   elementi quante sono le sottoscrizioni richieste; ciascun elemento
+   dell’\ *array* è una struttura JSON contenente:
+
+   -  ``id`` — valorizzato con l’identificativo univoco della firma
+      nell’ambito del processo di firma,
+
+   -  ``pag`` — valorizzato con il numero della pagina del documento ove
+      è richiesto che l’IdP apponga la componente grafica di cui al
+      §4.4. ;
+
+   -  ``pos`` — contenente una struttura JSON con due parametri – ``u``
+      e ``v`` – ciascuno dei due valorizzati con una struttura JSON di
+      due elementi di tipo number, recanti l’ascissa e la ordinata nei
+      sotto-parametri ``x`` e ``y``, rispettivamente di due vertici
+      diametralmente opposti, delineanti l’area rettangolare definita,
+      al §4.4. , per il posizionamento della componente grafica del
+      QSeal all’interno della pagina stessa, secondo quanto previsto
+      tecnicamente per la rappresentazione di oggetti PDF *Rectangles*,
+      secondo lo standard `ISO/IEC
+      32000-1 <http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf>`__;
+
+   -  ``ref`` —booleano per indicare se la firma è facoltativa
+      (``false``) ovvero obbligatoria (``true``) per il SP richiedente.
+      Se il firmatario non accetta di apporre anche solo una firma
+      obbligatoria, l’intero processo di sottoscrizione termina senza
+      successo e l’IdP non restituisce il documento al SP, informandolo
+      della mancanza di volontà del firmatario.
+
+Nel pacchetto di ritorno:
+
+-  ``sub`` — valorizzato con la stringa ``%``\ ``firmatario``\ ``%``
+   identificativa del firmatario, come definita nel §4.4. ;
+
+-  ``ref`` — valorizzato con un *array* JSON contenente tanti elementi
+   quante sono le firme richieste nel pacchetto di andata; ciascun
+   elemento dell’\ *array* è una struttura JSON contenente:
+
+   -  ``id`` — valorizzato con l’identificativo univoco della firma
+      contenuto nel pacchetto di andata,
+
+   -  ``signed`` — valorizzato con un booleano che conferma
+      l’apposizione (``true``) o meno (``false``) della firma.
+
+I pacchetti sono validi se conformi al presente provvedimento e a
+eventuali successive indicazioni dell’Agenzia.
+
+12. Seguono un esempio del pacchetto di andata e del relativo pacchetto
+    di ritorno per la sottoscrizione di un documento per il quale sono
+    richieste due firme: la prima, a pagina 3, obbligatoria; la seconda,
+    a pagina 7, facoltativa. Nella risposta, l’IdP informa il SP che
+    l’utente ha apposto solo la firma obbligatoria.
+
+13. Esempio di pacchetto di andata:
+
+::
+
+   {
+
+::
+
+       "jti" : "SessionID",
+
+::
+
+       "iss" : "https://url-SP-inviante",
+
+::
+
+       "aud" : "https://url-IdP-ricevente",
+
+::
+
+       "iat" : 1563235200,
+
+::
+
+       "filename" : "AgID_20190824T183000.pdf",
+
+::
+
+       "cty" : "pdf",
+
+::
+
+       "digest" : {
+
+::
+
+           "method" : "schema://funzione_hash",
+
+::
+
+           "value" : "ImprontaDocumento1"
+
+::
+
+       },
+
+::
+
+       "signatures" :
+
+::
+
+       [
+
+::
+
+           {
+
+::
+
+               "id"  : "1",
+
+::
+
+               "pag" : 3,
+
+::
+
+               "pos" : {
+
+::
+
+                   "u" : { "x":89.9446, "y":719.976 },
+
+::
+
+                   "v" : { "x":239.978, "y":751.299 }
+
+::
+
+               },
+
+::
+
+               "req" : true
+
+::
+
+           },
+
+::
+
+          {
+
+::
+
+               "id"  : "2",
+
+::
+
+               "pag" : 7,
+
+::
+
+               "pos" : {
+
+::
+
+                   "u" : { "x":240.734, "y":686.297 },
+
+::
+
+                   "v" : { "x":390.768, "y":718.421 }
+
+::
+
+               },
+
+::
+
+               "req" : false
+
+::
+
+          }
+
+::
+
+       ],
+
+::
+
+       "payload" : "BlobDocumento1+[…]+codificatoBase64"
+
+::
+
+   }
+
+14. Esempio di pacchetto di ritorno:
+
+::
+
+   {
+
+::
+
+       "jti" : "SessionID",
+
+::
+
+       "iss" : "https://url-IdP-inviante",
+
+::
+
+       "aud" : "https://url-SP-ricevente",
+
+::
+
+       "sub" : "Mario Rossi/CF:IT-RSSMR064T30H501H",
+
+::
+
+       "iat" : 1563235220,
+
+::
+
+       "filename" : "AgID_20190824T183000.pdf",
+
+::
+
+       "cty" : "pdf",
+
+::
+
+       "digest" : {
+
+::
+
+           "method":"schema://funzione_hash",
+
+::
+
+           "value" : "ImprontaDocumento2"
+
+::
+
+       },
+
+::
+
+       "ref" : [
+
+::
+
+           {"id":"1", "signed":true},
+
+::
+
+           {"id":"2", "signed":false}
+
+::
+
+       ],
+
+::
+
+       "payload" : "BlobDocumento2+[…]+codificatoBase64"
+
+::
+
+   }

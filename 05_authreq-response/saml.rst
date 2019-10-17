@@ -1,0 +1,160 @@
+SAML
+====
+
+Le richieste e risposte di autenticazione SAML contengono ciascuna
+un’estensione ``<``\ ``Signature``\ ``>`` (*namespace* ``spid``)
+contenuta nella sezione prevista dallo standard per le estensioni SAML.
+I metadati sopra elencati sono realizzati mediante i seguenti elementi:
+
+-  punti 1 e 4 tramite elemento ``<``\ ``File``\ ``n``\ ``ame``\ ``>``
+   (*namespace* ``spid``), contenente il nome del file del documento,
+   comprensivo della corretta estensione, composto come descritto in
+   §4.2. ;
+
+-  punti 2 e 5 tramite elemento ``<``\ ``DigestValue``\ ``>``
+   (*namespace* ``ds``), contenente un’impornta tappresentata
+   applicandole la trasformazione *Base64* (cfr.
+   `RFC-4648 <https://tools.ietf.org/html/rfc4648>`__);
+
+-  punti 3 e 6 tramite elemento ``<``\ ``DigestMethod``\ ``>``
+   (*namespace* ``ds``), contenente la codifica W3C della funzione di
+   *hash* utilizzata per il calcolo delle impronte dei documenti;
+
+-  l’identificativo univoco di sessione è indicato nell’attributo ``ID``
+   dell’elemento ``<``\ ``AuthnRequest``\ ``>`` per la richiesta di
+   autenticazione, il cui valore combacia con quello dell’attributo
+   ``InResponseTo`` dell’elemento ``<``\ ``Response``\ ``>`` per la
+   corrispondete risposta di autenticazione.
+
+Qui sotto è riportato un esempio di elemento ``<``\ ``Signature``\ ``>``
+per la richiesta di autenticazione SAML relativa a un documento in
+formato PDF predisposto dal SP e successivamente inviato all’IdP per la
+sottoscrizione.
+
+::
+
+   <saml2p:AuthnRequest xmlns:enc="http://www.w3.org/2001/04/xmlenc#" […] Destination="https://url-IdP-destinatario" ID="id-SessionId" […]>
+
+::
+
+       <saml:Issuer […]>https://url-SP-inviante</saml:Issuer>
+
+::
+
+       […]
+
+::
+
+       <saml2p:Extensions>
+
+::
+
+           <spid:Signature>
+
+::
+
+               <spid:Filename>
+
+::
+
+                   AgID_YYYYMMDDThhmmss.pdf
+
+::
+
+               </spid:Filename>
+
+::
+
+               <ds:DigestMethod Algorithm="http://funzione_hash" />
+
+::
+
+               <ds:DigestValue>ImprontaDocumento1</ds:DigestValue>
+
+::
+
+           </spid:Signature>
+
+::
+
+       </saml2p:Extensions>
+
+::
+
+   </saml2p:AuthnRequest>
+
+Qui sotto è riportato un esempio di elemento ``<``\ ``Signature``\ ``>``
+per la risposta di utenticazione SAML relativa alla richiesta di
+autenticazione di cui al precedente esempio (ove l’IdP comunica al SP i
+metadati del documento firmato con SPID).
+
+::
+
+   <saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" […]        Destination="https://url-SP-destinatario" ID="_ResponseID" InResponseTo="id-SessionID" […]>
+
+::
+
+       <saml:Issuer […]>https://url-IdP-inviante</saml:Issuer>
+
+::
+
+       […]
+
+::
+
+       <saml2p:Extensions>
+
+::
+
+           <spid:Signature>
+
+::
+
+               <spid:Filename>
+
+::
+
+                   AgID_YYYYMMDDThhmmss.pdf
+
+::
+
+               </spid:Filename>
+
+::
+
+               <ds:DigestMethod Algorithm="http://funzione_hash" />
+
+::
+
+               <ds:DigestValue>ImprontaDocumento2</ds:DigestValue>
+
+::
+
+           </spid:Signature>
+
+::
+
+       </saml2p:Extensions>
+
+::
+
+   </saml2p:Response>
+
+Tutte le evidenze informatiche SAML che si riferiscono al servizio in
+oggetto alle presenti Linee guida indicano il riferimento URN al
+*namespace* XML dell’Agenzia riservato a SPID — nel proprio elemento
+radice, ovvero in tutti i singoli elementi interessati (qui
+genericamente indicati come ``<``\ ``Element``\ ``>`` di *namespace*
+``ns``), come riportato nell’esempio sotto.
+
+::
+
+   <ns:Element […] xmlns:spid="http://spid.gov.it/saml-extensions" […]>
+
+::
+
+       […]
+
+::
+
+   </ns:Element>

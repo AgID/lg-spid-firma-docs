@@ -1,0 +1,18 @@
+Formato del documento
+=====================
+
+Il documento predisposto dal SP per il processo di firma rispetta le
+specifiche PDF versione 1.7 o successive, profilo PDF/A-2; inoltre
+rispetta le seguenti caratteristiche tecniche:
+
+1. Il documento non richiede alcun controllo di accesso per essere
+   aperto o modificato;
+
+2. è consentita la modifica del documento almeno per quanto concerne
+   l’apposizione di firme elettroniche;
+
+3. né il contenuto del documento né i suoi metadati sono cifrati;
+
+4. il documento è predisposto per la firma: il SP non può prevedere che
+   l’IdP debba consentire all’utente di apportare modifiche al
+   documento.
