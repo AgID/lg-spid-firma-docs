@@ -1,0 +1,65 @@
+Certificati di sigillo elettronico qualificato
+==============================================
+
+SP e IdP si dotano, presso un QTSP, di un certificato elettronico
+qualificato per la creazione di sigilli elettronici. Tali certificati
+sono resi disponibili nei metadata SPID.
+
+Detti certificati qualificati sono conformi alle raccomandazioni emanate
+con le *LL.GG. sui certificati elettronici* e contengono le seguenti
+informazioni aggiuntive:
+
+1. Il campo ``SubjectDN``, contenente i seguenti attributi:
+
+   a. ``serialNumber`` (OID `2.5.4.5 <http://http/oid-info.com/get/2.5.4.5>`__) — valorizzato,
+      sia per gli IdP che per i SP, in base alle alternative esposte al
+      seguente ordine:
+
+      -  la partita IVA indicata con il prefisso ‘``VAT``’, come
+         prescritto dal §5.1.4 punto 1 della norma ETSI `EN
+         319-\ 412-1 <http://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.01.01_60/en_31941201v010101p.pdf>`__
+         (es. “``VATIT-12345678901``”);
+
+      -  il codice fiscale indicato con il prefisso ‘``CF:``’, come
+         prescritto dal §5.1.4 punto 3 della suddetta norma (es. “``CF:IT-01234567890``”);
+
+      -  il numero assegnato dal Registro Imprese, indicato con il
+         prefisso ‘``NTR``’, come prescritto dal §5.1.4 punto 2 della suddetta norma
+         (es. “``NTRIT-1234567890``”);
+
+      -  per gli SP pubblici, il codice IPA, così come risulta nel campo
+         ``ipaEntityCode`` del registro SPID, preceduto dal prefisso
+         ‘``PA:``’, come prescritto dal §5.1.4 punto 3 della suddetta norma
+         (es. “``PA:IT-agid``”).
+
+   b. ``commonName`` (OID `2.5.4.3 <http://http/oid-info.com/get/2.5.4.3>`__) — contenente,
+      mediante un elemento di tipo ``dNSName``, il nome di dominio –
+      privo di qualsiasi carattere *wildcard* – di cui al punto 5.
+
+3. Il campo ``CertificatePolicies`` (OID `2.5.29.32 <http://http/oid-info.com/get/2.5.29.32>`__), contenente i
+   seguenti attributi:
+
+   c. ``PolicyIdentifier`` (OID `2.5.4.3 <http://http/oid-info.com/get/2.5.4.3>`__) — valorizzato
+      come:
+
+      -  ``spidSignature`` (OID `1.3.76.16.4.11 <http://http/oid-info.com/get/1.3.76.16.4.11>`__);
+
+   d. una limitazione d’uso indicata mediante la presenza di un campo
+      ``userNotice`` (OID `2.5.29.49 <http://http/oid-info.com/get/2.5.29.49>`__), di tipo
+      ``explicitText``, valorizzato con la seguente stringa bilingue:
+      “``Certificato usabile solo per il processo di sottoscrizione ex art.20 del CAD/This certificate may be used only for digital subscription pursuant to Digital Administration Code, art.20.``”.
+
+3. ``keyUsage`` (OID `2.5.29.15 <http://http/oid-info.com/get/2.5.29.15>`__) — contenente
+   i valori ``digitalSignature`` e ``keyEncipherment``, cioè i bit #0 e #2, valorizzati a ``1``,
+   come da specifica `RFC-5280 <https://tools.ietf.org/html/rfc5280>`__.
+
+4. ``extendedKeyUsage`` (OID `2.5.29.16 <http://http/oid-info.com/get/2.5.29.16>`__) — contenente
+   sia l’elemento ``id-kp-serverAuth`` (OID `1.3.6.1.5.5.7.3.1 <http://http/oid-info.com/get/1.3.6.1.5.5.7.3.1>`__)
+   che l’elemento ``id-kp-clientAuth`` (OID `1.3.6.1.5.5.7.3.2 <http://http/oid-info.com/get/1.3.6.1.5.5.7.3.2>`__).
+
+5. ``subjectAltName`` (OID `2.5.29.17 <http://http/oid-info.com/get/2.5.29.17>`__) — valorizzata
+   con elemento unico di tipo ``dNSName`` e contenente il dominio
+   dell’URL completo (così come riportato nel registro SPID) presso il
+   quale l’ente federato rende disponibile, agli enti federati della
+   tipologia opposta, il servizio di trasferimento sicuro di cui al
+   §5.2.
