@@ -75,7 +75,7 @@ scambiati durante i flussi a e b sono chiamate, rispettivamente,
 L’intestazione (*header*) comune ai pacchetti di andata e ritorno
 contiene i seguenti parametri obbligatori:
 
--  `typ` — valorizzato con la stringa "``JOSE``";
+-  ``typ`` — valorizzato con la stringa "``JOSE``";
 
 -  ``alg`` — valorizzato con l’identificativo JWA dell’algoritmo
    crittografico utilizzato per la firma del pacchetto JWS, secondo
