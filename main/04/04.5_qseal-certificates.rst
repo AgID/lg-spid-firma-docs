@@ -17,7 +17,7 @@ informazioni aggiuntive:
 
       -  la partita IVA indicata con il prefisso ‘``VAT``’, come
          prescritto dal §5.1.4 punto 1 della norma ETSI `EN
-         319-\ **412**\ -1 <http://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.01.01_60/en_31941201v010101p.pdf>`__
+         319-412-1 <http://www.etsi.org/deliver/etsi_en/319400_319499/31941201/01.01.01_60/en_31941201v010101p.pdf>`__
          (es. “``VATIT-12345678901``”);
 
       -  il codice fiscale indicato con il prefisso ‘``CF:``’, come
