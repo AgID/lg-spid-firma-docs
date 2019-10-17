@@ -27,5 +27,5 @@ scelta dell’IdP, il SP mostra solo gli IdP che offrono tale servizio.
   :maxdepth: 3
   :caption: Indice dei contenuti
 
-  procedura-di-sottoscrizione-ex-articolo-20-comma-1bis-del-cad/predisposizione-alla-sottoscrizione-presso-il-sp.rst
-  procedura-di-sottoscrizione-ex-articolo-20-comma-1bis-del-cad/consenso-alla-sottoscrizione-presso-lidp.rst
+  03_procedura-di-sottoscrizione/predisposizione-alla-sottoscrizione-presso-il-sp.rst
+  03_procedura-di-sottoscrizione/consenso-alla-sottoscrizione-presso-lidp.rst
