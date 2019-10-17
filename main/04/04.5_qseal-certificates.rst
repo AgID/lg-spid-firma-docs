@@ -63,3 +63,7 @@ informazioni aggiuntive:
    quale l’ente federato rende disponibile, agli enti federati della
    tipologia opposta, il servizio di trasferimento sicuro di cui al
    §5.2.
+
+.. discourse::
+
+:topic_identifier: 666
