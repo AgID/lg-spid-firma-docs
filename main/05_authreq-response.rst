@@ -1,6 +1,11 @@
 Richieste e risposte di autenticazione per la firma
 ===================================================
 
+.. highlights:
+
+   Sintassi dei messaggi SAML e JWT scambiati tra IdP e SP
+   come parte del processo di autenticazione e di sottoscrizione.
+
 La **richiesta di autenticazione** per la firma SPID, introdotta al
 punto 5 della procedura di cui al §3, contiene i seguenti metadati
 aggiuntivi:
