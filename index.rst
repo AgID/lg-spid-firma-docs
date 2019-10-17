@@ -27,13 +27,13 @@ Versione Data        Determinazione Tipologia modifica
    :maxdepth: 3
    :caption: Indice dei contenuti
 
-   01_definizioni.rst
-   02_scopo-e-ambito.rst
-   03_procedura-di-sottoscrizione.rst
-   04_regole-tecniche-documento.rst
-   05_authreq-response.rst
-   06_crittografia.rst
-   07_codici-errore.rst
-   08_obblighi.rst
-   09_conservazione-documenti.rst
-   10_norme-transitorie.rst
+   sec/01_definizioni.rst
+   sec/02_scopo-ambito.rst
+   sec/03_procedura-sottoscrizione.rst
+   sec/04_formazione-documento.rst
+   sec/05_authreq-response.rst
+   sec/06_crittografia.rst
+   sec/07_codici-errore.rst
+   sec/08_obblighi.rst
+   sec/09_conservazione.rst
+   sec/10_transitorio.rst
