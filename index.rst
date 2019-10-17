@@ -2,17 +2,17 @@ Regole Tecniche circa la sottoscrizione elettronica di documenti tramite SPID ex
 ================================================================================================
 
 .. highlights ::
-
-  Linee Guida ex art. 71 del CAD
+   Linee guida contenenti regole tecniche ex art. 71 del CAD
 
 .. admonition:: consultation
-
    La consultazione pubblica relativa al presente documento è attiva dal 
    **GG MESE** al **GG MESE 2019**. Questo documento raccoglie il testo delle
    Linee guida in oggetto, disponibile per la consultazione pubblica.
 
 .. Note::
-   Linee guida contenenti regole tecniche ex art. 71 del CAD
+   La consultazione pubblica relativa al presente documento è attiva dal 
+   **GG MESE** al **GG MESE 2019**. Questo documento raccoglie il testo delle
+   Linee guida in oggetto, disponibile per la consultazione pubblica.
 
 ======== =========== ============== =====================================
 Versione Data        Determinazione Tipologia modifica
