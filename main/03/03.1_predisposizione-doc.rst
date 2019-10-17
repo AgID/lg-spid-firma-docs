@@ -22,3 +22,7 @@ Il processo prevede quanto segue:
    “**firma SPID**”, conforme alle caratteristiche tecniche di cui
    al §5 e invia il documento predisposto al punto 1 all’IdP con le
    modalità descritte nel §5.2.
+
+.. discourse::
+
+:topic_identifier: 666
