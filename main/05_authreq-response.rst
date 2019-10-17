@@ -41,5 +41,5 @@ sintassi descritta nei seguenti paragrafi.
 .. toctree::
   :maxdepth: 3
 
-  main/05/05.1_saml.rst
-  main/05/05.2_secure-dataio.rst
+  05/05.1_saml.rst
+  05/05.2_secure-dataio.rst
