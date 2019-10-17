@@ -34,3 +34,7 @@ Gli algoritmi e i metodi crittografici contenuti nel presente
 capitolo possono essere sostituiti, rimossi o integrati con altri
 mediante pubblicazione di Avvisi sul sito web istituzionale
 dell’Agenzia.
+
+.. discourse::
+
+:topic_identifier: 666
