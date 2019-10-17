@@ -1,6 +1,11 @@
 Algoritmi crittografici
 =======================
 
+.. highlights:
+
+   Requisiti minimi circa gli algoritmi crittografici utilizzati
+   per assicurare autenticità, integrità e confidenzialità al procedimento.
+
 Ai fini del presente regolamento è utilizzata, per il calcolo delle
 impronte, la funzione di *hash* crittografico **SHA-256**, il cui
 riferimento W3C è ``http://www.w3.org/2001/04/xmlenc#sha256``.
