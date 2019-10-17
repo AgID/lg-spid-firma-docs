@@ -14,3 +14,7 @@ L’IdP è titolare del trattamento per finalità diverse da quelle del
 servizio di sottoscrizione ex art. 20. L’utente è chiaramente informato
 che i dati personali oggetto del servizio e i documenti firmati con SPID
 sono ulteriormente trattati dall’IdP.
+
+.. discourse::
+
+:topic_identifier: 666
