@@ -4,7 +4,7 @@ Obblighi degli enti federati
 .. highlights:
 
    Obblighi cui IdP e SP debbono assolvere qualora si avvalgono
-   della procedura di sottoscrizione tramite SPID.
+   della procedura di firma con SPID.
 
 Gli enti federati sono tenuti al rispetto delle disposizioni di quanto
 prescritto dal Regolamento GDPR e dal D.Lgs. №101/2018.
