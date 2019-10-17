@@ -1,6 +1,13 @@
 Regole tecniche del documento sottoscritto
 ==========================================
 
+.. highlights:
+
+   Regole tecniche circa la formazione del documento da sottoscrivere,
+   la sua naming convention presso i sistemi di *back-end* di IdP e SP,
+   il formato dei sigilli elettronici qualificati apposti su di esso da IdP e SP
+   e dei certificati qualificati utilizzati per la loro creazione.
+
 .. toctree::
   :maxdepth: 3
 
