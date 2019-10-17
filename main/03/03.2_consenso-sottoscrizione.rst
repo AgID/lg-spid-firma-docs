@@ -5,7 +5,7 @@ L’IdP:
 
 4.  Il SP predispone il documento, apponendovi un proprio sigillo
     elettronico qualificato, secondo quanto prescritto tecnicamente nel
-    §4.1. , sottoponendolo, presso la propria piattaforma, all’utente
+    §4.1, sottoponendolo, presso la propria piattaforma, all’utente
     affinché possa essere visionato, eventualmente scaricato e
     conservato.
 
@@ -15,10 +15,10 @@ L’IdP:
 6.  Informa l’utente che il processo di autenticazione è volto alla
     sottoscrizione, comunicando all’utente:
 
-    a. il nome del SP che sta richiedendo la sottoscrizione del
-       documento,
+    - il nome del SP che sta richiedendo la sottoscrizione del
+      documento,
 
-    b. il nome del file contenente il documento in oggetto.
+    - il nome del file contenente il documento in oggetto.
 
 7.  Consente all’utente di visionare il documento e scaricarlo.
 
@@ -35,7 +35,7 @@ L’IdP:
 
 11. Procede alla apposizione del sigillo elettronico qualificato (o di
     più sigilli nel caso siano previste più firme), secondo quanto
-    prescritto al §4.2. .
+    prescritto al §4.2.
 
 12. Propone all’utente di inviargli il documento firmato con SPID via
     posta elettronica, e/o di scaricarne una copia, e/o di
@@ -43,7 +43,7 @@ L’IdP:
     riservata in base al servizio di cui al §9.
 
 13. Invia al SP il documento firmato con SPID con le modalità descritte
-    nel §5.2. .
+    nel §5.2.
 
 14. Invia al SP la risposta di autenticazione della firma SPID recante
     l’esito positivo della procedura reindirizzando l’utente presso il
