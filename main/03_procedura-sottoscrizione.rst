@@ -26,5 +26,5 @@ scelta dell’IdP, il SP mostra solo gli IdP che offrono tale servizio.
 .. toctree::
   :maxdepth: 3
 
-  main/03/03.1_predisposizione-doc.rst
-  main/03/03.2_consenso-sottoscrizione.rst
+  03/03.1_predisposizione-doc.rst
+  03/03.2_consenso-sottoscrizione.rst
