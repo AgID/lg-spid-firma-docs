@@ -39,6 +39,5 @@ Versione Data        Determinazione Tipologia modifica
 
 .. toctree::
    :name: glossary_toc
-   :hidden:
 
    main/01_glossario.rst
