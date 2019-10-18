@@ -49,6 +49,8 @@ sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
  della controparte e
     l’integrità del documento ricevuto.
 
+.. _`§5.2.1`:
+
 Interfaccia applicativa
 -----------------------
 
