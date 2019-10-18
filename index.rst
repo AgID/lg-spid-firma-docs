@@ -27,6 +27,7 @@ Versione Data        Determinazione Tipologia modifica
    :maxdepth: 3
    :caption: Indice dei contenuti
 
+   main/01_definizioni.rst
    main/02_scopo-ambito.rst
    main/03_procedura-sottoscrizione.rst
    main/04_formazione-documento.rst
@@ -36,8 +37,3 @@ Versione Data        Determinazione Tipologia modifica
    main/08_obblighi.rst
    main/09_conservazione.rst
    main/10_transitorio.rst
-
-.. toctree::
-   :name: glossary_toc
-
-   main/01_glossario.rst
