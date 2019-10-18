@@ -1,3 +1,5 @@
+.. _`§4`:
+
 Regole tecniche del documento sottoscritto
 ==========================================
 
