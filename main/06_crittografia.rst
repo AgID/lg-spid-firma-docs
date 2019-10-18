@@ -15,9 +15,9 @@ di creazione di sigilli elettronici) è utilizzato l’algoritmo
 **ECDSA** (con uso della curva ellittica P256 e funzione di *hash*
 crittografico SHA-256), il cui riferimento W3C è
 ``http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256`` e il cui
-riferimento :ref:`JWA` è ``ES256``.
+riferimento :ref:`JWA <JWA>` è ``ES256``.
 
-Al di fuori della firma digitale dei pacchetti :ref:`JWT`, è usato
+Al di fuori della firma digitale dei pacchetti :ref:`JWT <JWT>`, è usato
 l'algoritmo **RSA** con funzione di *hash* crittografico SHA-256, il cui
 riferimento W3C è ``http://www.w3.org/2001/04/xmldsig-more#rsa-sha256``;
 la lunghezza delle chiavi crittografiche RSA è non inferiore a 2048 bit.
@@ -35,7 +35,7 @@ riferimenti tecnici sono pubblicati nella norma
    Gli algoritmi e i metodi crittografici contenuti nel presente
    capitolo possono essere sostituiti, rimossi o integrati con altri
    mediante pubblicazione di Avvisi sul sito web istituzionale
-   dell’:ref:`Agenzia <AgID>`.
+   dell’Agenzia.
 
 .. discourse::
 
