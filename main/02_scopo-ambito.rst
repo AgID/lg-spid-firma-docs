@@ -1,3 +1,5 @@
+.. _`§2`:
+
 Scopo e ambito di applicazione
 ==============================
 
