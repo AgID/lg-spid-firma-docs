@@ -1,7 +1,7 @@
 Scopo e ambito di applicazione
 ==============================
 
-L’articolo 20 del :ref:`CAD`: dispone il soddisfacimento del requisito della
+L’articolo 20 del :ref:`CAD` dispone il soddisfacimento del requisito della
 forma scritta e l’efficacia prevista dall’articolo 2702 del Codice
 Civile del documento informatico formato previa identificazione
 informatica del suo autore,
