@@ -1,3 +1,5 @@
+.. _`§4.4`:
+
 Apposizione del QSeal dell’Identity Provider
 ============================================
 
