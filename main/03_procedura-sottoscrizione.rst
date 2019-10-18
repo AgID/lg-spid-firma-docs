@@ -6,27 +6,27 @@ Procedura di sottoscrizione ex articolo 20 comma 1-bis del CAD
    Descrizione passo-passo dell'intera procedura di sottoscrizione tramite SPID.
 
 .. admonition:: must-not
-   Il processo di cui all’articolo 20 comma 1\ *-bis* del :ref:`CAD` non può essere
-   adoperato utilizzando identità digitali :ref:`SPID` per persona giuridica;
+   Il processo di cui all’articolo 20 comma 1\ *-bis* del :ref:`CAD <CAD>` non può essere
+   adoperato utilizzando identità digitali SPID per persona giuridica;
    possono essere utilizzate esclusivamente le identità digitali della
    persona fisica e le identità digitali per uso professionale.
 
 .. admonition:: may
-   Tutti i :ref:`SP` interessati hanno il diritto di avvalersi del servizio in oggetto.
+   Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto.
 
-I metadati :ref:`SPID` indicano se l’:ref:`IdP` offre il servizio in oggetto.
+I metadati SPID indicano se l’IdP offre il servizio in oggetto.
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
 realizzato per permettere al medesimo utente di sottoscrivere una o più
 parti del medesimo documento, attraverso un’unica sessione di
-autenticazione :ref:`SPID` e, al contempo, a utenti distinti di sottoscrivere
+autenticazione SPID e, al contempo, a utenti distinti di sottoscrivere
 il medesimo documento, in tempi e con sessioni di autenticazione SPID
 distinte.
 
-Il processo di firma prevede che l’utente, tramite il :ref:`SP`, esegua un
+Il processo di firma prevede che l’utente, tramite il SP, esegua un
 processo di autenticazione al fine della firma, con la propria identità
-digitale di livello 2 o superiore, scegliendo il proprio :ref:`IdP`. Per la
-scelta dell’:ref:`IdP`, il :ref:`SP` mostra solo gli :ref:`IdP` che offrono tale servizio.
+digitale di livello 2 o superiore, scegliendo il proprio IdP. Per la
+scelta dell’IdP, il SP mostra solo gli IdP che offrono tale servizio.
 
 .. toctree::
   :maxdepth: 3
