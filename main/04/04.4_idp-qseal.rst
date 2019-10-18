@@ -3,9 +3,9 @@
 Apposizione del QSeal dell’Identity Provider
 ============================================
 
-A completamento del processo di firma, l’IdP appone il proprio QSeal nel
+A completamento del processo di firma, l’IdP appone il proprio :ref:`QSeal <QSeal>` nel
 documento, che è graficamente localizzato nello spazio previsto dal SP e
-indicato nella richiesta di autenticazione (cfr. §5). La componente
+indicato nella richiesta di autenticazione (cfr. :ref:`§5 <§5>`). La componente
 visibile del sigillo contiene il seguente testo:
 
 .. code-block::
@@ -31,7 +31,7 @@ Dove:
       ‘``/``’, seguiti dalla denominazione dell’organizzazione,
       seguita da un altro *slash* ascendente ‘``/``’, seguito da un
       identificativo unico dell’organizzazione valorizzato seguendo le
-      alternative proposte nel §4.5, punto 15.a. Ad esempio, in caso
+      alternative proposte nel :ref:`§5.4 <§4.5>`, punto 15.a. Ad esempio, in caso
       di soggetto operante per conto di un’organizzazione dotata di
       partita IVA:
       “``Mario Rossi/Agenzia per l'Italia Digitale/TINIT-97735020584``”.
