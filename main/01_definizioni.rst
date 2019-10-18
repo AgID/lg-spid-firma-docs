@@ -9,7 +9,7 @@ Ai fini delle presenti Linee guida, oltre ad applicarsi le definizioni di cui al
 .. _`CAD`:
 -  **CAD**: D.Lgs. 7 marzo 2005 №82, *Codice dell’Amministrazione Digitale*, e sue successive modificazioni;
 
--  **documento firmato con SPID**: il documento cui è apposto il sigillo elettronico qualificato dell’IDP;
+-  **documento firmato con SPID**: il documento cui è apposto il sigillo elettronico qualificato dell’IdP;
 
 -  **ente federato**: gestore di identità digitali ovvero fornitore di servizi della federazione SPID;
 
