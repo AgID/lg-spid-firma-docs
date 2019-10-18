@@ -79,7 +79,7 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
 
 .. _`SAML`:
 
-   -  **SAML**: standard `*Security Assertion Markup Language* <http://docs.oasis-open.org/security/saml/v2.0/saml-2.0-os.zip>`__,
+   -  **SAML**: standard *`Security Assertion Markup Language <http://docs.oasis-open.org/security/saml/v2.0/saml-2.0-os.zip>`__*,
    versione 2.0, pubblicato da OASIS;
 
 .. _`SPID`:
