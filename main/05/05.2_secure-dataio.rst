@@ -1,3 +1,5 @@
+.. _`§5.2`:
+
 Sistema di trasferimento sicuro dei documenti
 =============================================
 
@@ -12,9 +14,9 @@ trasferimento di documenti dall’esterno è reso noto da ciascun ente
 federato verso tutti gli enti federati, mediante l’URL che l’ente
 medesimo pubblica nel metadata SPID e il cui dominio è contestualmente
 riportato nei campi ``commonName`` e ``subjectAltName`` del proprio
-certificato qualificato di sigillo elettronico, di cui al §4.5, punti
+certificato qualificato di sigillo elettronico, di cui al :ref:`§4.5 <§4.5>`, punti
 14.b e 5. Tale URL indica esplicitamente il protocollo di comunicazione
-sicuro, i cui dettagli sono dati in §5.2.1.
+sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
 
 1. Il sistema di trasferimento è, nella sua interezza, protetto da
    misure di sicurezza logica e fisica conformi almeno alle *LL.GG.
@@ -31,7 +33,7 @@ sicuro, i cui dettagli sono dati in §5.2.1.
       trasferimenti iniziati in *upstream* dall’IDP).
 
 2.  SP e IdP controllano che ogni file creato presso il proprio storage
-    soddisfi quanto prescritto nel §4.2. Non sono permessi file non
+    soddisfi quanto prescritto nel :ref:`§4.2 <§4.2>`. Non sono permessi file non
     conformi a quanto prescritto.
 
 3.  L’IdP rimuove dallo storage i file ricevuti per i quali non sia
@@ -49,24 +51,24 @@ sicuro, i cui dettagli sono dati in §5.2.1.
 Interfaccia applicativa
 -----------------------
 
-SP e IdP si scambiano evidenze informatiche in formato JWS, in accordo
-con le specifiche OpenAPI su canale HTTPS, formate mediate la seguente
+SP e IdP si scambiano evidenze informatiche in formato :ref:`JWS <JWS>`, in accordo
+con le specifiche :ref:`OpenAPI <OAS>` su canale HTTPS, formate mediate la seguente
 procedura:
 
-1. predisposizione di una struttura JSON contenente sia il **dato**
+1. predisposizione di una struttura :ref:`JSON <JSON>` contenente sia il **dato**
    (cioè il documento oggetto di sottoscrizione) che i suoi
    **metadati**, di seguito elencati:
 
-2. codifica del messaggio di cui al punto 1 in un pacchetto JWT;
+2. codifica del messaggio di cui al punto 1 in un pacchetto :ref:`JWT <JWT>`;
 
-3. conversione del pacchetto di cui al punto 2 in JWS, mediante il
+3. conversione del pacchetto di cui al punto 2 in :ref:`JWS <JWS>`, mediante il
    metodo Compact Serialization (cfr.
    `RFC-7515 <https://tools.ietf.org/html/rfc7515>`__), mediante
    creazione di apposito QSeal.
 
 Gli algoritmi crittografici utilizzati lungo l’intera procedura sopra
-descritta sono definiti in §6. I pacchetti JWS sono caratterizzati dalla
-presenza degli identificativi unici di sessione (cfr. §5).
+descritta sono definiti in :ref:`§6 <§6>`. I pacchetti JWS sono caratterizzati dalla
+presenza degli identificativi unici di sessione (cfr. :ref:`§5 <§5>`).
 
 Le strutture JSON in base alle quali sono prodotti i pacchetti JWS
 scambiati durante i flussi a e b sono chiamate, rispettivamente,
@@ -79,7 +81,7 @@ contiene i seguenti parametri obbligatori:
 
 -  ``alg`` — valorizzato con l’identificativo JWA dell’algoritmo
    crittografico utilizzato per la firma del pacchetto JWS, secondo
-   quanto indicato al §6;
+   quanto indicato al :ref:`§6 <§6>`;
 
 -  ``x5c`` — valorizzato con il certificato qualificato di sigillo
    elettronico dell’ente inviante (codificato in *Base64*, cfr.
@@ -121,7 +123,7 @@ parametri obbligatori:
 
 -  ``aud`` — valorizzato con l’``entityId`` (URL con schema HTTPS)
    dell’ente federato destinatario; coincide con il valore
-   dell’attributo ``Destination``, rispettivamente, dell’elemento SAML:
+   dell’attributo ``Destination``, rispettivamente, dell’elemento :ref:`SAML <SAML>`:
 
    -  ``<AuthnRequest>`` per il pacchetto di andata (flusso i), *ovvero*
 
@@ -132,7 +134,7 @@ parametri obbligatori:
    JSON di tipo *NumericDate*;
 
 -  ``filename`` — valorizzato con il nome del file del documento
-   inviato; coincide con il valore dell’elemento ``<Filename>`` come specificato nel §4.2. ;
+   inviato; coincide con il valore dell’elemento ``<Filename>`` come specificato nel :ref:`§4.2 <§4.2>`;
 
 -  ``cty`` — valorizzato con la tipologia MIME del documento di cui al
    punto precedente (quindi come “``pdf``”, come da normativa
@@ -163,14 +165,14 @@ Nel pacchetto di andata:
 
    -  ``pag`` — valorizzato con il numero della pagina del documento ove
       è richiesto che l’IdP apponga la componente grafica di cui al
-      §4.4;
+      :ref:`§4.4 <§4.4>`;
 
    -  ``pos`` — contenente una struttura JSON con due parametri – ``u``
       e ``v`` – ciascuno dei due valorizzati con una struttura JSON di
       due elementi di tipo number, recanti l’ascissa e la ordinata nei
       sotto-parametri ``x`` e ``y``, rispettivamente di due vertici
       diametralmente opposti, delineanti l’area rettangolare definita,
-      al §4, per il posizionamento della componente grafica del
+      al :ref:`§4 <§4>`, per il posizionamento della componente grafica del
       QSeal all’interno della pagina stessa, secondo quanto previsto
       tecnicamente per la rappresentazione di oggetti PDF *Rectangles*,
       secondo lo standard `ISO/IEC
@@ -186,7 +188,7 @@ Nel pacchetto di andata:
 Nel pacchetto di ritorno:
 
 -  ``sub`` — valorizzato con la stringa ``%firmatario%``
-   identificativa del firmatario, come definita nel §4.4;
+   identificativa del firmatario, come definita nel :ref:`§4.4 <§4.4>`;
 
 -  ``ref`` — valorizzato con un *array* JSON contenente tanti elementi
    quante sono le firme richieste nel pacchetto di andata; ciascun
