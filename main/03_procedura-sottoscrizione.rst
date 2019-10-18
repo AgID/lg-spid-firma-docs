@@ -1,3 +1,5 @@
+.. _`§3`:
+
 Procedura di sottoscrizione ex articolo 20 comma 1-bis del CAD
 ===============================================================
 
