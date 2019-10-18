@@ -1,3 +1,5 @@
+.. _`§3.2`:
+
 Consenso alla sottoscrizione (presso l’IdP)
 ===========================================
 
@@ -38,15 +40,15 @@ L’IdP:
    
    11. Procede alla apposizione del sigillo elettronico qualificato (o di
        più sigilli nel caso siano previste più firme), secondo quanto
-       prescritto al §4.2.
+       prescritto al :ref:`§4.2 <§4.2>`.
    
    12. Propone all’utente di inviargli il documento firmato con SPID via
        posta elettronica, e/o di scaricarne una copia, e/o di
        conservarglielo e renderglielo disponibile nella propria area
-       riservata in base al servizio di cui al §9.
+       riservata in base al servizio di cui al :ref:`§9 <§9>`.
    
    13. Invia al SP il documento firmato con SPID con le modalità descritte
-       nel §5.2.
+       nel :ref:`§5.2 <§5.2>`:.
    
    14. Invia al SP la risposta di autenticazione della firma SPID recante
        l’esito positivo della procedura reindirizzando l’utente presso il
@@ -58,9 +60,9 @@ L’IdP:
 
 Al termine del processo qui descritto, salvo che l’utente non abbia
 scelto di avvalersi dei servizi di conservazione dei documenti firmati
-(cfr. §9), l’IdP rimuove dai propri sistemi il documento oggetto della
+(cfr. :ref:`§9 <§9>`), l’IdP rimuove dai propri sistemi il documento oggetto della
 sottoscrizione, nel pieno rispetto di quanto disposto dal Regolamento
-GDPR.
+:ref:`GDPR <GDPR>`.
 
 .. discourse::
 
