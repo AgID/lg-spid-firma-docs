@@ -1,3 +1,5 @@
+.. _`§8.2`:
+
 Obblighi in capo ai Service Provider
 ====================================
 
