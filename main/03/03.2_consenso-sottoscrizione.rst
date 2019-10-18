@@ -10,7 +10,7 @@ L’IdP:
    
    4.  Il SP predispone il documento, apponendovi un proprio sigillo
        elettronico qualificato, secondo quanto prescritto tecnicamente nel
-       §4.1, sottoponendolo, presso la propria piattaforma, all’utente
+       :ref:`§4.1 <§4.1>`:, sottoponendolo, presso la propria piattaforma, all’utente
        affinché possa essere visionato, eventualmente scaricato e
        conservato.
    
