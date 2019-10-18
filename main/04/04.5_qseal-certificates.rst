@@ -13,7 +13,7 @@ informazioni aggiuntive:
 
 1. Il campo ``SubjectDN``, contenente i seguenti attributi:
 
-   a. ``serialNumber`` (ᴏɪᴅ `2.5.4.5 <http://http/oid-info.com/get/2.5.4.5>`__) — valorizzato,
+   a. ``serialNumber`` (`ᴏɪᴅ 2.5.4.5 <http://http/oid-info.com/get/2.5.4.5>`__) — valorizzato,
       sia per gli IdP che per i SP, in base alle alternative esposte al
       seguente ordine:
 
@@ -34,32 +34,32 @@ informazioni aggiuntive:
          ‘``PA:``’, come prescritto dal §5.1.4 punto 3 della suddetta norma
          (es. “``PA:IT-agid``”).
 
-   b. ``commonName`` (ᴏɪᴅ `2.5.4.3 <http://http/oid-info.com/get/2.5.4.3>`__) — contenente,
+   b. ``commonName`` (`ᴏɪᴅ 2.5.4.3 <http://http/oid-info.com/get/2.5.4.3>`__) — contenente,
       mediante un elemento di tipo ``dNSName``, il nome di dominio –
       privo di qualsiasi carattere *wildcard* – di cui al punto 5.
 
-2. Il campo ``CertificatePolicies`` (ᴏɪᴅ `2.5.29.32 <http://http/oid-info.com/get/2.5.29.32>`__), contenente i
+2. Il campo ``CertificatePolicies`` (`ᴏɪᴅ 2.5.29.32 <http://http/oid-info.com/get/2.5.29.32>`__), contenente i
    seguenti attributi:
 
    a. ``PolicyIdentifier`` — valorizzato
       come:
 
-      -  ``spidSignature`` (ᴏɪᴅ `1.3.76.16.4.11 <http://http/oid-info.com/get/1.3.76.16.4.11>`__);
+      -  ``spidSignature`` (`ᴏɪᴅ 1.3.76.16.4.11 <http://http/oid-info.com/get/1.3.76.16.4.11>`__);
 
    b. una limitazione d’uso indicata mediante la presenza di un campo
-      ``userNotice`` (ᴏɪᴅ `2.5.29.49 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.49>`__), di tipo
+      ``userNotice`` (`ᴏɪᴅ 2.5.29.49 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.49>`__), di tipo
       ``explicitText``, valorizzato con la seguente stringa bilingue:
       “``Certificato usabile solo per il processo di sottoscrizione ex art.20 del CAD/This certificate may be used only for digital subscription pursuant to Digital Administration Code, art.20.``”.
 
-3. ``keyUsage`` (ᴏɪᴅ `2.5.29.15 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.15>`__) — contenente
+3. ``keyUsage`` (`ᴏɪᴅ 2.5.29.15 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.15>`__) — contenente
    i valori ``digitalSignature`` e ``keyEncipherment``, cioè i bit #0 e #2, valorizzati a ``1``,
    come da specifica `RFC-5280 <https://tools.ietf.org/html/rfc5280>`__.
 
-4. ``extendedKeyUsage`` (ᴏɪᴅ `2.5.29.16 <http://http/oid-info.com/get/2.5.29.16>`__) — contenente
-   sia l’elemento ``id-kp-serverAuth`` (ᴏɪᴅ `1.3.6.1.5.5.7.3.1 <http://http/oid-info.com/get/1.3.6.1.5.5.7.3.1>`__)
-   che l’elemento ``id-kp-clientAuth`` (ᴏɪᴅ `1.3.6.1.5.5.7.3.2 <http://http/oid-info.com/get/1.3.6.1.5.5.7.3.2>`__).
+4. ``extendedKeyUsage`` (`ᴏɪᴅ 2.5.29.16 <http://http/oid-info.com/get/2.5.29.16>`__) — contenente
+   sia l’elemento ``id-kp-serverAuth`` (`ᴏɪᴅ 1.3.6.1.5.5.7.3.1 <http://http/oid-info.com/get/1.3.6.1.5.5.7.3.1>`__)
+   che l’elemento ``id-kp-clientAuth`` (`ᴏɪᴅ 1.3.6.1.5.5.7.3.2 <http://http/oid-info.com/get/1.3.6.1.5.5.7.3.2>`__).
 
-5. ``subjectAltName`` (ᴏɪᴅ `2.5.29.17 <http://http/oid-info.com/get/2.5.29.17>`__) — valorizzata
+5. ``subjectAltName`` (`ᴏɪᴅ 2.5.29.17 <http://http/oid-info.com/get/2.5.29.17>`__) — valorizzata
    con elemento unico di tipo ``dNSName`` e contenente il dominio
    dell’URL completo (così come riportato nel registro SPID) presso il
    quale l’ente federato rende disponibile, agli enti federati della
