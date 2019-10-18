@@ -3,7 +3,7 @@
 SAML
 ====
 
-Le richieste e risposte di autenticazione SAML contengono ciascuna
+Le richieste e risposte di autenticazione :ref:`SAML <SAML>` contengono ciascuna
 un’estensione ``<Signature>`` (*namespace* ``spid``)
 contenuta nella sezione prevista dallo standard per le estensioni SAML.
 I metadati sopra elencati sono realizzati mediante i seguenti elementi:
