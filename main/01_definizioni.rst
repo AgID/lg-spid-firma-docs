@@ -22,17 +22,19 @@ Ai fini delle presenti Linee guida, oltre ad applicarsi le definizioni di cui al
 .. _`hash`:
 -  **impronta**: impronta crittografica, risultante dell’applicazione di una funzione di hash crittografico ad un’evidenza informatica;
 
+.. _`llgg certificati`:
 -  **LL.GG. sui certificati elettronici**: *Linee guida contenenti Regole Tecniche e Raccomandazioni afferenti la generazione di certificati elettronici qualificati, firme e sigilli elettronici qualificati e validazioni temporali elettroniche qualificate*, pubblicate con Determinazione AgID №121/2019 e successive modificazioni;
 
+.. _`llgg mis min sicurezza`:
 -  **LL.GG. sulle misure minime di sicurezza**: Circolare AgID №1/2017 e successive modificazioni, recante *Misure minime di sicurezza ICT per le pubbliche amministrazioni*, emanata con DPCM del 24 ottobre 2014;
 
 .. _`registro SPID`:
 -  **registro SPID**: elenco dei soggetti appartenenti alla federazione SPID, previsto dalla vigente normativa;
 
-.. _`Regolamento eIDAS`:
+.. _`eIDAS`:
 -  **regolamento *eIDAS**: Regolamento (UE) №910/2014 del Parlamento Europeo e del Consiglio, del 23 luglio 2014, in materia di identificazione elettronica e servizi fiduciari per le transazioni elettroniche nel mercato interno e che abroga la direttiva 1999/93/CE;
 
-.. _`Regolamento GDPR`:
+.. _`GDPR`:
 -  **regolamento GDPR**: Regolamento (UE) №679/2016 del Parlamento Europeo e del Consiglio, del 27 aprile 2016, relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali, nonché alla libera circolazione di tali dati e che abroga la direttiva 95/46/CE;
 
 -  **sottoscrizione**: il processo di cui all’articolo 20, comma 1*-bis* del CAD;
