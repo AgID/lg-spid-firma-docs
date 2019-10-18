@@ -1,12 +1,14 @@
+.. _`§4.5`:
+
 Certificati di sigillo elettronico qualificato
 ==============================================
 
-SP e IdP si dotano, presso un QTSP, di un certificato elettronico
+SP e IdP si dotano, presso un :ref:`QTSP <QTSP>`, di un certificato elettronico
 qualificato per la creazione di sigilli elettronici. Tali certificati
 sono resi disponibili nei metadata SPID.
 
 Detti certificati qualificati sono conformi alle raccomandazioni emanate
-con le *LL.GG. sui certificati elettronici* e contengono le seguenti
+con le *:ref:`LL.GG. sui certificati elettronici <llgg certificati>`* e contengono le seguenti
 informazioni aggiuntive:
 
 1. Il campo ``SubjectDN``, contenente i seguenti attributi:
@@ -62,7 +64,7 @@ informazioni aggiuntive:
    dell’URL completo (così come riportato nel registro SPID) presso il
    quale l’ente federato rende disponibile, agli enti federati della
    tipologia opposta, il servizio di trasferimento sicuro di cui al
-   §5.2.
+   :ref:`§5.2 <§5.2>`.
 
 .. discourse::
 
