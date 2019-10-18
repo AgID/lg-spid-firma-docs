@@ -8,7 +8,7 @@ qualificato per la creazione di sigilli elettronici. Tali certificati
 sono resi disponibili nei metadata SPID.
 
 Detti certificati qualificati sono conformi alle raccomandazioni emanate
-con le *:ref:`LL.GG. sui certificati elettronici <llgg certificati>`* e contengono le seguenti
+con le *LL.GG. sui certificati elettronici* (:ref:`cit. <llgg certificati>`) e contengono le seguenti
 informazioni aggiuntive:
 
 1. Il campo ``SubjectDN``, contenente i seguenti attributi:
