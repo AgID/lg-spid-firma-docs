@@ -1,3 +1,5 @@
+.. _`§8`:
+
 Obblighi degli enti federati
 ============================
 
@@ -7,7 +9,7 @@ Obblighi degli enti federati
    della procedura di firma con SPID.
 
 Gli enti federati sono tenuti al rispetto delle disposizioni di quanto
-prescritto dal Regolamento GDPR e dal D.Lgs. №101/2018.
+prescritto dal Regolamento :ref:`GDPR <GDPR>` e dal D.Lgs. №101/2018.
 
 .. toctree::
   :maxdepth: 3
