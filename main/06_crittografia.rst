@@ -1,3 +1,5 @@
+.. _`§6`:
+
 Algoritmi crittografici
 =======================
 
