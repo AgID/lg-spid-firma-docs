@@ -20,7 +20,7 @@ sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
 
 1. Il sistema di trasferimento è, nella sua interezza, protetto da
    misure di sicurezza logica e fisica conformi almeno alle *LL.GG.
-   sulle misure minime di sicurezza*. Esso è inoltre adeguatamente
+   sulle misure minime di sicurezza* (:ref:`cit. <llgg mis min sicurezza>`). Esso è inoltre adeguatamente
    protetto logicamente affinché solamente gli enti federati possano
    trasferire file mediante uno dei seguenti due flussi:
 
@@ -45,7 +45,8 @@ sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
     rispettivamente, nella richiesta e nella risposta di autenticazione
     che le accompagnano.
 
-5.  IdP e SP verificano l’autenticità dei QSeal della controparte e
+5.  IdP e SP verificano l’autenticità dei :ref:`QSeal <QSeal>`
+ della controparte e
     l’integrità del documento ricevuto.
 
 Interfaccia applicativa
@@ -55,7 +56,7 @@ SP e IdP si scambiano evidenze informatiche in formato :ref:`JWS <JWS>`, in acco
 con le specifiche :ref:`OpenAPI <OAS>` su canale HTTPS, formate mediate la seguente
 procedura:
 
-1. predisposizione di una struttura :ref:`JSON <JSON>` contenente sia il **dato**
+1. predisposizione di una struttura :ref:`JSON <JSON>` contenente sia i **dati**
    (cioè il documento oggetto di sottoscrizione) che i suoi
    **metadati**, di seguito elencati:
 
