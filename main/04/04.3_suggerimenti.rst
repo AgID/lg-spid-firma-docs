@@ -1,14 +1,16 @@
+.. _`§4.3`:
+
 Suggerimenti sugli elenchi
 ==========================
 
-Il SP appone il proprio QSeal mediante firma elettronica di tipo PAdES,
+Il SP appone il proprio :ref:.. _`QSeal <QSeal>` mediante firma elettronica di tipo PAdES,
 non visibile (senza alcuna componente grafica), nei formati previsti dal
-Regolamento eIDAS e dalle conseguenti Decisioni di Esecuzione (UE).
+Regolamento :ref:`eIDAS <eIDAS>` e dalle conseguenti Decisioni di Esecuzione (UE).
 
 Prima di apporre il proprio QSeal, il SP predispone il documento
 prevedendo adeguato spazio per contenere la componente grafica (o più
-componenti se richiede più firme) del QSeal che verrà apposto dall’IDP,
-il cui testo (cfr. §4.4) deve essere agevolmente leggibile.
+componenti se richiede più firme) del QSeal che verrà apposto dall’IdP,
+il cui testo (cfr. :ref:`§4.4 <§4.4>`) deve essere agevolmente leggibile.
 
 .. discourse::
 
