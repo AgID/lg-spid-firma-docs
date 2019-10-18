@@ -11,7 +11,7 @@ I metadati sopra elencati sono realizzati mediante i seguenti elementi:
 -  punti 1 e 4 tramite elemento ``<Filename>``
    (*namespace* ``spid``), contenente il nome del file del documento,
    comprensivo della corretta estensione, composto come descritto in
-   §4.2;
+   :ref:`§4.2 <§4.2>`;
 
 -  punti 2 e 5 tramite elemento ``<DigestValue>`` (*namespace* ``ds``),
    contenente un’impornta rappresentata applicandole la trasformazione
