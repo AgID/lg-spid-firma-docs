@@ -12,9 +12,9 @@ Procedura di sottoscrizione ex articolo 20 comma 1-bis del CAD
    persona fisica e le identità digitali per uso professionale.
 
 .. admonition:: may
-   Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto.
+   Tutti i :ref:`SP` interessati hanno il diritto di avvalersi del servizio in oggetto.
 
-I metadati SPID indicano se l’IdP offre il servizio in oggetto.
+I metadati :ref:`SPID` indicano se l’:ref:`IdP` offre il servizio in oggetto.
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
 realizzato per permettere al medesimo utente di sottoscrivere una o più
@@ -26,7 +26,7 @@ distinte.
 Il processo di firma prevede che l’utente, tramite il SP, esegua un
 processo di autenticazione al fine della firma, con la propria identità
 digitale di livello 2 o superiore, scegliendo il proprio IdP. Per la
-scelta dell’IdP, il SP mostra solo gli IdP che offrono tale servizio.
+scelta dell’:ref:`IdP`, il :ref:`SP` mostra solo gli :ref:`IdP` che offrono tale servizio.
 
 .. toctree::
   :maxdepth: 3
