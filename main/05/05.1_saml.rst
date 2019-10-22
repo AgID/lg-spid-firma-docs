@@ -81,7 +81,8 @@ genericamente indicati come ``<Element>`` di *namespace*
 
 .. code-block:: xml
   
- <ns:Element xmlns:spid="http://spid.gov.it/saml-extensions">
+ <ns:Element 
+       xmlns:spid="http://spid.gov.it/saml-extensions">
      ...
  </ns:Element>
 
