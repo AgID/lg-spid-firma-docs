@@ -38,8 +38,8 @@ sottoscrizione.
        xmlns:enc="http://www.w3.org/2001/04/xmlenc#"
        Destination="https://url-IdP-destinatario"
        ID="id-SessionId">
-     <saml:Issuer […]>https://url-SP-inviante</saml:Issuer>
-     
+     <saml:Issuer>https://url-SP-inviante</saml:Issuer>
+     ...
      <saml2p:Extensions>
          <spid:Signature>
              <spid:Filename>AgID_YYYYMMDDThhmmss.pdf</spid:Filename>
@@ -61,7 +61,7 @@ metadati del documento firmato con SPID).
        Destination="https://url-SP-destinatario"
        ID="_ResponseID"
        InResponseTo="id-SessionID">
-     <saml:Issuer […]>https://url-IdP-inviante</saml:Issuer>
+     <saml:Issuer>https://url-IdP-inviante</saml:Issuer>
      ...
      <saml2p:Extensions>
          <spid:Signature>
