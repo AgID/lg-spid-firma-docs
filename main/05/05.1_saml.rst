@@ -39,7 +39,7 @@ sottoscrizione.
        Destination="https://url-IdP-destinatario"
        ID="id-SessionId">
      <saml:Issuer […]>https://url-SP-inviante</saml:Issuer>
-     ...
+     
      <saml2p:Extensions>
          <spid:Signature>
              <spid:Filename>AgID_YYYYMMDDThhmmss.pdf</spid:Filename>
