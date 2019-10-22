@@ -84,7 +84,8 @@ genericamente indicati come ``<Element>`` di *namespace*
 ``ns``), come riportato nell’esempio sotto.
 
 .. code-block:: xml
-
+   :linenos:
+   
  <ns:Element 
         xmlns:spid="http://spid.gov.it/saml-extensions"
      […]>
