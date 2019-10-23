@@ -26,11 +26,11 @@ Si veda a tal scopo il seguente esempio:
 
 .. code-block:: xml
 
- <EntityDescriptor>
+ <md:EntityDescriptor>
      <ds:Signature>...</ds:Signature>
      ...
-     <IDPSSODescriptor>...</IDPSSODescriptor>
-     <Extensions
+     <md:IDPSSODescriptor>...</md:IDPSSODescriptor>
+     <saml2p:Extensions
            xmlns:spid="https://spid.gov.it/saml-extensions">
          <spid:SignatureArt20>
              <spid:FileTransferService>
@@ -38,10 +38,10 @@ Si veda a tal scopo il seguente esempio:
                    Location="https://indirizzo:porta/servizio/DataIO/"
                    FriendlyName="Firma SPID">
          </spid:SignatureArt20>
-     </Extensions>
-     <Organization>...</Organization>
+     </saml2p:Extensions>
+     <md:Organization>...</md:Organization>
      ...
- </EntityDescriptor>
+ </md:EntityDescriptor>
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
 realizzato per permettere al medesimo utente di sottoscrivere una o più
