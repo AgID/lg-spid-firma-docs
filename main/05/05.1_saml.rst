@@ -40,7 +40,8 @@ sottoscrizione.
        ID="id-SessionId">
      <saml:Issuer>https://url-SP-inviante</saml:Issuer>
      ...
-     <saml2p:Extensions>
+     <saml2p:Extensions
+           xmlns:spid="https://spid.gov.it/saml-extensions">
          <spid:Signature>
              <spid:Filename>AgID_YYYYMMDDThhmmss.pdf</spid:Filename>
              <ds:DigestMethod Algorithm="http://funzione_hash" />
@@ -63,7 +64,8 @@ metadati del documento firmato con SPID).
        InResponseTo="id-SessionID">
      <saml:Issuer>https://url-IdP-inviante</saml:Issuer>
      ...
-     <saml2p:Extensions>
+     <saml2p:Extensions
+           xmlns:spid="https://spid.gov.it/saml-extensions">
          <spid:Signature>
              <spid:Filename>AgID_YYYYMMDDThhmmss.pdf</spid:Filename>
              <ds:DigestMethod Algorithm="http://funzione_hash" />
@@ -81,8 +83,7 @@ genericamente indicati come :code:`<Element>` di *namespace*
 
 .. code-block:: xml
   
- <ns:Element 
-       xmlns:spid="http://spid.gov.it/saml-extensions">
+ <ns:Element xmlns:spid="https://spid.gov.it/saml-extensions">
      ...
  </ns:Element>
 
