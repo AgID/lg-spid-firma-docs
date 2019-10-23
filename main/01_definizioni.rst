@@ -26,7 +26,7 @@ Ai fini delle presenti Linee guida, oltre ad applicarsi le definizioni di cui al
 -  **LL.GG. sui certificati elettronici**: *Linee guida contenenti Regole Tecniche e Raccomandazioni afferenti la generazione di certificati elettronici qualificati, firme e sigilli elettronici qualificati e validazioni temporali elettroniche qualificate*, pubblicate con `Determinazione AgID №121/2019 <http://www.agid.gov.it/sites/default/files/repository_files/regole_e_raccomandazioni_v1.1.pdf>`__ e successive modificazioni;
 
 .. _`llgg mis min sicurezza`:
--  **LL.GG. sulle misure minime di sicurezza**: Circolare AgID №1/2017 e successive modificazioni, recante *Misure minime di sicurezza ICT per le pubbliche amministrazioni*, emanata con DPCM del 24 ottobre 2014;
+-  **LL.GG. sulle misure minime di sicurezza**: `Circolare AgID №1/2017 <https://www.agid.gov.it/it/sicurezza/misure-minime-sicurezza-ict>`__ e successive modificazioni, recante *Misure minime di sicurezza ICT per le pubbliche amministrazioni*, emanata con DPCM del 24 ottobre 2014;
 
 .. _`registro SPID`:
 -  **registro SPID**: elenco dei soggetti appartenenti alla federazione SPID, previsto dalla vigente normativa e disponibile all'URL https://registry.spid.gov.it;
