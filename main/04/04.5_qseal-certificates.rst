@@ -11,7 +11,7 @@ Detti certificati qualificati sono conformi alle raccomandazioni emanate
 con le *LL.GG. sui certificati elettronici* (:ref:`cit. <llgg certificati>`) e contengono le seguenti
 informazioni aggiuntive:
 
-1. Il campo :code:`SubjectDN``, contenente i seguenti attributi:
+1. Il campo :code:`SubjectDN`, contenente i seguenti attributi:
 
    a. :code:`serialNumber` (`ᴏɪᴅ 2.5.4.5 <http://http/oid-info.com/get/2.5.4.5>`__) — valorizzato,
       sia per gli IdP che per i SP, in base alle alternative esposte al
