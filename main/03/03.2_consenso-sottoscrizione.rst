@@ -27,8 +27,8 @@ L’IdP:
    
    7.  Consente all’utente di visionare il documento e scaricarlo.
    
-   8.  Propone all’utente di procedere con la sottoscrizione. Il dissenso
-       alla sottoscrizione da parte dell’utente comporta l’invio di una
+   8.  Propone all’utente di procedere con la sottoscrizione, raccogliendone il consenso.
+       Il dissenso alla sottoscrizione da parte dell’utente comporta l’invio di una
        risposta di autenticazione con esito negativo al SP e il termine del
        processo.
    
