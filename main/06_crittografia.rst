@@ -31,7 +31,7 @@ versione 1.2 o superiore.
 Gli algoritmi crittografici utilizzati per i pacchetti :ref:`JWS` sono
 conformi a quanto previsto dal presente capitolo e i loro
 riferimenti tecnici sono pubblicati nella norma
-`RFC-7518 <https://tools.ietf.org/html/rfc7518>`__.
+:RFC:`7518`.
 
 .. important::
    Gli algoritmi e i metodi crittografici contenuti nel presente
