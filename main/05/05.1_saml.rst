@@ -4,30 +4,30 @@ SAML
 ====
 
 Le richieste e risposte di autenticazione :ref:`SAML <SAML>` contengono ciascuna
-un’estensione ``<Signature>`` (*namespace* ``spid``)
+un’estensione :code:`<Signature>` (*namespace* ``spid``)
 contenuta nella sezione prevista dallo standard per le estensioni SAML.
 I metadati sopra elencati sono realizzati mediante i seguenti elementi:
 
--  punti 1 e 4 tramite elemento ``<Filename>``
+-  punti 1 e 4 tramite elemento :code:`<Filename>`
    (*namespace* ``spid``), contenente il nome del file del documento,
    comprensivo della corretta estensione, composto come descritto in
    :ref:`§4.2 <§4.2>`;
 
--  punti 2 e 5 tramite elemento ``<DigestValue>`` (*namespace* ``ds``),
+-  punti 2 e 5 tramite elemento :code:`<DigestValue>` (*namespace* ``ds``),
    contenente un’impornta rappresentata applicandole la trasformazione
-   *Base64* (cfr. `RFC-4648 <https://tools.ietf.org/html/rfc4648>`__);
+   *Base64* (cfr. :RFC:`4648`);
 
--  punti 3 e 6 tramite elemento ``<DigestMethod>``
-   (*namespace* ``ds``), contenente la codifica W3C della funzione di
-   *hash* utilizzata per il calcolo delle impronte dei documenti;
+-  punti 3 e 6 tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``),
+   contenente la codifica W3C della funzione di *hash* utilizzata per il
+   calcolo delle impronte dei documenti;
 
--  l’identificativo univoco di sessione è indicato nell’attributo ``ID``
-   dell’elemento ``<AuthnRequest>`` per la richiesta di
+-  l’identificativo univoco di sessione è indicato nell’attributo :code:`ID`
+   dell’elemento :code:`<AuthnRequest>` per la richiesta di
    autenticazione, il cui valore combacia con quello dell’attributo
-   ``InResponseTo`` dell’elemento ``<Response>`` per la
+   :code:`InResponseTo` dell’elemento :code:`<Response>` per la
    corrispondete risposta di autenticazione.
 
-Qui sotto è riportato un esempio di elemento ``<Signature>``
+Qui sotto è riportato un esempio di elemento :code:`<Signature>`
 per la richiesta di autenticazione SAML relativa a un documento in
 formato PDF predisposto dal SP e successivamente inviato all’IdP per la
 sottoscrizione.
@@ -49,7 +49,7 @@ sottoscrizione.
      </saml2p:Extensions>
  </saml2p:AuthnRequest>
 
-Qui sotto è riportato un esempio di elemento ``<Signature>``
+Qui sotto è riportato un esempio di elemento :code:`<Signature>`
 per la risposta di utenticazione SAML relativa alla richiesta di
 autenticazione di cui al precedente esempio (ove l’IdP comunica al SP i
 metadati del documento firmato con SPID).
@@ -76,7 +76,7 @@ Tutte le evidenze informatiche SAML che si riferiscono al servizio in
 oggetto alle presenti Linee guida indicano il riferimento URN al
 *namespace* XML dell’Agenzia riservato a SPID — nel proprio elemento
 radice, ovvero in tutti i singoli elementi interessati (qui
-genericamente indicati come ``<Element>`` di *namespace*
+genericamente indicati come :code:`<Element>` di *namespace*
 ``ns``), come riportato nell’esempio sotto.
 
 .. code-block:: xml
