@@ -24,15 +24,11 @@ sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
    protetto logicamente affinché solamente gli enti federati possano
    trasferire file mediante uno dei seguenti due flussi:
 
-.. _`flusso-a`:
-
-   a. il sistema dell’IdP è configurato per la sola ricezione di evidenze
+   a. .. _`flusso-a`: il sistema dell’IdP è configurato per la sola ricezione di evidenze
       informatiche provenienti dagli SP in modalità *push* (cioè con
       trasferimenti iniziati in *upstream* dal SP);
 
-.. _`flusso-b`:
-
-   b. il sistema del SP è configurato per la sola ricezione di evidenze
+   b. .. _`flusso-b`: il sistema del SP è configurato per la sola ricezione di evidenze
       informatiche provenienti dagli IdP in modalità *push* (cioè con
       trasferimenti iniziati in *upstream* dall’IDP).
 
