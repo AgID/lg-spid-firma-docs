@@ -13,7 +13,7 @@ L’interfaccia applicativa fornita dal protocollo di comunicazione per il
 trasferimento di documenti dall’esterno è reso noto da ciascun ente
 federato verso tutti gli enti federati, mediante l’URL che l’ente
 medesimo pubblica nel metadata SPID e il cui dominio è contestualmente
-riportato nei campi ``commonName`` e ``subjectAltName`` del proprio
+riportato nei campi :code:`commonName` e :code:`subjectAltName` del proprio
 certificato qualificato di sigillo elettronico, di cui al :ref:`§4.5 <§4.5>`, punti
 14.b e 5. Tale URL indica esplicitamente il protocollo di comunicazione
 sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
@@ -24,9 +24,13 @@ sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
    protetto logicamente affinché solamente gli enti federati possano
    trasferire file mediante uno dei seguenti due flussi:
 
+.. _`flusso-a`:
+
    a. il sistema dell’IdP è configurato per la sola ricezione di evidenze
       informatiche provenienti dagli SP in modalità *push* (cioè con
       trasferimenti iniziati in *upstream* dal SP);
+
+.. _`flusso-b`:
 
    b. il sistema del SP è configurato per la sola ricezione di evidenze
       informatiche provenienti dagli IdP in modalità *push* (cioè con
@@ -65,33 +69,32 @@ procedura:
 2. codifica del messaggio di cui al punto 1 in un pacchetto :ref:`JWT <JWT>`;
 
 3. conversione del pacchetto di cui al punto 2 in :ref:`JWS <JWS>`, mediante il
-   metodo Compact Serialization (cfr.
-   :RFC:`7515`), mediante
-   creazione di apposito QSeal.
+   metodo *Compact Serialization* (cfr.
+   :RFC:`7515`), mediante creazione di apposito QSeal.
 
 Gli algoritmi crittografici utilizzati lungo l’intera procedura sopra
 descritta sono definiti in :ref:`§6 <§6>`. I pacchetti JWS sono caratterizzati dalla
 presenza degli identificativi unici di sessione (cfr. :ref:`§5 <§5>`).
 
 Le strutture JSON in base alle quali sono prodotti i pacchetti JWS
-scambiati durante i flussi a e b sono chiamate, rispettivamente,
+scambiati durante i flussi :ref:`a <flusso-a>` e :ref:`b <flusso-b>` sono chiamate, rispettivamente,
 **pacchetto di andata** e **pacchetto di ritorno**.
 
 L’intestazione (*header*) comune ai pacchetti di andata e ritorno
 contiene i seguenti parametri obbligatori:
 
--  ``typ`` — valorizzato con la stringa “``JOSE``”;
+-  :code:`typ` — valorizzato con la stringa “``JOSE``”;
 
--  ``alg`` — valorizzato con l’identificativo JWA dell’algoritmo
+-  :code:`alg` — valorizzato con l’identificativo JWA dell’algoritmo
    crittografico utilizzato per la firma del pacchetto JWS, secondo
    quanto indicato al :ref:`§6 <§6>`;
 
--  ``x5c`` — valorizzato con il certificato qualificato di sigillo
+-  :code:`x5c` — valorizzato con il certificato qualificato di sigillo
    elettronico dell’ente inviante (codificato in *Base64*, cfr.
    :RFC:`4648`);
 
--  ``crit`` — valorizzato con una lista di un unico elemento
-   “``x5c``”, ad indicare che la convalida del certificato di cui al
+-  :code:`crit` — valorizzato con una lista di un unico elemento
+   “:code:`x5c`”, ad indicare che la convalida del certificato di cui al
    punto precedente è obbligatoria;
 
 Un esempio di intestazione sopra definita è:
@@ -108,72 +111,67 @@ Un esempio di intestazione sopra definita è:
 Il *payload* dei pacchetti di andata e ritorno contiene i seguenti
 parametri obbligatori:
 
--  ``jti`` — valorizzato con l’identificativo unico della sessione, così
+-  :code:`jti` — valorizzato con l’identificativo unico della sessione, così
    come dichiarato nella richiesta di autenticazione per firma SPID,
    epurato del prefisso “``id-``” – coincide con il valore che, nei
    pacchetti di andata e di ritorno, si trova rispettivamente
    nell’attributo:
 
-   -  :code:`ID` dell’elemento SAML ``<AuthnRequest>`` per il
-      flusso a (andata), *ovvero*
+   -  :code:`ID` dell’elemento SAML :code:`<AuthnRequest>` per il flusso :ref:`a <flusso-a>` (andata), *ovvero*
 
-   -  ``InResponseTo`` dell’elemento SAML ``<Response>`` per il flusso b
-      (ritorno).
+   -  :code:`InResponseTo` dell’elemento SAML :code:`<Response>` per il flusso :ref:`b <flusso-b>` (ritorno).
 
--  ``iss`` — valorizzato con l’``entityId`` (URL con schema HTTPS)
-   dell’ente federato inviante; coincide con il valore dell’elemento
-   ``<Issuer>``:
+-  :code:`iss` — valorizzato con l’:code:`entityId`: (URL con schema HTTPS)
+   dell’ente federato inviante; coincide con il valore dell’elemento :code:`<Issuer>`:
 
 -  ``aud`` — valorizzato con l’``entityId`` (URL con schema HTTPS)
    dell’ente federato destinatario; coincide con il valore
    dell’attributo ``Destination``, rispettivamente, dell’elemento :ref:`SAML <SAML>`:
 
-   -  ``<AuthnRequest>`` per il pacchetto di andata (flusso i), *ovvero*
+   -  :code:`<AuthnRequest>` per il pacchetto di andata (flusso :ref:`a <flusso-a>`), *ovvero*
 
-   -  ``<Response>`` per il pacchetto di ritorno (flusso ii).
+   -  :code:`<Response>` per il pacchetto di ritorno (flusso :ref:`b <flusso-b>`).
 
--  ``iat`` — valorizzato con l’orario in cui il messaggio è generato e
+-  :code:`iat` — valorizzato con l’orario in cui il messaggio è generato e
    inviato (rispetto al fuso orario italiano), codificato come campo
    JSON di tipo *NumericDate*;
 
--  ``filename`` — valorizzato con il nome del file del documento
-   inviato; coincide con il valore dell’elemento ``<Filename>`` come specificato nel :ref:`§4.2 <§4.2>`;
+-  :code:`filename` — valorizzato con il nome del file del documento
+   inviato; coincide con il valore dell’elemento :code:`<Filename>`
+   come specificato nel :ref:`§4.2 <§4.2>`;
 
--  ``cty`` — valorizzato con la tipologia MIME del documento di cui al
-   punto precedente (quindi come “``pdf``”, come da normativa
-   :RFC:`7515`);
+-  :code:`cty` — valorizzato con la tipologia MIME del documento di cui al
+   punto precedente (quindi come “``pdf``”, come da normativa :RFC:`7515`);
 
--  ``payload`` — valorizzato con l’evidenza del documento informatico da
-   trasferire, codificato in *Base64* (cfr.
-   :RFC:`6848`);
+-  :code:`payload` — valorizzato con l’evidenza del documento informatico da
+   trasferire, codificato in *Base64* (cfr. :RFC:`6848`);
 
--  ``hash`` — valorizzato con una struttura JSON così costituita:
+-  :code:`hash` — valorizzato con una struttura JSON così costituita:
 
-   -  ``method`` — valorizzato con la codifica W3C della funzione di
+   -  :code:`method` — valorizzato con la codifica W3C della funzione di
       *hash* utilizzata per il calcolo delle impronte dei documenti e
-      coincidente con il valore dell’emento SAML
-      ``<DigestMethod>``,
+      coincidente con il valore dell’emento SAML :code:`<DigestMethod>`,
 
-   -  ``digest`` — valorizzato con l’impronta del documento trasferito e
-      coincidente con il valore dell’elemento SAML ``<DigestValue>``.
+   -  :code:`digest` — valorizzato con l’impronta del documento trasferito e
+      coincidente con il valore dell’elemento SAML :code:`<DigestValue>`.
 
 Nel pacchetto di andata:
 
--  ``signatures`` — valorizzato con un *array* JSON contenente tanti
+-  :code:`signatures` — valorizzato con un *array* JSON contenente tanti
    elementi quante sono le sottoscrizioni richieste; ciascun elemento
    dell’*array* è una struttura JSON contenente:
 
-   -  ``id`` — valorizzato con l’identificativo univoco della firma
+   -  :code:`id` — valorizzato con l’identificativo univoco della firma
       nell’ambito del processo di firma,
 
-   -  ``pag`` — valorizzato con il numero della pagina del documento ove
+   -  :code:`pag` — valorizzato con il numero della pagina del documento ove
       è richiesto che l’IdP apponga la componente grafica di cui al
       :ref:`§4.4 <§4.4>`;
 
-   -  ``pos`` — contenente una struttura JSON con due parametri – ``u``
-      e ``v`` – ciascuno dei due valorizzati con una struttura JSON di
+   -  :code:`pos` — contenente una struttura JSON con due parametri – :code:`u`
+      e :code:`v` – ciascuno dei due valorizzati con una struttura JSON di
       due elementi di tipo number, recanti l’ascissa e la ordinata nei
-      sotto-parametri ``x`` e ``y``, rispettivamente di due vertici
+      sotto-parametri :code:`x` e :code:`y`, rispettivamente di due vertici
       diametralmente opposti, delineanti l’area rettangolare definita,
       al :ref:`§4 <§4>`, per il posizionamento della componente grafica del
       QSeal all’interno della pagina stessa, secondo quanto previsto
@@ -181,8 +179,8 @@ Nel pacchetto di andata:
       secondo lo standard `ISO/IEC
       32000-1 <http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf>`__;
 
-   -  ``ref`` —booleano per indicare se la firma è facoltativa
-      (``false``) ovvero obbligatoria (``true``) per il SP richiedente.
+   -  :code:`ref` —booleano per indicare se la firma è facoltativa
+      (:code:`false`) ovvero obbligatoria (:code:`true`) per il SP richiedente.
       Se il firmatario non accetta di apporre anche solo una firma
       obbligatoria, l’intero processo di sottoscrizione termina senza
       successo e l’IdP non restituisce il documento al SP, informandolo
@@ -190,21 +188,21 @@ Nel pacchetto di andata:
 
 Nel pacchetto di ritorno:
 
--  ``sub`` — valorizzato con la stringa ``%firmatario%``
+-  :code:`sub` — valorizzato con la stringa ``%firmatario%``
    identificativa del firmatario, come definita nel :ref:`§4.4 <§4.4>`;
 
--  ``ref`` — valorizzato con un *array* JSON contenente tanti elementi
+-  :code:`ref` — valorizzato con un *array* JSON contenente tanti elementi
    quante sono le firme richieste nel pacchetto di andata; ciascun
    elemento dell’*array* è una struttura JSON contenente:
 
-   -  ``id`` — valorizzato con l’identificativo univoco della firma
+   -  :code:`id` — valorizzato con l’identificativo univoco della firma
       contenuto nel pacchetto di andata,
 
-   -  ``signed`` — valorizzato con un booleano che conferma
-      l’apposizione (``true``) o meno (``false``) della firma.
+   -  :code:`signed` — valorizzato con un booleano che conferma
+      l’apposizione (:code:`true`) o meno (:code:`false`) della firma.
 
 I pacchetti sono validi se conformi al presente provvedimento e a
-eventuali successive indicazioni dell’Agenzia.
+eventuali successive indicazioni dell’:ref:`Agenzia <AgID>`.
 
 Seguono un esempio del pacchetto di andata e del relativo pacchetto
 di ritorno per la sottoscrizione di un documento per il quale sono
