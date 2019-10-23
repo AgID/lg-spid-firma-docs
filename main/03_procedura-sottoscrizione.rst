@@ -27,12 +27,14 @@ Si veda a tal scopo il seguente esempio:
 .. code-block:: xml
 
  <EntityDescriptor>
-     <ds:Signature> ... </ds:Signature>
-     <IDPSSODescriptor> ... </IDPSSODescriptor>
+     <ds:Signature>...</ds:Signature>
+     ...
+     <IDPSSODescriptor>...</IDPSSODescriptor>
      <Extensions>
-         <spid:SignatureArt20>true</spid:SignatureArt20>
+         <spid:SignatureArt20 />
      </Extensions>
-     <Organization> ... </Organization>
+     <Organization>...</Organization>
+     ...
  </EntityDescriptor>
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
