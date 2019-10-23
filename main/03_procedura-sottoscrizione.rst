@@ -16,17 +16,18 @@ Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto.
 
 I metadati SPID indicano se l’IdP offre il servizio in oggetto.
 
-Se l'IdP offre il servizio in oggetto, il relativo metadata contiene l'elemento :code:`<SignatureArt20>` valorizzato con il valore true come estensione all'interno dell'elemento :code:`EntityDescriptor` (vedi esempio). Nel caso in cui l'elemento :code:`<SignatureArt20>` sia presente ma valorizzato con ``false``, è da intendersi che l'IdP *non* offre il servizio.
+Se l'IdP offre il servizio in oggetto, il relativo metadata contiene l'elemento :code:`<SignatureArt20>` valorizzato con il valore ``true`` come estensione all'interno dell'elemento :code:`EntityDescriptor` (vedi esempio). Nel caso in cui l'elemento :code:`<SignatureArt20>` sia presente ma valorizzato con ``false``, è da intendersi che l'IdP *non* offre il servizio.
 
 .. code-block:: xml
-   <EntityDescriptor>
-       <ds:Signature> ... </ds:Signature>
-       <IDPSSODescriptor> ... </IDPSSODescriptor>
-       <Extensions>
-           <spid:SignatureArt20>true</spid:SignatureArt20>
-       </Extensions>
-       <Organization> ... </Organization>
-   </EntityDescriptor>
+
+  <EntityDescriptor>
+      <ds:Signature> ... </ds:Signature>
+      <IDPSSODescriptor> ... </IDPSSODescriptor>
+      <Extensions>
+          <spid:SignatureArt20>true</spid:SignatureArt20>
+      </Extensions>
+      <Organization> ... </Organization>
+  </EntityDescriptor>
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
 realizzato per permettere al medesimo utente di sottoscrivere una o più
