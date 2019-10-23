@@ -20,14 +20,14 @@ Se l'IdP offre il servizio in oggetto, il relativo metadata contiene l'elemento 
 
 .. code-block:: xml
 
-  <EntityDescriptor>
-      <ds:Signature> ... </ds:Signature>
-      <IDPSSODescriptor> ... </IDPSSODescriptor>
-      <Extensions>
-          <spid:SignatureArt20>true</spid:SignatureArt20>
-      </Extensions>
-      <Organization> ... </Organization>
-  </EntityDescriptor>
+ <EntityDescriptor>
+     <ds:Signature> ... </ds:Signature>
+     <IDPSSODescriptor> ... </IDPSSODescriptor>
+     <Extensions>
+         <spid:SignatureArt20>true</spid:SignatureArt20>
+     </Extensions>
+     <Organization> ... </Organization>
+ </EntityDescriptor>
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
 realizzato per permettere al medesimo utente di sottoscrivere una o più
@@ -39,7 +39,8 @@ distinte.
 Il processo di firma prevede che l’utente, tramite il SP, esegua un
 processo di autenticazione al fine della firma, con la propria identità
 digitale di livello 2 o superiore, scegliendo il proprio IdP. Per la
-scelta dell’IdP, il SP mostra solo gli IdP che offrono tale servizio.
+scelta dell’IdP, il SP mostra il consueto bottone “*Entra con SPID*”,
+contenente i soli IdP che offrono tale servizio.
 
 .. toctree::
   :maxdepth: 3
