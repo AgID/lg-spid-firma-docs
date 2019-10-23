@@ -66,7 +66,7 @@ procedura:
 
 3. conversione del pacchetto di cui al punto 2 in :ref:`JWS <JWS>`, mediante il
    metodo Compact Serialization (cfr.
-   `RFC-7515 <https://tools.ietf.org/html/rfc7515>`__), mediante
+   :RFC:`7515`), mediante
    creazione di apposito QSeal.
 
 Gli algoritmi crittografici utilizzati lungo l’intera procedura sopra
@@ -88,7 +88,7 @@ contiene i seguenti parametri obbligatori:
 
 -  ``x5c`` — valorizzato con il certificato qualificato di sigillo
    elettronico dell’ente inviante (codificato in *Base64*, cfr.
-   `RFC-4648 <https://tools.ietf.org/html/rfc4648>`__);
+   :RFC:`4648`);
 
 -  ``crit`` — valorizzato con una lista di un unico elemento
    “``x5c``”, ad indicare che la convalida del certificato di cui al
@@ -114,7 +114,7 @@ parametri obbligatori:
    pacchetti di andata e di ritorno, si trova rispettivamente
    nell’attributo:
 
-   -  ``ID`` dell’elemento SAML ``<AuthnRequest>`` per il
+   -  :code:`ID` dell’elemento SAML ``<AuthnRequest>`` per il
       flusso a (andata), *ovvero*
 
    -  ``InResponseTo`` dell’elemento SAML ``<Response>`` per il flusso b
@@ -141,11 +141,11 @@ parametri obbligatori:
 
 -  ``cty`` — valorizzato con la tipologia MIME del documento di cui al
    punto precedente (quindi come “``pdf``”, come da normativa
-   `RFC-7515 <https://tools.ietf.org/html/rfc7515>`__);
+   :RFC:`7515`);
 
 -  ``payload`` — valorizzato con l’evidenza del documento informatico da
    trasferire, codificato in *Base64* (cfr.
-   `RFC-4648 <https://tools.ietf.org/html/rfc4648>`__);
+   :RFC:`6848`);
 
 -  ``hash`` — valorizzato con una struttura JSON così costituita:
 
