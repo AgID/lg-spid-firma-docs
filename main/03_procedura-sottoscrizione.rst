@@ -30,8 +30,11 @@ Si veda a tal scopo il seguente esempio:
      <ds:Signature>...</ds:Signature>
      ...
      <IDPSSODescriptor>...</IDPSSODescriptor>
-     <Extensions>
-         <spid:SignatureArt20 />
+     <Extensions
+       xmlns:spid="http://spid.gov.it/saml-extensions">
+         <spid:SignatureArt20>
+             
+         </spid:SignatureArt20>
      </Extensions>
      <Organization>...</Organization>
      ...
