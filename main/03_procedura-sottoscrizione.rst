@@ -16,7 +16,13 @@ Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto.
 
 I metadati SPID indicano se l’IdP offre il servizio in oggetto.
 
-Se l'IdP offre il servizio in oggetto, il relativo metadata contiene l'elemento :code:`<SignatureArt20>` valorizzato con il valore ``true`` come estensione all'interno dell'elemento :code:`EntityDescriptor` (vedi esempio). Nel caso in cui l'elemento :code:`<SignatureArt20>` sia presente ma valorizzato con ``false``, è da intendersi che l'IdP *non* offre il servizio.
+Se l'IdP offre il servizio in oggetto, il relativo *metadata* contiene
+l'elemento :code:`<SignatureArt20>` valorizzato con il valore ``true``
+come estensione all'interno dell'elemento :code:`EntityDescriptor`.
+Nel caso in cui l'elemento :code:`<SignatureArt20>` sia presente ma
+valorizzato con ``false``, è da intendersi che l'IdP *non* offre il servizio.
+
+Si veda a tal scopo il seguente esempio:
 
 .. code-block:: xml
 
