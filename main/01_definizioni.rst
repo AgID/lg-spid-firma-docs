@@ -53,13 +53,13 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
 -  **JSON**: *JavaScript Object Notation*, come previsto dalle norme `RFC-8259 <https://tools.ietf.org/html/rfc8259>`__;
 
 .. _`JWA`:
--  **JWA**: algoritmi crittografici JSON (*JSON Web Algorithm*), come previsto dalle norme `RFC-7518 <https://tools.ietf.org/html/rfc7518>`__;
+-  **JWA**: algoritmi crittografici JSON (*JSON Web Algorithm*), come previsto dalla norma :RFC:`7518`;
 
 .. _`JWS`:
--  **JWS**: pacchetto JWT firmato (*JSON Token Signature*), come previsto dalle norme `RFC-7515 <https://tools.ietf.org/html/rfc7515>`__;
+-  **JWS**: pacchetto JWT firmato (*JSON Token Signature*), come previsto dalla norma :RFC:`7515`;
 
 .. _`JWT`:
--  **JWT**: pacchetto JSON per applicazioni web (*JSON Web Token*), come previsto dalle norme `RFC-7797 <https://tools.ietf.org/html/rfc7797>`__;
+-  **JWT**: pacchetto JSON per applicazioni web (*JSON Web Token*), come previsto dalle norme :RFC:`7797`;
 
 .. _`QSeal`:
 -  **QSeal**: sigillo elettronico qualificato, come da regolamento eIDAS;
