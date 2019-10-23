@@ -1,7 +1,7 @@
 .. _`§2`:
 
-Scopo e ambito di applicazione
-==============================
+Riferimenti normativi, scopo e ambito di applicazione
+=====================================================
 
 L’articolo 20 del :ref:`CAD <CAD>` dispone il soddisfacimento del requisito della
 forma scritta e l’efficacia prevista dall’articolo 2702 del Codice
@@ -15,6 +15,8 @@ informatica del suo autore,
 Le presenti Linee guida regolano le modalità atte a garantire la
 sicurezza, integrità e immodificabilità del documento e, in maniera
 manifesta e inequivoca, la sua riconducibilità all’autore.
+
+Destinatari delle Linee guida sono i fornitori di servizi e i gestori dell'identità che intendono realizzare quanto previsto dal sopracitato articolo 20; gli utenti in qualità di fruitori del servizio.
 
 .. discourse::
 
