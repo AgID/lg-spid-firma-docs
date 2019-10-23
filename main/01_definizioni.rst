@@ -50,7 +50,7 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
 -  **IdP**: gestore di identità digitali nel contesto della federazione SPID;
 
 .. _`JSON`:
--  **JSON**: *JavaScript Object Notation*, come previsto dalle norme `RFC-8259 <https://tools.ietf.org/html/rfc8259>`__;
+-  **JSON**: *JavaScript Object Notation*, come previsto dalla norma :RFC:`8259`;
 
 .. _`JWA`:
 -  **JWA**: algoritmi crittografici JSON (*JSON Web Algorithm*), come previsto dalla norma :RFC:`7518`;
@@ -59,7 +59,7 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
 -  **JWS**: pacchetto JWT firmato (*JSON Token Signature*), come previsto dalla norma :RFC:`7515`;
 
 .. _`JWT`:
--  **JWT**: pacchetto JSON per applicazioni web (*JSON Web Token*), come previsto dalle norme :RFC:`7797`;
+-  **JWT**: pacchetto JSON per applicazioni web (*JSON Web Token*), come previsto dalla norma :RFC:`7797`;
 
 .. _`QSeal`:
 -  **QSeal**: sigillo elettronico qualificato, come da regolamento eIDAS;
