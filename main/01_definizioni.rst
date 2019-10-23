@@ -32,10 +32,10 @@ Ai fini delle presenti Linee guida, oltre ad applicarsi le definizioni di cui al
 -  **registro SPID**: elenco dei soggetti appartenenti alla federazione SPID, previsto dalla vigente normativa e disponibile all'URL https://registry.spid.gov.it;
 
 .. _`eIDAS`:
--  **regolamento eIDAS**: Regolamento (UE) №910/2014 del Parlamento Europeo e del Consiglio, del 23 luglio 2014, in materia di identificazione elettronica e servizi fiduciari per le transazioni elettroniche nel mercato interno e che abroga la direttiva 1999/93/CE;
+-  **regolamento eIDAS**: Regolamento (UE) №910/2014 del Parlamento Europeo e del Consiglio, del 23 luglio 2014, in materia di identificazione elettronica e servizi fiduciari per le transazioni elettroniche nel mercato interno e che abroga la direttiva 1999/93/CE, e sue successive modificazioni;
 
 .. _`GDPR`:
--  **regolamento GDPR**: Regolamento (UE) №679/2016 del Parlamento Europeo e del Consiglio, del 27 aprile 2016, relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali, nonché alla libera circolazione di tali dati e che abroga la direttiva 95/46/CE;
+-  **regolamento GDPR**: Regolamento (UE) №679/2016 del Parlamento Europeo e del Consiglio, del 27 aprile 2016, relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali, nonché alla libera circolazione di tali dati e che abroga la direttiva 95/46/CE, e sue successive modificazioni;
 
 -  **sottoscrizione**: il processo di cui all’articolo 20, comma 1-bis del CAD;
 
