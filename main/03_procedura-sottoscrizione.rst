@@ -31,12 +31,13 @@ Si veda a tal scopo il seguente esempio:
      ...
      <IDPSSODescriptor>...</IDPSSODescriptor>
      <Extensions
-           xmlns:spid="http://spid.gov.it/saml-extensions">
-             <spid:SignatureArt20>
-                 <spid:FileTransferService>
-                       Binding="urn:metodo-di-binding"
-                       Location="https://indirizzo:porta/servizio/DataIO/"
-                       FriendlyName="Firma SPID">
+           xmlns:spid="https://spid.gov.it/saml-extensions">
+         <spid:SignatureArt20>
+             <spid:FileTransferService>
+                   Binding="urn:metodo-di-binding"
+                   Location="https://indirizzo:porta/servizio/DataIO/"
+                   FriendlyName="Firma SPID">
+         </spid:SignatureArt20>
      </Extensions>
      <Organization>...</Organization>
      ...
