@@ -24,16 +24,17 @@ Se l'IdP offre il servizio in oggetto, il relativo metadata contiene l'elemento 
    .. role:: admonition-internal-title
       :class: admonition-internal-title
 
-   `Esempio di utilizzo dell'estensione <SignatureArt20>`:admonition-internal-title:
+   `Esempio di utilizzo dell'estensione`:admonition-internal-title:
 
-   <EntityDescriptor>
-       <ds:Signature> ... </ds:Signature>
-       <IDPSSODescriptor> ... </IDPSSODescriptor>
-       <Extensions>
-           <spid:SignatureArt20>true</spid:SignatureArt20>
-       </Extensions>
-       <Organization> ... </Organization>
-   </EntityDescriptor>
+   .. code-block:: xml
+     <EntityDescriptor>
+         <ds:Signature> ... </ds:Signature>
+         <IDPSSODescriptor> ... </IDPSSODescriptor>
+         <Extensions>
+             <spid:SignatureArt20>true</spid:SignatureArt20>
+         </Extensions>
+         <Organization> ... </Organization>
+     </EntityDescriptor>
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
 realizzato per permettere al medesimo utente di sottoscrivere una o più
