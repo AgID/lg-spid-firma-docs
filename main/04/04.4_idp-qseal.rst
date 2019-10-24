@@ -58,7 +58,9 @@ Dove:
 Il documento può contenere già una o più firme elettroniche qualificate
 o sigilli elettronici qualificati, o può già essere stato oggetto di
 altri processi di sottoscrizione come previsti dalle presenti Linee
-guida. Il documento può richiedere più di una firma, in tal caso l’IdP
+guida.
+
+Il documento può richiedere più di una firma, in tal caso l’IdP
 appone più sigilli.
 
 La richiesta del SP può prevedere più firme dello stesso soggetto sul documento;
