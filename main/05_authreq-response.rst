@@ -12,24 +12,24 @@ La **richiesta di autenticazione** per la firma SPID, introdotta al
 punto 5 della procedura di cui al §\ :ref:`3 <§3>`, contiene i seguenti metadati
 aggiuntivi:
 
-1. il nome del file del documento;
+a. il nome del file del documento;
 
-2. l’impronta dell’evidenza informatica ottenuta calcolando l’:ref:`impronta <hash>`
-   del file di cui al punto 1;
+b. l’impronta dell’evidenza informatica ottenuta calcolando l’:ref:`impronta <hash>`
+   del file di cui al punto a;
 
-3. l’identificativo della funzione di *hash* crittografico utilizzato al
-   punto 2.
+c. l’identificativo della funzione di *hash* crittografico utilizzato al
+   punto b.
 
 La **risposta di autenticazione** per la firma SPID contiene
 obbligatoriamente i seguenti metadati:
 
-4. il nome del file del documento firmato con SPID;
+d. il nome del file del documento firmato con SPID;
 
-5. l’impronta dell’evidenza ottenuta calcolando l’impronta del file di
-   cui al punto 4, calcolata dall’IdP ai sensi del §\ :ref:`6 <§6>`;
+e. l’impronta dell’evidenza ottenuta calcolando l’impronta del file di
+   cui al punto d, calcolata dall’IdP ai sensi del §\ :ref:`6 <§6>`;
 
-6. l’identificativo della funzione di *hash* crittografico utilizzato al
-   punto 5.
+f. l’identificativo della funzione di *hash* crittografico utilizzato al
+   punto e.
 
 L’identificativo unico della sessione di autenticazione (*session ID*)
 di cui al §\ :ref:`3 <§3>`: punto 3, sempre presente in ogni richiesta e risposta di
