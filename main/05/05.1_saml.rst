@@ -8,16 +8,16 @@ un’estensione :code:`<Signature>` (*namespace* ``spid``)
 contenuta nella sezione prevista dallo standard per le estensioni SAML.
 I metadati sopra elencati sono realizzati mediante i seguenti elementi:
 
--  punti 1 e 4 tramite elemento :code:`<Filename>`
+-  punti a. e d. tramite elemento :code:`<Filename>`
    (*namespace* ``spid``), contenente il nome del file del documento,
    comprensivo della corretta estensione, composto come descritto in
    §\ :ref:`4.2 <§4.2>`;
 
--  punti 2 e 5 tramite elemento :code:`<DigestValue>` (*namespace* ``ds``),
+-  punti b. e e. tramite elemento :code:`<DigestValue>` (*namespace* ``ds``),
    contenente un’impornta rappresentata applicandole la trasformazione
    *Base64* (cfr. :RFC:`4648`);
 
--  punti 3 e 6 tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``),
+-  punti c. e f. tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``),
    contenente la codifica W3C della funzione di *hash* utilizzata per il
    calcolo delle impronte dei documenti;
 
