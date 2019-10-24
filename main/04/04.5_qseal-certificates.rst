@@ -48,7 +48,7 @@ informazioni aggiuntive:
    b. una limitazione d’uso indicata mediante la presenza di un campo
       :code:`userNotice` (`ᴏɪᴅ 2.5.29.49 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.49>`__), di tipo
       :code:`explicitText`, valorizzato con la seguente stringa bilingue:
-      “``Certificato usabile solo per il processo di sottoscrizione ex art.20 del CAD/This certificate may be used only for digital subscription pursuant to Digital Administration Code, art.20.``”.
+      “``Certificato usabile solo per il processo di sottoscrizione di cui all'art.20 del CAD/This certificate may be used only for digital subscription pursuant to Digital Administration Code, art.20.``”.
 
 3. :code:`keyUsage` (`ᴏɪᴅ 2.5.29.15 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.15>`__) — contenente
    i valori :code:`digitalSignature` e :code:`keyEncipherment`, cioè i bit #0 e #2, valorizzati a ``1``,
