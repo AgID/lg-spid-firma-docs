@@ -14,34 +14,8 @@ persona fisica e le identità digitali per uso professionale.
 
 Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto.
 
-I metadati SPID indicano se l’IdP offre il servizio in oggetto.
-
-Se l'IdP offre il servizio in oggetto, il relativo *metadata* contiene
-l'elemento :code:`<SignatureArt20>` valorizzato con il valore ``true``
-come estensione all'interno dell'elemento :code:`EntityDescriptor`.
-Nel caso in cui l'elemento :code:`<SignatureArt20>` sia presente ma
-valorizzato con ``false``, è da intendersi che l'IdP *non* offre il servizio.
-
-Si veda a tal scopo il seguente esempio:
-
-.. code-block:: xml
-
- <md:EntityDescriptor>
-     <ds:Signature>...</ds:Signature>
-     ...
-     <md:IDPSSODescriptor>...</md:IDPSSODescriptor>
-     <saml2p:Extensions
-           xmlns:spid="https://spid.gov.it/saml-extensions">
-         <spid:SignatureArt20>
-             <spid:FileTransferService>
-                   Binding="urn:metodo-di-binding"
-                   Location="https://indirizzo:porta/servizio/DataIO/"
-                   FriendlyName="Firma SPID">
-         </spid:SignatureArt20>
-     </saml2p:Extensions>
-     <md:Organization>...</md:Organization>
-     ...
- </md:EntityDescriptor>
+I metadati SPID indicano se l’IdP offre il servizio in oggetto o meno
+(cfr. :ref:`§4.6 <§4.6>`).
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
 realizzato per permettere al medesimo utente di sottoscrivere una o più
