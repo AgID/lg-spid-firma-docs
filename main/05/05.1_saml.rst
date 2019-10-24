@@ -74,19 +74,6 @@ metadati del documento firmato con SPID).
      </saml2p:Extensions>
  </saml2p:Response>
 
-Tutte le evidenze informatiche SAML che si riferiscono al servizio in
-oggetto alle presenti Linee guida indicano il riferimento URN al
-*namespace* XML dell’Agenzia riservato a SPID — nel proprio elemento
-radice, ovvero in tutti i singoli elementi interessati (qui
-genericamente indicati come :code:`<Element>` di *namespace*
-``ns``), come riportato nell’esempio sotto.
-
-.. code-block:: xml
-  
- <ns:Element xmlns:spid="https://spid.gov.it/saml-extensions">
-     ...
- </ns:Element>
-
 .. discourse::
 
 :topic_identifier: 666
