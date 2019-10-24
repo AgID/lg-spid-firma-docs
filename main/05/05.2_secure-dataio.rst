@@ -189,8 +189,10 @@ Nel pacchetto di ritorno:
    quante sono le firme richieste nel pacchetto di andata; ciascun
    elemento dell’*array* è una struttura JSON contenente:
 
-   -  :code:`id` — valorizzato con l’identificativo univoco della firma
-      contenuto nel pacchetto di andata,
+   -  :code:`id` — l’identificativo univoco della firma contenuto nel pacchetto
+      di andata, valorizzato con la medesima sintassi ammessa per l’attributo
+      ``name`` dell’elemento :code:`<FileTransferService>` definito nel
+      §\ :ref:`4.6 <§4.6>`;
 
    -  :code:`signed` — valorizzato con un booleano che conferma
       l’apposizione (:code:`true`) o meno (:code:`false`) della firma.
