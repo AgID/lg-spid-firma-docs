@@ -12,14 +12,14 @@ La suddetta modalità è costituita da:
  1. L'elemento :code:`<FileTransferService>` dotato dei seguenti attributi
     obbligatori:
     
-     a. :code:`id` — identificativo della modalità tecnica, univoco per l’ente
-        federato, valorizzato come la stringa di un UUID v4 (come da specifica
-        :RFC:`4122`), ovvero da un minimo di 3 e un massimo di 16 caratteri
-        scelti nel seguente sottoinsieme di caratteri ASCII: 
-        ``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-``.
-     b. :code:`Location` — URL completo (comprensivo del relativo schema) ove
-        l’ente rende disponibile il sistema di trasferimento sicuro dei documenti
-        di cui al §\ :ref:`5.2 <§5.2>`.
+    a. :code:`id` — identificativo della modalità tecnica, univoco per l’ente
+       federato, valorizzato come la stringa di un UUID v4 (come da specifica
+       :RFC:`4122`), ovvero da un minimo di 3 e un massimo di 16 caratteri
+       scelti nel seguente sottoinsieme di caratteri ASCII: 
+       ``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-``.
+    b. :code:`Location` — URL completo (comprensivo del relativo schema) ove
+       l’ente rende disponibile il sistema di trasferimento sicuro dei documenti
+       di cui al §\ :ref:`5.2 <§5.2>`.
 
 .. code-block:: xml
 
