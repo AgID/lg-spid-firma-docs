@@ -224,8 +224,10 @@ Esempio di pacchetto di andata:
              "id"  : "1",
              "pag" : 3,
              "pos" : {
-                 "llx":89.9446, "lly":719.976",
-                 "urx":89.9446, "ury":719.976
+                 "llx":89.9446,
+                 "lly":719.976",
+                 "urx":89.9446,
+                 "ury":719.976
              },
              "req" : true
          },
@@ -233,8 +235,10 @@ Esempio di pacchetto di andata:
              "id"  : "2",
              "pag" : 7,
              "pos" : {
-                 "u" : { "x":240.734, "y":686.297 },
-                 "v" : { "x":390.768, "y":718.421 }
+                 "llx":240.734,
+                 "lly":686.297",
+                 "urx":390.768,
+                 "ury":718.421
              },
              "req" : false
          }
