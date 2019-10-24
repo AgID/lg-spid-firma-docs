@@ -27,7 +27,7 @@ I metadati sopra elencati sono realizzati mediante i seguenti elementi:
    :code:`InResponseTo` dell’elemento :code:`<Response>` per la
    corrispondete risposta di autenticazione.
 
-Qui sotto è riportato un esempio di elemento :code:`<SignatureArt20>`
+Qui sotto è riportato un esempio di elemento :code:`<Signature>`
 per la richiesta di autenticazione SAML relativa a un documento in
 formato PDF predisposto dal SP e successivamente inviato all’IdP per la
 sottoscrizione.
@@ -42,11 +42,11 @@ sottoscrizione.
      ...
      <saml2p:Extensions
            xmlns:spid="https://spid.gov.it/saml-extensions">
-         <spid:SignatureArt20>
+         <spid:Signature>
              <spid:Filename>AgID_YYYYMMDDThhmmss.pdf</spid:Filename>
              <ds:DigestMethod Algorithm="http://funzione_hash" />
              <ds:DigestValue>ImprontaDocumento-1</ds:DigestValue>
-         </spid:SignatureArt20>
+         </spid:Signature>
      </saml2p:Extensions>
  </saml2p:AuthnRequest>
 
