@@ -10,7 +10,7 @@ Regolamento :ref:`eIDAS <eIDAS>` e dalle conseguenti Decisioni di Esecuzione (UE
 Prima di apporre il proprio QSeal, il SP predispone il documento
 prevedendo adeguato spazio per contenere la componente grafica (o più
 componenti se richiede più firme) del QSeal che verrà apposto dall’IdP,
-il cui testo (cfr. :ref:`§4.4 <§4.4>`) deve essere agevolmente leggibile.
+il cui testo (cfr. §:ref:`4.4 <§4.4>`) deve essere agevolmente leggibile.
 
 .. discourse::
 
