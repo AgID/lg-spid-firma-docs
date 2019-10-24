@@ -10,9 +10,9 @@ Il processo prevede quanto segue:
 
    1. Il SP predispone il documento, apponendovi un proprio sigillo
       elettronico qualificato, secondo quanto prescritto tecnicamente nel
-      :ref:`§4.1 <§4.1>`, sottoponendolo, presso la propria piattaforma, all’utente
-      affinché possa essere visionato, eventualmente scaricato e
-      conservato.
+      §\ :ref:`4.1 <§4.1>`, sottoponendolo, presso la propria piattaforma,
+      all’utente affinché possa essere visionato, eventualmente scaricato
+      e conservato.
    
    2. Il SP richiede all’utente conferma della volontà di procedere alla
       sottoscrizione del documento di cui al punto 1, rendendo manifesto
@@ -25,8 +25,8 @@ Il processo prevede quanto segue:
    3. Il SP inoltra la sessione dell’utente all’IdP con una nuova richiesta
       di autenticazione speciale (di livello pari almeno a 2), denominata
       “**firma SPID**”, conforme alle caratteristiche tecniche di cui
-      al :ref:`§5 <§5>` e invia il documento predisposto al punto 1 all’IdP con le
-      modalità descritte nel :ref:`§5.2 <§5.2>`.
+      al §\ :ref:`5 <§5>` e invia il documento predisposto al punto 1 all’IdP con le
+      modalità descritte nel §\ :ref:`5.2 <§5.2>`.
 
 .. discourse::
 
