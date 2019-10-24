@@ -8,10 +8,7 @@ documento, che è graficamente localizzato nello spazio previsto dal SP e
 indicato nella richiesta di autenticazione (cfr. :ref:`§5 <§5>`). La componente
 visibile del sigillo contiene il seguente testo:
 
-.. code-block::
-
- Il %data% alle %ora%, %firmatario% ha confermato la volonta' di apporre qui la propria sottoscrizione 
- ai sensi dell'art. 20, comma 1-bis del CAD.
+ ``Il %data% alle %ora%, %firmatario% ha confermato la volonta' di apporre qui la propria sottoscrizione ai sensi dell'art. 20, comma 1-bis del CAD.``
 
 Dove:
 
