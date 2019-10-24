@@ -163,16 +163,15 @@ Nel pacchetto di andata:
       è richiesto che l’IdP apponga la componente grafica di cui al
       §\ :ref:`4.4 <§4.4>`;
 
-   -  :code:`pos` — contenente una struttura JSON con due parametri – :code:`u`
-      e :code:`v` – ciascuno dei due valorizzati con una struttura JSON di
-      due elementi di tipo number, recanti l’ascissa e la ordinata nei
-      sotto-parametri :code:`x` e :code:`y`, rispettivamente di due vertici
-      diametralmente opposti, delineanti l’area rettangolare definita,
-      al §\ :ref:`4 <§4>`, per il posizionamento della componente grafica del
-      QSeal all’interno della pagina stessa, secondo quanto previsto
-      tecnicamente per la rappresentazione di oggetti PDF *Rectangles*,
-      secondo lo standard `ISO/IEC
-      32000-1 <http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf>`__;
+   -  :code:`pos` — contenente un *array* JSON con quattro elementi di
+      tipo *number* – :code:`llx`, :code:`lly`, :code:`urx` e :code:`ury`
+      - valorizzati rispettivamente con l'ascissa e l'ordinata del vertice
+      inferiore sinistro, l'ascissa e l'ordinata del vertice superiore destro
+      di un'area rettangolare definita al §\ :ref:`4.4 <§4.4>`, per il
+      posizionamento della componente grafica del QSeal all’interno della
+      pagina stessa, secondo quanto previsto tecnicamente per la
+      rappresentazione di oggetti PDF *Rectangles*, §4.40 dello standard
+      `ISO/IEC 32000-1 <http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf>`__;
 
    -  :code:`ref` —booleano per indicare se la firma è facoltativa
       (:code:`false`) ovvero obbligatoria (:code:`true`) per il SP richiedente.
@@ -225,8 +224,8 @@ Esempio di pacchetto di andata:
              "id"  : "1",
              "pag" : 3,
              "pos" : {
-                 "u" : { "x":89.9446, "y":719.976 },
-                 "v" : { "x":239.978, "y":751.299 }
+                 "llx":89.9446, "lly":719.976",
+                 "urx":89.9446, "ury":719.976
              },
              "req" : true
          },
