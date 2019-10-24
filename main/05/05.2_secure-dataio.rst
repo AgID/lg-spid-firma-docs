@@ -14,9 +14,9 @@ trasferimento di documenti dall’esterno è reso noto da ciascun ente
 federato verso tutti gli enti federati, mediante l’URL che l’ente
 medesimo pubblica nel metadata SPID e il cui dominio è contestualmente
 riportato nei campi :code:`commonName` e :code:`subjectAltName` del proprio
-certificato qualificato di sigillo elettronico, di cui al :ref:`§4.5 <§4.5>`, punti
+certificato qualificato di sigillo elettronico, di cui al §\ :ref:`4.5 <§4.5>`, punti
 14.b e 5. Tale URL indica esplicitamente il protocollo di comunicazione
-sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
+sicuro, i cui dettagli sono dati in §\ :ref:`5.2.1 <§5.2.1>`.
 
 1. Il sistema di trasferimento è, nella sua interezza, protetto da
    misure di sicurezza logica e fisica conformi almeno alle *LL.GG.
@@ -33,7 +33,7 @@ sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
       trasferimenti iniziati in *upstream* dall’IDP).
 
 2.  SP e IdP controllano che ogni file creato presso il proprio storage
-    soddisfi quanto prescritto nel :ref:`§4.2 <§4.2>`. Non sono permessi file non
+    soddisfi quanto prescritto nel §\ :ref:`4.2 <§4.2>`. Non sono permessi file non
     conformi a quanto prescritto.
 
 3.  L’IdP rimuove dallo storage i file ricevuti per i quali non sia
@@ -46,8 +46,7 @@ sicuro, i cui dettagli sono dati in :ref:`§5.2.1 <§5.2.1>`.
     che le accompagnano.
 
 5.  IdP e SP verificano l’autenticità dei :ref:`QSeal <QSeal>`
- della controparte e
-    l’integrità del documento ricevuto.
+ della controparte e l’integrità del documento ricevuto.
 
 .. _`§5.2.1`:
 
@@ -69,7 +68,7 @@ procedura:
    :RFC:`7515`), mediante creazione di apposito QSeal.
 
 Gli algoritmi crittografici utilizzati lungo l’intera procedura sopra
-descritta sono definiti in :ref:`§6 <§6>`. I pacchetti JWS sono caratterizzati dalla
+descritta sono definiti in §\ :ref:`6 <§6>`. I pacchetti JWS sono caratterizzati dalla
 presenza degli identificativi unici di sessione (cfr. :ref:`§5 <§5>`).
 
 Le strutture JSON in base alle quali sono prodotti i pacchetti JWS
@@ -83,7 +82,7 @@ contiene i seguenti parametri obbligatori:
 
 -  :code:`alg` — valorizzato con l’identificativo JWA dell’algoritmo
    crittografico utilizzato per la firma del pacchetto JWS, secondo
-   quanto indicato al :ref:`§6 <§6>`;
+   quanto indicato al §\ :ref:`6 <§6>`;
 
 -  :code:`x5c` — valorizzato con il certificato qualificato di sigillo
    elettronico dell’ente inviante (codificato in *Base64*, cfr.
@@ -134,7 +133,7 @@ parametri obbligatori:
 
 -  :code:`filename` — valorizzato con il nome del file del documento
    inviato; coincide con il valore dell’elemento :code:`<Filename>`
-   come specificato nel :ref:`§4.2 <§4.2>`;
+   come specificato nel §\ :ref:`4.2 <§4.2>`;
 
 -  :code:`cty` — valorizzato con la tipologia MIME del documento di cui al
    punto precedente (quindi come “``pdf``”, come da normativa :RFC:`7515`);
@@ -162,14 +161,14 @@ Nel pacchetto di andata:
 
    -  :code:`pag` — valorizzato con il numero della pagina del documento ove
       è richiesto che l’IdP apponga la componente grafica di cui al
-      :ref:`§4.4 <§4.4>`;
+      §\ :ref:`4.4 <§4.4>`;
 
    -  :code:`pos` — contenente una struttura JSON con due parametri – :code:`u`
       e :code:`v` – ciascuno dei due valorizzati con una struttura JSON di
       due elementi di tipo number, recanti l’ascissa e la ordinata nei
       sotto-parametri :code:`x` e :code:`y`, rispettivamente di due vertici
       diametralmente opposti, delineanti l’area rettangolare definita,
-      al :ref:`§4 <§4>`, per il posizionamento della componente grafica del
+      al §\ :ref:`4 <§4>`, per il posizionamento della componente grafica del
       QSeal all’interno della pagina stessa, secondo quanto previsto
       tecnicamente per la rappresentazione di oggetti PDF *Rectangles*,
       secondo lo standard `ISO/IEC
@@ -185,7 +184,7 @@ Nel pacchetto di andata:
 Nel pacchetto di ritorno:
 
 -  :code:`sub` — valorizzato con la stringa ``%firmatario%``
-   identificativa del firmatario, come definita nel :ref:`§4.4 <§4.4>`;
+   identificativa del firmatario, come definita nel §\ :ref:`4.4 <§4.4>`;
 
 -  :code:`ref` — valorizzato con un *array* JSON contenente tanti elementi
    quante sono le firme richieste nel pacchetto di andata; ciascun
