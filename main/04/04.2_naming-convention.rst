@@ -39,7 +39,7 @@ In particolare:
 
    -  due cifre per il minuto secondo (da “``01``” a “``59``”);
 
-Il nome del **documento firmato con SPID** (cfr. :ref:§`1 <§1>`) resta immutato.
+Il nome del **documento firmato con SPID** (cfr. §:ref:`1 <§1>`) resta immutato.
 
 .. admonition:: example
    :class: admonition-example display-page
