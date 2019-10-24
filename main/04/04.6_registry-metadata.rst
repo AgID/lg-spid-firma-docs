@@ -31,7 +31,7 @@ La suddetta modalità è costituita da:
            xmlns:spid="https://spid.gov.it/saml-extensions">
          <spid:SignatureArt20>
              <spid:FileTransferService>
-                   id="UID"
+                   id="UUID"
                    Location="https://indirizzo:porta/servizio/DataIO/" />
          </spid:SignatureArt20>
      </saml2p:Extensions>
