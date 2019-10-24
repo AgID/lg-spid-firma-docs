@@ -16,8 +16,8 @@ In particolare:
 
 -  ``SPuid`` — È un identificativo unico del SP che forma il
    documento. È una stringa costituita da un minimo di 3 a un massimo di
-   8 caratteri a scelta tra i seguenti caratteri puramente alfanumerici:
-   “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ``”.
+   8 caratteri del seguente sottoinsieme di caratteri ASCII:
+   “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-``”.
 
 -  ``data`` — È la data di formazione rispetto al fuso orario italiano.
    È una stringa di 8 caratteri numerici così ripartiti:
