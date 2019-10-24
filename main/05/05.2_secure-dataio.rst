@@ -225,7 +225,7 @@ Esempio di pacchetto di andata:
              "pag" : 3,
              "pos" : {
                  "llx":89.9446,
-                 "lly":719.976",
+                 "lly":719.976,
                  "urx":89.9446,
                  "ury":719.976
              },
@@ -236,7 +236,7 @@ Esempio di pacchetto di andata:
              "pag" : 7,
              "pos" : {
                  "llx":240.734,
-                 "lly":686.297",
+                 "lly":686.297,
                  "urx":390.768,
                  "ury":718.421
              },
