@@ -19,7 +19,7 @@ La suddetta modalità è costituita da:
         ``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-``.
      b. :code:`Location` — URL completo (comprensivo del relativo schema) ove
         l’ente rende disponibile il sistema di trasferimento sicuro dei documenti
-        di cui al `5.2 <§5.2>`.
+        di cui al §:ref:`5.2 <§5.2>`.
 
 .. code-block:: xml
 
