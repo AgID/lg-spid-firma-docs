@@ -15,7 +15,7 @@ persona fisica e le identità digitali per uso professionale.
 Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto.
 
 I metadati SPID indicano se l’IdP offre il servizio in oggetto o meno
-(cfr. :ref:`§4.6 <§4.6>`).
+(cfr. §\ :ref:`4.6 <§4.6>`).
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
 realizzato per permettere al medesimo utente di sottoscrivere una o più
