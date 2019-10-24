@@ -1,0 +1,36 @@
+.. _`§3`:
+
+Metadata nel registro SPID
+==========================
+
+Qualora un IDP o un SP offra il servizio in oggetto, il relativo metadata
+pubblicato nel registro SPID contiene l’estensione :code:`<SignatureArt20>`
+come figlio dell’elemento :code:`<Extensions>`, al cui interno è specificata la
+modalità tecnica tramite la quale l’ente federato espone tale servizio.
+
+La suddetta modalità è costituita da:
+
+.. code-block:: xml
+
+ <md:EntityDescriptor>
+     <ds:Signature>...</ds:Signature>
+     ...
+     <md:IDPSSODescriptor>...</md:IDPSSODescriptor>
+     <saml2p:Extensions
+           xmlns:spid="https://spid.gov.it/saml-extensions">
+         <spid:SignatureArt20>
+             <spid:FileTransferService>
+                   id="UID"
+                   Location="https://indirizzo:porta/servizio/DataIO/" />
+         </spid:SignatureArt20>
+     </saml2p:Extensions>
+     <md:Organization>...</md:Organization>
+     ...
+ </md:EntityDescriptor>
+ 
+ Qualora l’elemento :code:`<SignatureArt20>` non sia presente nel metadata,
+ è da intendersi che l’ente  federato *non* offre tale servizio.
+
+.. discourse::
+
+:topic_identifier: 666
