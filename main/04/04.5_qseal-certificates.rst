@@ -63,7 +63,7 @@ informazioni aggiuntive:
    dell’URL completo (così come riportato nel registro SPID) presso il
    quale l’ente federato rende disponibile, agli enti federati della
    tipologia opposta, il servizio di trasferimento sicuro di cui al
-   :ref:`§5.2 <§5.2>`.
+   §\ :ref:`5.2 <§5.2>`.
 
 .. discourse::
 
