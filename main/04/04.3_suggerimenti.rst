@@ -1,7 +1,7 @@
 .. _`§4.3`:
 
-Suggerimenti sugli elenchi
-==========================
+Apposizione del QSeal del Service Provider
+==========================================
 
 Il SP appone il proprio :ref:`QSeal <QSeal>` mediante firma elettronica di tipo PAdES,
 non visibile (senza alcuna componente grafica), nei formati previsti dal
