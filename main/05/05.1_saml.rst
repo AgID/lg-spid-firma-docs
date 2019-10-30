@@ -51,7 +51,7 @@ sottoscrizione.
  </saml2p:AuthnRequest>
 
 Qui sotto è riportato un esempio di elemento :code:`<Signature>`
-per la risposta di utenticazione SAML relativa alla richiesta di
+per la risposta di autenticazione SAML relativa alla richiesta di
 autenticazione di cui al precedente esempio (ove l’IdP comunica al SP i
 metadati del documento firmato con SPID).
 
