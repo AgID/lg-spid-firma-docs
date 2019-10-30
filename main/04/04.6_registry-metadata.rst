@@ -44,7 +44,7 @@ Qualora l’elemento :code:`<SignatureArt20>` non sia presente nel metadata,
 è da intendersi che l’ente  federato *non* offre tale servizio.
  
 Tutte le evidenze informatiche SAML che si riferiscono al servizio in
-oggetto (descritte sia qui che al §\ :ref:`5.1 <§5.1>`, indicano il
+oggetto (descritte sia qui che al §\ :ref:`5.1 <§5.1>`) indicano il
 riferimento URN al *namespace* XML dell’Agenzia riservato a SPID — nel
 proprio elemento radice, ovvero in tutti i singoli elementi interessati
 (qui genericamente indicati come :code:`<Element>` di *namespace*
