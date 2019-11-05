@@ -9,10 +9,10 @@ Il processo prevede quanto segue:
    :class: procedure
 
    1. Il SP predispone il documento, apponendovi un proprio sigillo
-      elettronico qualificato, secondo quanto prescritto tecnicamente nel
-      §\ :ref:`4.1 <§4.1>`, sottoponendolo, presso la propria piattaforma,
-      all’utente affinché possa essere visionato, eventualmente scaricato
-      e conservato.
+      elettronico qualificato, secondo quanto prescritto  nei
+      §\ :ref:`4.1 <§4.1>`, :ref:`4.2 <4.2>`, :ref:`4.3 <4.3>`,
+      sottoponendolo, presso la propria piattaforma, all’utente
+      affinché possa essere visionato, eventualmente scaricato e conservato.
    
    2. Il SP richiede all’utente conferma della volontà di procedere alla
       sottoscrizione del documento di cui al punto 1, rendendo manifesto
