@@ -3,7 +3,8 @@
 Definizioni
 ===========
 
-Ai fini delle presenti Linee guida, oltre ad applicarsi le definizioni di cui all’articolo 1 del CAD, si intende per:
+Ai fini delle presenti Linee guida, oltre ad applicarsi le definizioni di cui all’articolo 1 del CAD,
+e del DPCM 24 ottobre 2014 *Definizione delle caratteristiche del sistema pubblico per la gestione dell'identità digitale di cittadini e imprese (SPID)*, si intende per:
 
 .. _`AgID`:
 -  **Agenzia** o **AgID**: Agenzia per l’Italia Digitale;
@@ -11,7 +12,7 @@ Ai fini delle presenti Linee guida, oltre ad applicarsi le definizioni di cui al
 .. _`CAD`:
 -  **CAD**: D.Lgs. 7 marzo 2005 №82, *Codice dell’Amministrazione Digitale*, e sue successive modificazioni;
 
--  **documento firmato con SPID**: il documento cui è apposto il sigillo elettronico qualificato dell’IdP;
+-  **documento firmato con SPID**: il documento sottoscritto ai sensi delle presenti linee guida;
 
 -  **ente federato**: gestore di identità digitali ovvero fornitore di servizi della federazione SPID;
 
@@ -20,7 +21,10 @@ Ai fini delle presenti Linee guida, oltre ad applicarsi le definizioni di cui al
 -  **firmatario**: la persona fisica che, utilizzando la propria identità digitale SPID di livello 2 o superiore, conferisce al documento informatico il valore e l’efficacia previsti dall’articolo 20 del CAD attraverso il processo di firma di cui al presente provvedimento;
 
 .. _`hash`:
--  **impronta**: impronta crittografica, risultante dell’applicazione di una funzione di hash crittografico ad un’evidenza informatica;
+-  **impronta**: impronta crittografica, risultante dell’applicazione di una funzione di hash crittografica a un’evidenza informatica;
+
+.. _`payload`:
+-  **evidenza informatica**: sequenza finita di bit che può essere elaborata da una procedura informatica;
 
 .. _`llgg certificati`:
 -  **LL.GG. sui certificati elettronici**: *Linee guida contenenti Regole Tecniche e Raccomandazioni afferenti la generazione di certificati elettronici qualificati, firme e sigilli elettronici qualificati e validazioni temporali elettroniche qualificate*, pubblicate con `Determinazione AgID №121/2019 <http://www.agid.gov.it/sites/default/files/repository_files/regole_e_raccomandazioni_v1.1.pdf>`__ e successive modificazioni;
