@@ -18,11 +18,10 @@ I metadati SPID indicano se l’IdP offre il servizio in oggetto o meno
 (cfr. §\ :ref:`4.6 <§4.6>`).
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
-realizzato per permettere al medesimo utente di sottoscrivere una o più
-parti del medesimo documento, attraverso un’unica sessione di
-autenticazione SPID e, al contempo, a utenti distinti di sottoscrivere
-il medesimo documento, in tempi e con sessioni di autenticazione SPID
-distinte.
+realizzato per permettere al medesimo utente di sottoscrivere un documento,
+(anche in più punti), attraverso un’unica sessione di autenticazione
+SPID e, al contempo, a utenti distinti di sottoscrivere il medesimo
+documento, in tempi e con sessioni di autenticazione SPID distinte.
 
 Il processo di firma prevede che l’utente, tramite il SP, esegua un
 processo di autenticazione al fine della firma, con la propria identità
