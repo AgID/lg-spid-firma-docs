@@ -15,6 +15,7 @@ La tabella contiene:
 
 -  il codice di risposta HTTP.
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
