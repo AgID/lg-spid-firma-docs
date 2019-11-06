@@ -56,6 +56,7 @@ proprio elemento radice, ovvero in tutti i singoli elementi interessati
      ...
  </ns:Element>
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
