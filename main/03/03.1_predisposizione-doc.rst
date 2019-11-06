@@ -28,6 +28,7 @@ Il processo prevede quanto segue:
       al §\ :ref:`5 <§5>` e invia il documento predisposto al punto 1 all’IdP con le
       modalità descritte nel §\ :ref:`5.2 <§5.2>`.
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
