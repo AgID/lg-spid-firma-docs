@@ -39,6 +39,7 @@ riferimenti tecnici sono pubblicati nella norma
    mediante pubblicazione di Avvisi sul sito web istituzionale
    dell’Agenzia.
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
