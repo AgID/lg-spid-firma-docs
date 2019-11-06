@@ -52,6 +52,7 @@ sintassi descritta nei seguenti paragrafi.
   05/05.1_saml.rst
   05/05.2_secure-dataio.rst
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
