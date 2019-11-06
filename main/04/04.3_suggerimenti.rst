@@ -12,6 +12,7 @@ prevedendo adeguato spazio per contenere la componente grafica (o più
 componenti se richiede più firme) del QSeal che verrà apposto dall’IdP,
 il cui testo (cfr. §\ :ref:`4.4 <§4.4>`) deve essere agevolmente leggibile.
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
