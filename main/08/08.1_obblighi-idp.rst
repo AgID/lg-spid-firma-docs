@@ -11,6 +11,7 @@ Obblighi in capo agli Identity Provider
    i documenti firmati con SPID che sono depositati presso i propri
    sistemi, rimuovendoli in modo sicuro al termine del trattamento.
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
