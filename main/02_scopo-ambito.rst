@@ -29,6 +29,7 @@ amministrativo in caso di violazione delle prescrizioni ivi contenute. Nelle ipo
 essere da parte dei soggetti di cui all’articolo 2, comma 2 del CAD, è altresì possibile presentare apposita segnalazione al
 difensore civico, ai sensi dell’articolo 17 del CAD, istituito presso l'AgID.
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
