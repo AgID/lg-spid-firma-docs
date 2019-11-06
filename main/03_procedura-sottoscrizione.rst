@@ -35,6 +35,7 @@ contenente i soli IdP che offrono tale servizio.
   03/03.1_predisposizione-doc.rst
   03/03.2_consenso-sottoscrizione.rst
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
