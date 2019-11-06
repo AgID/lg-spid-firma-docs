@@ -65,6 +65,7 @@ informazioni aggiuntive:
    tipologia opposta, il servizio di trasferimento sicuro di cui al
    §\ :ref:`5.2 <§5.2>`.
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
