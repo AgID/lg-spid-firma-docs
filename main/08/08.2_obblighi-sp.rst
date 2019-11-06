@@ -8,6 +8,7 @@ Obblighi in capo ai Service Provider
    presente provvedimento, hanno l’obbligo improrogabile di consentire agli
    utenti la sottoscrizione con firma elettronica qualificata.
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
