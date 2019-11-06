@@ -66,6 +66,7 @@ appone più sigilli.
 La richiesta del SP può prevedere più firme dello stesso soggetto sul documento;
 in tal caso l’IdP appone altrettanti sigilli.
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
