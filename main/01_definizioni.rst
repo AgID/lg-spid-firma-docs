@@ -79,6 +79,6 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
 -  **SPID**: il Sistema Pubblico di Identità Digitale.
 
 
-.. discourse::
-
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
