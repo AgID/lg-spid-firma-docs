@@ -17,6 +17,7 @@ prescritto dal Regolamento :ref:`GDPR <GDPR>` e dal D.Lgs. №101/2018.
   08/08.1_obblighi-idp.rst
   08/08.2_obblighi-sp.rst
 
-.. discourse::
 
-:topic_identifier: 666
+.. forum_italia::
+   :topic_id: 6
+   :scope: document
