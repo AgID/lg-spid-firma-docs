@@ -23,6 +23,8 @@ e del DPCM 24 ottobre 2014 *Definizione delle caratteristiche del sistema pubbli
 -  **firmatario**: la persona fisica che, utilizzando la propria identità digitale SPID di livello 2 o superiore, conferisce al documento informatico il valore e l’efficacia previsti dall’articolo 20 del CAD attraverso il processo di firma di cui al presente provvedimento;
 
 .. _`hash`:
+-  **hash**: cfr. impronta crittografica;
+
 -  **impronta**: impronta crittografica, risultante dell’applicazione di una funzione di hash crittografica a un’evidenza informatica;
 
 .. _`payload`:
