@@ -60,17 +60,18 @@ Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre, un
 Il metadata del SP comprende dunque la seguente struttura:
 
 .. code-block:: xml
-   <md:EntityDescriptor […] >
-           […]
-           <md:SPSSODescriptor […] >
-               <md:AttributeConsumingService index="77">
-                   <md:ServiceName xml:lang="it">
-                       Sottoscrizione elettronica ex art.20 CAD
-                   </md:ServiceName>
-               </md:AttributeConsumingService>
-           […]
-       </md:SPSSODescriptor>
-   </samlp:Response>
+
+ <md:EntityDescriptor […] >
+     […]
+     <md:SPSSODescriptor […] >
+         <md:AttributeConsumingService index="77">
+             <md:ServiceName xml:lang="it">
+                 Sottoscrizione elettronica ex art.20 CAD
+             </md:ServiceName>
+         </md:AttributeConsumingService>
+     […]
+     </md:SPSSODescriptor>
+ </samlp:Response>
 
 
 Tutte le evidenze informatiche SAML che si riferiscono al servizio in
