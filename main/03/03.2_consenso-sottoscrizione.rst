@@ -8,10 +8,10 @@ L’IdP:
 .. topic:: Procedura
    :class: procedure
    
-   4.  Procede con l’autenticazione dell’utente con credenziali di livello
+   5.  Procede con l’autenticazione dell’utente con credenziali di livello
        2 o superiore.
    
-   5.  Informa l’utente che il processo di autenticazione è volto alla
+   6.  Informa l’utente che il processo di autenticazione è volto alla
        sottoscrizione, comunicando all’utente:
    
        - il nome del SP che sta richiedendo la sottoscrizione del
@@ -19,38 +19,39 @@ L’IdP:
    
        - il nome del file contenente il documento in oggetto.
    
-   6.  Consente all’utente di visionare il documento e scaricarlo.
+   7.  Consente all’utente di visionare il documento e scaricarlo.
    
-   7.  Propone all’utente di procedere con la sottoscrizione, raccogliendone il consenso.
+   8.  Propone all’utente di procedere con la sottoscrizione, raccogliendone il consenso.
        Il dissenso alla sottoscrizione da parte dell’utente comporta l’invio di una
        risposta di autenticazione con esito negativo al SP e il termine del
        processo.
    
-   8.  Visualizza la pagina destinata a contenere il contenuto grafico del
+   9.  Visualizza la pagina destinata a contenere il contenuto grafico del
        sigillo elettronico qualificato informando l’utente in merito alla
        obbligatorietà o facoltatività della firma.
    
-   9.  Acquisisce il consenso dell’utente ad apporre la firma.
+   10. Acquisisce il consenso dell’utente ad apporre la firma.
    
-   10. Procede alla apposizione del sigillo elettronico qualificato (o di
-       più sigilli nel caso siano previste più firme), secondo quanto
-       prescritto al §\ :ref:`4.4 <§4.4>`.
+   11. Procede alla apposizione del sigillo elettronico qualificato (o di
+       più sigilli nel caso siano previste più firme), formando dunque il 
+       *documento firmato con SPID*, secondo quanto prescritto ai
+       §§\ :ref:`4.2 <§4.2>` (nome del file), :ref:`4.4 <§4.4>` (QSeal).
    
-   11. Propone all’utente di inviargli il documento firmato con SPID via
+   12. Propone all’utente di inviargli il documento firmato con SPID via
        posta elettronica, e/o di scaricarne una copia, e/o di renderglielo
        disponibile nella propria area riservata in base al servizio di cui
        al §\ :ref:`9 <§9>`.
    
-   12. Invia al SP il documento firmato con SPID con le modalità descritte
+   13. Invia al SP il documento firmato con SPID con le modalità descritte
        nel §\ :ref:`5.2 <§5.2>`:.
    
-   13. Invia al SP la risposta di autenticazione della firma SPID recante
+   14. Invia al SP la risposta di autenticazione della firma SPID recante
        l’esito positivo della procedura reindirizzando l’utente presso il
        SP. Nel caso in cui il punto precedente non abbia successo, l’IdP
        informa l’SP e l’utente in merito al mancato successo del processo
        di firma.
    
-   Il processo di cui ai punti 8 e 9 è reiterato per ogni firma.
+   Il processo di cui ai punti 9 e 10 è reiterato per ogni firma.
 
 Al termine del processo qui descritto, salvo che l’utente non abbia
 scelto di avvalersi dei servizi di conservazione dei documenti firmati
