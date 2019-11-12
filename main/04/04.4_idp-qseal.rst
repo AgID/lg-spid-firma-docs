@@ -27,10 +27,11 @@ Dove:
       separati da uno spazio) seguiti da uno slash ascendente
       ‘``/``’, seguiti dalla denominazione dell’organizzazione,
       seguita da un altro *slash* ascendente ‘``/``’, seguito da un
-      identificativo unico dell’organizzazione valorizzato seguendo le
-      alternative proposte nel §\ :ref:`4.5 <§4.5>`, punto 15.a. Ad esempio, in caso
-      di soggetto operante per conto di un’organizzazione dotata di
-      partita IVA:
+      identificativo unico dell’organizzazione (privo di spazi in testa
+      e in coda), valorizzato seguendo le alternative proposte nel §\ :ref:`4.5 <§4.5>`,
+      punto 1.a. Ad esempio, nel caso di Mario ROssi che utilizza
+      l'identotà digitale per uso professionale della persona giuridica
+      Agenzia per l'Italia Digitale:
       “``Mario Rossi/Agenzia per l'Italia Digitale/TINIT-97735020584``”.
 
 -  La parte variabile ``%data%`` contiene la data di sottoscrizione,
@@ -39,7 +40,7 @@ Dove:
 
    -  due cifre per giorno del mese (da “``01``” a “``31``”),
 
-   -  due cifre per il mese dell’anno (da “``01``” a “``12``”),
+   -  due cifre per il mese dell’anno (da “``01``” per gennaio a “``12``” per dicembre),
 
    -  quattro cifre per l’anno solare (da “``2019``” in poi).
 
@@ -60,8 +61,8 @@ o sigilli elettronici qualificati, o può già essere stato oggetto di
 altri processi di sottoscrizione come previsti dalle presenti Linee
 guida.
 
-Il documento può richiedere più di una firma, in tal caso l’IdP
-appone più sigilli.
+La richiesta del SP può prevedere più firme dello stesso soggetto sul documento;
+in tal caso l’IdP appone altrettanti sigilli.
 
 La richiesta del SP può prevedere più firme dello stesso soggetto sul documento;
 in tal caso l’IdP appone altrettanti sigilli.
