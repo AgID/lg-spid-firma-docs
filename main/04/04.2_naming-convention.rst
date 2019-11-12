@@ -3,10 +3,16 @@
 Convenzioni di nomenclatura dei documenti
 =========================================
 
-Il nome documento è costituito da tre parti obbligatorie [e una
-facoltativa] variabili (indicate in corsivo), più l’estensione del file
-(in tondo, dato che è necessariamente ``.pdf``), più delle parti fisse
-(in tondo):
+Il nome del documento predisposto per la firma, di cui al §:ref:`3.1 <§3.1>` punto 2
+è costituito da tre parti obbligatorie variabili, più delle parti
+fisse (in tondo):
+
+.. code-block::
+
+   SPuid_dataTora.tmp.pdf
+   
+Il nome del *documento firmato con SPID*, di cui al §\ :ref:`3.2 <§3.1>` punto 11,
+è derivato dal precedente nome, senza il suffisso ``.tmp``:
 
 .. code-block::
 
@@ -16,37 +22,42 @@ In particolare:
 
 -  ``SPuid`` — È un identificativo unico del SP che forma il
    documento. È una stringa costituita da un minimo di 3 a un massimo di
-   8 caratteri del seguente sottoinsieme di caratteri ASCII:
+   8 caratteri ASCII a scelta tra quelli del seguente sottoinsieme:
    “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ``”.
 
--  ``data`` — È la data di formazione rispetto al fuso orario italiano.
-   È una stringa di 8 caratteri numerici così ripartiti:
+-  ``data`` — È la data di creazione del documento predisposto per la firma
+   (rispetto al fuso orario italiano), rappresentata da una stringa di 8
+   caratteri numerici così ripartiti:
 
    -  quattro cifre per l’anno solare (da “``2019``” in poi),
 
-   -  due cifre per il mese dell’anno (da “``01``” a “``12``”),
+   -  due cifre per il mese dell’anno (da “``01``” per gennaio a “``12``” per dicmebre),
 
-   -  due cifre per giorno del mese (da “``01``” a “``31``”);
+   -  due cifre per il giorno del mese (da “``01``” a “``31``”);
 
--  ``ora`` — È l’ora di formazione rispetto all’orario di sistema
-   dell’ente federato, eventualmente riportata al fuso orario italiano
-   corrente. È una stringa di 6 caratteri numerici così ripartiti:
+-  ``ora`` — È l’ora di creazione del documento predisposto per la firma,
+   rispetto all’orario di sistema del SP, *riportato al fuso orario italiano*.
+   È una stringa di 6 caratteri numerici così ripartiti:
 
    -  due cifre per l’ora nell’arco delle ventiquattrore (da
-      “``00``” per la mezzanotte a “``23``”),
+      “``00``” per la mezzanotte alle “``23``”),
 
    -  due cifre per il minuto primo (da “``01``” a “``59``”),
 
    -  due cifre per il minuto secondo (da “``01``” a “``59``”);
+
+A titolo di esempio, i.
 
 Il nome del **documento firmato con SPID** (cfr. §\ :ref:`1 <§1>`) resta immutato.
 
 .. admonition:: example
    :class: admonition-example display-page
    
-   Il documento PDF, predisposto per la firma
-   dall’Agenzia per l’Italia Digitale (acronimo: “``AgID``”) all’ora
-   locale 08:34:10, è “``AgID_20190321T083410.pdf``”.
+   l documento predisposto per la firma dall’Agenzia per l’Italia
+   Digitale (acronimo: “``AgID``”), il 21 marzo 2019 all’ora locale
+   08:34:10, è “``AgID_20190312T083410.tmp.pdf``”. Il nome del
+   corrispondente documento frimato con SPID (da una persona fisica 
+   presso il proprio IdP), sarà “``AgID_20190321T083410.pdf``”
 
 
 .. forum_italia::
