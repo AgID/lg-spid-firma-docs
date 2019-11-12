@@ -4,8 +4,7 @@ Certificati di sigillo elettronico qualificato
 ==============================================
 
 SP e IdP si dotano, presso un :ref:`QTSP <QTSP>`, di un certificato elettronico
-qualificato per la creazione di sigilli elettronici. Tali certificati
-sono resi disponibili nei metadata SPID.
+qualificato per la creazione di sigilli elettronici.
 
 Detti certificati qualificati sono conformi alle raccomandazioni emanate
 con le *LL.GG. sui certificati elettronici* (:ref:`cit. <llgg certificati>`) e contengono le seguenti
@@ -13,9 +12,8 @@ informazioni aggiuntive:
 
 1. Il campo :code:`SubjectDN`, contenente i seguenti attributi:
 
-   a. :code:`serialNumber` (`ᴏɪᴅ 2.5.4.5 <http://http/oid-info.com/get/2.5.4.5>`__) — valorizzato,
-      sia per gli IdP che per i SP, in base alle alternative esposte al
-      seguente ordine:
+   a. :code:`serialNumber` (`ᴏɪᴅ 2.5.4.5 <http://http/oid-info.com/get/2.5.4.5>`__) — contiene
+      per gli IdP e i SP, alternativamente, secondo il seguente ordine:
 
       -  la partita IVA indicata con il prefisso ‘``VAT``’, come
          prescritto dal §5.1.4 punto 1 della norma ETSI `EN
@@ -48,7 +46,7 @@ informazioni aggiuntive:
    b. una limitazione d’uso indicata mediante la presenza di un campo
       :code:`userNotice` (`ᴏɪᴅ 2.5.29.49 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.49>`__), di tipo
       :code:`explicitText`, valorizzato con la seguente stringa bilingue:
-      “``Certificato usabile solo per il processo di sottoscrizione di cui all'art.20 del CAD/This certificate may be used only for digital subscription pursuant to Digital Administration Code, art.20.``”.
+      “``Certificato usabile solo per il processo di sottoscrizione di cui all'art.20 del CAD/This certificate may be used only for elecrronic signing pursuant to the Italian Digital Administration Code, art.20.``”.
 
 3. :code:`keyUsage` (`ᴏɪᴅ 2.5.29.15 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.15>`__) — contenente
    i valori :code:`digitalSignature` e :code:`keyEncipherment`, cioè i bit #0 e #2, valorizzati a ``1``,
