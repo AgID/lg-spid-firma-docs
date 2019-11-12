@@ -8,25 +8,35 @@ Il processo prevede quanto segue:
 .. topic:: Procedura
    :class: procedure
 
-   1. Il SP predispone il documento, apponendovi un proprio sigillo
-      elettronico qualificato, secondo quanto prescritto  nei
-      §\ :ref:`4.1 <§4.1>`, :ref:`4.2 <4.2>`, :ref:`4.3 <4.3>`,
-      sottoponendolo, presso la propria piattaforma, all’utente
-      affinché possa essere visionato, eventualmente scaricato e conservato.
+   1. L’utente, tramite il :ref:`SP <SP>`, esegue un processo di autenticazione al
+      fine della firma, con la propria identità digitale di livello 2 o superiore,
+      scegliendo il proprio :ref:`IdP <IdP>`. Per la scelta dell'IdP, il SP mostra
+      il consueto bottone **Entra con SPID**, contenente i soli IdP che offrono
+      tale servizio, e richiederà almeno il codice fiscale dell’utente in quanto
+      necessario per il processo di ***firma con SPID***.
    
-   2. Il SP richiede all’utente conferma della volontà di procedere alla
-      sottoscrizione del documento di cui al punto 1, rendendo manifesto
-      che il processo prevede l’invio del documento all’IDP prescelto,
+   2. Il SP predispone il documento (*documento predisposto per la firma*), apponendovi
+      un proprio :ref:`sigillo elettronico qualificato <QSeal>`, secondo quanto
+      prescritto  nei §§\ :ref:`4.1 <§4.1>` (formato del file), :ref:`4.2 <4.2>` (nome
+      del file), :ref:`4.3 <4.3>` (QSeal) e sottoponendolo, presso la propria
+      piattaforma, all’utente affinché possa essere visionato, eventualmente scaricato
+      e conservato.
+   
+   3. Il SP richiede all’utente conferma della volontà di procedere alla
+      sottoscrizione del documento di cui al punto 2, rendendo manifesto
+      che il processo prevede l’invio del documento all’IdP prescelto,
       acquisendo quindi il consenso dell’utente. L’utente è avvisato in
       modo chiaro e manifesto che tale documento gli sarà reso
       successivamente disponibile dal proprio IdP e gli viene consigliato
       di leggerlo nuovamente in tale occasione.
    
-   3. Il SP inoltra la sessione dell’utente all’IdP con una nuova richiesta
+   4. Il SP inoltra la sessione dell’utente all’IdP con una nuova richiesta
       di autenticazione speciale (di livello pari almeno a 2), denominata
-      “**firma SPID**”, conforme alle caratteristiche tecniche di cui
-      al §\ :ref:`5 <§5>` e invia il documento predisposto al punto 1 all’IdP con le
-      modalità descritte nel §\ :ref:`5.2 <§5.2>`.
+      “**firma con SPID**”, conforme alle caratteristiche tecniche di cui
+      al §\ :ref:`5 <§5>` e invia il documento predisposto al punto 2 all’IdP
+      con le modalità descritte nel §\ :ref:`5.2 <§5.2>`. Tale richiesta contiene
+      il codice fiscale del soggetto che deve apporre la firma, acquisito al
+      punto 1.
 
 
 .. forum_italia::
