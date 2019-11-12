@@ -7,7 +7,7 @@ Procedura di sottoscrizione ex articolo 20 comma 1-bis del CAD
    Descrizione passo-passo dell'intera procedura di sottoscrizione tramite SPID.
 
 Il processo di cui all’articolo 20 comma 1\ *-bis* del :ref:`CAD <CAD>` non può essere
-adoperato utilizzando identità digitali SPID per persona giuridica;
+adoperato utilizzando identità digitali :ref:`SPID <SPID>` per persona giuridica;
 possono essere utilizzate esclusivamente le identità digitali della
 persona fisica e le identità digitali per uso professionale.
 
