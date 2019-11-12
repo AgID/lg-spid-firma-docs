@@ -15,11 +15,13 @@ aggiuntivi:
 a. il nome del file del documento;
 
 b. l’impronta dell’:ref:`evidenza informatica <payload>` ottenuta
-   calcolando l’:ref:`impronta <hash>` del file di cui al punto a,
+   calcolando l’:ref:`hash <hash>` del file di cui al punto a,
    calcolata dal SP conformemente a quanto indicato al §\ :ref:`6 <§6>`;
 
 c. l’identificativo della funzione di *hash* crittografico utilizzato al
-   punto b.
+   punto b;
+
+d. il codice fiscale del soggetto che deve apporre la firma.
 
 La **risposta di autenticazione** per la firma SPID contiene
 obbligatoriamente i seguenti metadati:
@@ -27,16 +29,16 @@ obbligatoriamente i seguenti metadati:
 d. il nome del file del documento firmato con SPID;
 
 e. l’impronta dell’:ref:`evidenza informatica <payload>` ottenuta
-   calcolando l’:ref:`impronta <hash>` del file di cui al punto d,
+   calcolando l’:ref:`hash <hash>` del file di cui al punto e,
    calcolata dal SP conformemente a quanto indicato al §\ :ref:`6 <§6>`;
 
 f. l’identificativo della funzione di *hash* crittografico utilizzato al
-   punto e.
+   punto f.
 
 L’identificativo unico della sessione di autenticazione (*session ID*),
 sempre presente in ogni richiesta e risposta di autenticazione, associa
-in modo univoco il documento informatico scambiato tra SP, IdP e vice
-versa, ad un’unica autenticazione di firma SPID.
+in modo univoco il documento informatico scambiato tra SP, IDP e vice
+versa, ad un’unica autenticazione di firma con SPID.
 
 La durata delle sessioni di autenticazione descritte nell’ambito del
 processo di sottoscrizione di cui alle presenti Linee guida è estesa
