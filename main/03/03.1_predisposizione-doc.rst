@@ -11,9 +11,9 @@ Il processo prevede quanto segue:
    1. L’utente, tramite il :ref:`SP <SP>`, esegue un processo di autenticazione al
       fine della firma, con la propria identità digitale di livello 2 o superiore,
       scegliendo il proprio :ref:`IdP <IdP>`. Per la scelta dell'IdP, il SP mostra
-      il consueto bottone **Entra con SPID**, contenente i soli IdP che offrono
+      il consueto bottone ``Entra con SPID``, contenente i soli IdP che offrono
       tale servizio, e richiederà almeno il codice fiscale dell’utente in quanto
-      necessario per il processo di ***firma con SPID***.
+      necessario per il processo di **firma con SPID**.
    
    2. Il SP predispone il documento (*documento predisposto per la firma*), apponendovi
       un proprio :ref:`sigillo elettronico qualificato <QSeal>`, secondo quanto
