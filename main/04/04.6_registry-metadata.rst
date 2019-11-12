@@ -10,6 +10,7 @@ pubblicato nel registro SPID contiene l’estensione :code:`<SignatureArt20>`
 l’ente federato espone tale servizio.
 
 La suddetta modalità è costituita da:
+
  * L'elemento :code:`<FileTransferService>` (*namespace* `spid`) dotato dei
    seguenti attributi obbligatori:
     
