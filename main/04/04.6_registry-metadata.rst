@@ -53,9 +53,9 @@ Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre, un
  
  * privo di alcun attributo nel servizio (nessun elemento :code:`<RequestedAttribute>`);
  
- * contenente almeno un elemento figlio :code:`<ServiceName>` (namespace `md`),
-   valorizzato con il nome del servizio in lingua italiana: 
-   “Sottoscrizione elettronica ex art.20 CAD”;
+ * contenente almeno un elemento figlio :code:`<ServiceName>`
+   (*namespace* ``md``), valorizzato con il nome del servizio in lingua
+   italiana: “``Sottoscrizione elettronica ex art.20 CAD``”;
 
 Il metadata del SP comprende dunque la seguente struttura:
 
