@@ -5,13 +5,13 @@ Metadata nel registro SPID
 
 Qualora un IdP o un SP offra il servizio in oggetto, il relativo metadata
 pubblicato nel registro SPID contiene l’estensione :code:`<SignatureArt20>`
-(*namespace* `spid`) come figlio dell’elemento :code:`<Extensions>` (*namespace*
-`samlp`), al cui interno è specificata la modalità tecnica tramite la quale
+(*namespace* ``spid``) come figlio dell’elemento :code:`<Extensions>` (*namespace*
+``samlp``), al cui interno è specificata la modalità tecnica tramite la quale
 l’ente federato espone tale servizio.
 
 La suddetta modalità è costituita da:
 
- * L'elemento :code:`<FileTransferService>` (*namespace* `spid`) dotato dei
+ * L'elemento :code:`<FileTransferService>` (*namespace* ``spid``) dotato dei
    seguenti attributi obbligatori:
     
     a. :code:`name` — identificativo della modalità tecnica, univoco per l’ente
