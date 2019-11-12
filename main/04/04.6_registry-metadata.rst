@@ -46,7 +46,7 @@ Si veda a tale scopo il seguente esempio:
 Qualora l’elemento :code:`<SignatureArt20>` non sia presente nel metadata,
 è da intendersi che l’ente federato *non* offre tale servizio.
 
-Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre un 
+Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre, un 
 *Attribute Consuming Service* specifico:
 
  * il cui attributo ``index`` è valorizzato con il valore “``77``”;
