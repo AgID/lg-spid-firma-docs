@@ -61,15 +61,15 @@ Il metadata del SP comprende dunque la seguente struttura:
 
 .. code-block:: xml
 
- <md:EntityDescriptor […] >
-     […]
-     <md:SPSSODescriptor […] >
+ <md:EntityDescriptor>
+     ...
+     <md:SPSSODescriptor>
          <md:AttributeConsumingService index="77">
              <md:ServiceName xml:lang="it">
                  Sottoscrizione elettronica ex art.20 CAD
              </md:ServiceName>
          </md:AttributeConsumingService>
-     […]
+     ...
      </md:SPSSODescriptor>
  </samlp:Response>
 
