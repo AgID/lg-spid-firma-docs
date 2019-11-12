@@ -18,20 +18,22 @@ di creazione di sigilli elettronici) è utilizzato l’algoritmo
 crittografico SHA-256), il cui riferimento W3C è
 ``http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256`` e il cui
 riferimento :ref:`JWA <JWA>` è ``ES256``.
-
 Al di fuori della firma digitale dei pacchetti :ref:`JWT <JWT>`, è usato
-l'algoritmo **RSA** con funzione di *hash* crittografico SHA-256, il cui
-riferimento W3C è ``http://www.w3.org/2001/04/xmldsig-more#rsa-sha256``;
-la lunghezza delle chiavi crittografiche RSA è non inferiore a 2048 bit.
+l'algoritmo **RSA** con lunghezza delle chiavi asimmetriche di 2048 bit
+(e funzione di *hash* crittografico SHA-256), il cui riferimento W3C è
+``http://www.w3.org/2001/04/xmldsig-more#rsa-sha256``.
 
-Il canale di comunicazione utilizzato dagli enti federati utilizza
-per l’autenticazione e la confidenzialità l’algoritmo **TLS** alla
-versione 1.2 o superiore.
+La versione del canale di comunicazione TLS utilizzato dagli enti federati
+è la 1.2 o superiore.
 
-Gli algoritmi crittografici utilizzati per i pacchetti :ref:`JWS` sono
-conformi a quanto previsto dal presente capitolo e i loro
-riferimenti tecnici sono pubblicati nella norma
-:RFC:`7518`.
+Gli algoritmi crittografici utilizzati per i pacchetti :ref:`JWS <JWS>`
+cono conformi a quanto previsto dal presente capitolo e i loro riferimenti
+tecnici sono pubblicati nella norma :RFC:`7518`.
+
+Gli algoritmie i metodi crittografici contenuti nel presente capitolo
+possono essere sostituiti, rimossi o integrati con altri mediante
+pubblicazione di Avvisi sul sito web istituzionale dell’Agenzia.
+
 
 .. important::
    Gli algoritmi e i metodi crittografici contenuti nel presente
