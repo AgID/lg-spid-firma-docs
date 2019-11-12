@@ -4,9 +4,9 @@ Apposizione del QSeal dell’Identity Provider
 ============================================
 
 A completamento del processo di firma, l’IdP appone il proprio :ref:`QSeal <QSeal>` nel
-documento, che è graficamente localizzato nello spazio previsto dal SP e
-indicato nella richiesta di autenticazione (cfr. §\ :ref:`5 <§5>`). La componente
-visibile del sigillo contiene il seguente testo:
+documento che è, per ciascuna firma, graficamente localizzato nello spazio
+previsto dal SP e indicato nella richiesta di utenticazione (cfr. :ref:`5 <§5>`).
+La componente visibile del sigillo contiene il seguente testo:
 
  ``Il %data% alle %ora%, %firmatario% ha confermato la volonta' di apporre qui la propria sottoscrizione ai sensi dell'art. 20, comma 1-bis del CAD.``
 
@@ -17,8 +17,8 @@ Dove:
 
    -  nel caso sia stata utilizzata un’identità digitale **non ad uso
       professionale**: il nome e cognome del firmatario (separati fra
-      loro da uno spazio – esadecimale 0x20), seguiti da uno *slash*
-      ascendente ‘``/``’ (esadecimale 0x2F), seguito dalla stringa
+      loro da uno spazio – esadecimale `0x20`), seguiti da uno *slash*
+      ascendente ‘``/``’ (esadecimale `0x2F`), seguito dalla stringa
       ‘``TINIT-``’, seguito dal codice fiscale del firmatario; ad
       esempio: “``Mario Rossi/TINIT-RSSMR064T30H501H``”;
 
