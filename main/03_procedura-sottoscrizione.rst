@@ -9,7 +9,8 @@ Procedura di sottoscrizione ex articolo 20 comma 1-bis del CAD
 Il processo di cui all’articolo 20 comma 1\ *-bis* del :ref:`CAD <CAD>` non può essere
 adoperato utilizzando identità digitali :ref:`SPID <SPID>` per persona giuridica;
 possono essere utilizzate esclusivamente le identità digitali della
-persona fisica e le identità digitali per uso professionale.
+persona fisica e le identità digitali per uso professionale (quest'ultime regolamentate
+dalle :ref:`LL.GG. identità digitali ad uso professionale <llgg_uso_professionale>`).
 
 Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto.
 
@@ -21,12 +22,6 @@ realizzato per permettere al medesimo utente di sottoscrivere un documento,
 (anche in più punti), attraverso un’unica sessione di autenticazione
 SPID e, al contempo, a utenti distinti di sottoscrivere il medesimo
 documento, in tempi e con sessioni di autenticazione SPID distinte.
-
-Il processo di firma prevede che l’utente, tramite il SP, esegua un
-processo di autenticazione al fine della firma, con la propria identità
-digitale di livello 2 o superiore, scegliendo il proprio IdP. Per la
-scelta dell’IdP, il SP mostra il consueto bottone “*Entra con SPID*”,
-contenente i soli IdP che offrono tale servizio.
 
 .. toctree::
   :maxdepth: 3
