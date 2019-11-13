@@ -20,8 +20,8 @@ Il processo prevede quanto segue:
    
    2. Il SP predispone il documento (*documento predisposto per la firma*), apponendovi
       un proprio :ref:`sigillo elettronico qualificato <QSeal>`, secondo quanto
-      prescritto  nei §§\ :ref:`4.1 <§4.1>` (formato del file), :ref:`4.2 <4.2>` (nome
-      del file), :ref:`4.3 <4.3>` (QSeal) e sottoponendolo, presso la propria
+      prescritto  nei §§\ :ref:`4.1 <§4.1>` (formato del file), :ref:`4.2 <§4.2>` (nome
+      del file), :ref:`4.3 <§4.3>` (QSeal) e sottoponendolo, presso la propria
       piattaforma, all’utente affinché possa essere visionato, eventualmente scaricato
       e conservato.
    
