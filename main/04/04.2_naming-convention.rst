@@ -20,12 +20,12 @@ Il nome del *documento firmato con SPID*, di cui al §\ :ref:`3.2 <§3.1>` punto
 
 In particolare:
 
--  ``SPuid`` — È l’\ *identificativo unico del SP* che forma il documento,
+-  :code:`SPuid` — È l’\ *identificativo unico del SP* che forma il documento,
    come previsto al §:ref:`4.6 <§4.6>`. È una stringa costituita da un minimo
    di 3 a un massimo di 8 caratteri ASCII a scelta tra i seguenti:
    “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ``”.
 
--  ``data`` — È la data di creazione del documento predisposto per la firma
+-  :code:`data` — È la data di creazione del documento predisposto per la firma
    (rispetto al fuso orario italiano), rappresentata da una stringa di 8
    caratteri numerici così ripartiti:
 
@@ -35,7 +35,7 @@ In particolare:
 
    -  due cifre per il giorno del mese (da “``01``” a “``31``”);
 
--  ``ora`` — È l’ora di creazione del documento predisposto per la firma,
+-  :code:`ora` — È l’ora di creazione del documento predisposto per la firma,
    rispetto all’orario di sistema del SP, *riportato al fuso orario italiano*.
    È una stringa di 6 caratteri numerici così ripartiti:
 
