@@ -74,8 +74,8 @@ tramite metodo  HTTP *POST*. Le evidenze sono formate mediate la seguente proced
 2. codifica del messaggio di cui al punto 1 in un pacchetto :ref:`JWT <JWT>`;
 
 3. conversione in :ref:`JWS <JWS>` del pacchetto di cui al punto 2, mediante metodo
-   *JWS Compact Serialization* (cfr. :RFC:`7515`), utilizzando il sigillo elettronico
-   qualificato di cui al §\ :ref:`4.5 <§4.5>`.
+   *JWS Compact Serialization* (cfr. :RFC:`7515`), utilizzando il QSeal
+   di cui al §\ :ref:`4.5 <§4.5>`.
 Gli algoritmi crittografici utilizzati lungo l’intera procedura sopra descritta
 sono definiti in §\ :ref:`6 <§6>`. I pacchetti JWS sono caratterizzati dalla
 presenza degli identificativi unici di sessione (cfr. §\ :ref:`5 <§5>`).
