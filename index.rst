@@ -37,3 +37,8 @@ Versione Data        Determinazione Tipologia modifica
    main/08_obblighi.rst
    main/09_conservazione.rst
    main/10_transitorio.rst
+
+.. toctree::
+   :maxdepth: 1
+
+   attachments/A_codici-errore.rst
