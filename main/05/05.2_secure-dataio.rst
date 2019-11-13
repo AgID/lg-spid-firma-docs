@@ -57,11 +57,11 @@ procedura:
 1. predisposizione di una struttura :ref:`JSON <JSON>` contenente sia il **dato**
    (cioè il documento oggetto di sottoscrizione) che i suoi **metadati**, di seguito
    elencati:
-    a. il nome del documento da inviare, predisposto come da §\ :ref:`§4.2 <§4.2>`,
+    a. il nome del documento da inviare, predisposto come da §\ :ref:`4.2 <§4.2>`,
     b. l'impronta del docuento da inviare sigillato elettronicamente,
     c. la funzione di *hash* impiegata al punto 1.b,
     d. la posizione ove collocare la/le componente/i grafica/he del QSeal
-       (hash §\ `4.4 <§4.4>`),
+       (hash §\ :ref:`4.4 <§4.4>`),
     e. l'eventuale obbligatorietà di ciascuna firma.
 
 2. codifica del messaggio di cui al punto 1 in un pacchetto :ref:`JWT <JWT>`;
