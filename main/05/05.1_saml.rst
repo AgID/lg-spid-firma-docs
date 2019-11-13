@@ -34,10 +34,10 @@ elementi:
    :code:`InResponseTo` dell’elemento :code:`<Response>` per la
    corrispondete risposta di autenticazione.
 
-Qui sotto è riportato un esempio di elemento :code:`<Signature>`
-per la richiesta di autenticazione SAML relativa a un documento in
-formato PDF predisposto dal SP e successivamente inviato all’IdP per la
-sottoscrizione.
+Qui sotto è riportato un esempio di richiesta di autenticazione SAML, comprensiva
+dell’\ Attribute Consuming Service* specifica e dell’elemento :code:`<Signature>`
+per la richiesta di autenticazione relativa a un documento in formato PDF
+predisposto dal SP e successivamente inviato all’IdP per la sottoscrizione.
 
 .. code-block:: xml
 
