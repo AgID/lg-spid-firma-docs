@@ -49,7 +49,7 @@ Qualora l’elemento :code:`<SignatureArt20>` non sia presente nel metadata,
 
 Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre: 
 
- * un *Attribute Consuming Service* specifico:
+ * Un *Attribute Consuming Service* specifico:
 
    a. il cui attributo ``index`` è valorizzato con il valore “``77``”;
  
@@ -57,9 +57,9 @@ Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre:
  
    c. contenente almeno un elemento figlio :code:`<ServiceName>`
       (*namespace* ``md``), valorizzato con il nome del servizio in lingua
-      italiana: “``Sottoscrizione elettronica ex art.20 CAD``”;
+      italiana: “``Sottoscrizione elettronica ex art.20 CAD``”.
 
- * un elemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
+ * Un elemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
    l’\ *identificativo unico del SP*, :code:`SPuid`, di cui al §\ :ref:`4.2 <§4.2>`
 
 Il metadata del SP comprende dunque la seguente struttura:
