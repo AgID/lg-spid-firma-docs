@@ -13,7 +13,10 @@ Il processo prevede quanto segue:
       scegliendo il proprio :ref:`IdP <IdP>`. Per la scelta dell'IdP, il SP mostra
       il consueto bottone ``Entra con SPID``, contenente i soli IdP che offrono
       tale servizio, e richiederà almeno il codice fiscale dell’utente in quanto
-      necessario per il processo di **firma con SPID**.
+      necessario per il processo di **firma con SPID**. Qualora l’utente sia già
+      autenticato presso il SP, con l’identità digitale di un IDP che offre il
+      servizio di firma con SPID e il SP abbia già acquisito il codice fiscale
+      dell’utente, tale passaggio può essere saltato.
    
    2. Il SP predispone il documento (*documento predisposto per la firma*), apponendovi
       un proprio :ref:`sigillo elettronico qualificato <QSeal>`, secondo quanto
