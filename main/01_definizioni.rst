@@ -43,10 +43,10 @@ e del DPCM 24 ottobre 2014 *Definizione delle caratteristiche del sistema pubbli
 -  **registro SPID**: elenco dei soggetti appartenenti alla federazione SPID, previsto dalla vigente normativa;
 
 .. _`eIDAS`:
--  **Regolamento eIDAS**: Regolamento (UE) №910/2014 del Parlamento Europeo e del Consiglio, del 23 luglio 2014, in materia di identificazione elettronica e servizi fiduciari per le transazioni elettroniche nel mercato interno e che abroga la direttiva 1999/93/CE;
+-  **Regolamento eIDAS**: `Regolamento (UE) №910/2014 <https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX%3A32014R0910>`__ del Parlamento Europeo e del Consiglio, del 23 luglio 2014, in materia di identificazione elettronica e servizi fiduciari per le transazioni elettroniche nel mercato interno e che abroga la direttiva 1999/93/CE;
 
 .. _`GDPR`:
--  **Regolamento GDPR**: Regolamento (UE) №679/2016 del Parlamento Europeo e del Consiglio, del 27 aprile 2016, relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali, nonché alla libera circolazione di tali dati e che abroga la direttiva 95/46/CE;
+-  **Regolamento GDPR**: `Regolamento (UE) №679/2016 <https://eur-lex.europa.eu/legal-content/IT/TXT/?uri=CELEX%3A32016R0679>`__ del Parlamento Europeo e del Consiglio, del 27 aprile 2016, relativo alla protezione delle persone fisiche con riguardo al trattamento dei dati personali, nonché alla libera circolazione di tali dati e che abroga la direttiva 95/46/CE;
 
 -  **richiesta di autenticazione**: l’evidenza informatica con la quale un SP richiede l’avvio di una sessione di autenticazione presso un IdP (cioè l’\ *authentication request*);
 
@@ -77,7 +77,7 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
 -  **JWT**: pacchetto JSON per applicazioni web (*JSON Web Token*), come previsto dalla norma :RFC:`7797`;
 
 .. _`QSeal`:
--  **QSeal**: sigillo elettronico qualificato, come da regolamento eIDAS;
+-  **QSeal**: sigillo elettronico qualificato, come da Regolamento eIDAS;
 
 .. _`QTSP`:
 -  **QTSP**: prestatore di servizi fiduciari elettronici qualificati, come da Regolamento eIDAS;
