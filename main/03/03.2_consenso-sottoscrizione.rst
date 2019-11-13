@@ -14,10 +14,10 @@ L’IdP:
    6.  Informa l’utente che il processo di autenticazione è volto alla
        sottoscrizione, comunicando all’utente:
    
-        * il nome del SP che sta richiedendo la sottoscrizione del
+          il nome del SP che sta richiedendo la sottoscrizione del
           documento,
    
-        * il nome del file contenente il documento in oggetto.
+          il nome del file contenente il documento in oggetto.
    
    7.  Consente all’utente di visionare il documento e scaricarlo.
    
