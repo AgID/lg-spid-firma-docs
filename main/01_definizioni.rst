@@ -40,7 +40,7 @@ e del DPCM 24 ottobre 2014 *Definizione delle caratteristiche del sistema pubbli
 -  **LL.GG. sulle misure minime di sicurezza**: `Circolare AgID №1/2017 <https://www.agid.gov.it/it/sicurezza/misure-minime-sicurezza-ict>`__ e successive modificazioni, recante *Misure minime di sicurezza ICT per le pubbliche amministrazioni*;
 
 .. _`registro SPID`:
--  **registro SPID**: elenco dei soggetti appartenenti alla federazione SPID, previsto dalla vigente normativa e disponibile all'URL https://registry.spid.gov.it;
+-  **registro SPID**: elenco dei soggetti appartenenti alla federazione SPID, previsto dalla vigente normativa;
 
 .. _`eIDAS`:
 -  **Regolamento eIDAS**: Regolamento (UE) №910/2014 del Parlamento Europeo e del Consiglio, del 23 luglio 2014, in materia di identificazione elettronica e servizi fiduciari per le transazioni elettroniche nel mercato interno e che abroga la direttiva 1999/93/CE;
