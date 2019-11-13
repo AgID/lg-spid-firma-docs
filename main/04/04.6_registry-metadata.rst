@@ -14,7 +14,7 @@ La suddetta modalità è costituita da:
  * L'elemento :code:`<FileTransferService>` (*namespace* ``spid``) dotato dei
    seguenti attributi obbligatori:
     
-    a. :code:`name` — identificativo della modalità tecnica, univoco per l’ente
+    a. :code:`type` — identificativo della modalità tecnica, univoca per l’ente
        federato, valorizzato un UUID v4 (come da specifica :RFC:`4122`), ovvero
        da una stringa con un minimo di 3 e un massimo di 16 caratteri del
        sottoinsieme di caratteri ASCII 
@@ -34,7 +34,7 @@ Si veda a tale scopo il seguente esempio:
            xmlns:spid="https://spid.gov.it/saml-extensions">
          <spid:SignatureArt20>
              <spid:FileTransferService>
-                   id="UUID"
+                   type="UUID"
                    Location="https://indirizzo:porta/servizio/DataIO/" />
          </spid:SignatureArt20>
      </samlp:Extensions>
@@ -46,16 +46,20 @@ Si veda a tale scopo il seguente esempio:
 Qualora l’elemento :code:`<SignatureArt20>` non sia presente nel metadata,
 è da intendersi che l’ente federato *non* offre tale servizio.
 
-Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre, un 
-*Attribute Consuming Service* specifico:
+Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre: 
 
- * il cui attributo ``index`` è valorizzato con il valore “``77``”;
+ * un *Attribute Consuming Service* specifico:
+
+   a. il cui attributo ``index`` è valorizzato con il valore “``77``”;
  
- * privo di alcun attributo nel servizio (nessun elemento :code:`<RequestedAttribute>`);
+   b. privo di alcun attributo nel servizio (nessun elemento :code:`<RequestedAttribute>`);
  
- * contenente almeno un elemento figlio :code:`<ServiceName>`
-   (*namespace* ``md``), valorizzato con il nome del servizio in lingua
-   italiana: “``Sottoscrizione elettronica ex art.20 CAD``”;
+   c. contenente almeno un elemento figlio :code:`<ServiceName>`
+    (*namespace* ``md``), valorizzato con il nome del servizio in lingua
+    italiana: “``Sottoscrizione elettronica ex art.20 CAD``”;
+
+ * un elemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
+   l’\ *identificativo unico del SP*, :code:`SPuid`, di cui al §\ :ref:`4.2 <§4.2>`
 
 Il metadata del SP comprende dunque la seguente struttura:
 
