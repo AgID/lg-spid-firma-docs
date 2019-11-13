@@ -19,6 +19,7 @@ La suddetta modalità è costituita da:
        da una stringa con un minimo di 3 e un massimo di 16 caratteri del
        sottoinsieme di caratteri ASCII 
        ``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-``.
+       
     b. :code:`Location` — URL completo (comprensivo del relativo schema) ove
        l’ente rende disponibile il sistema di trasferimento sicuro dei documenti
        di cui al §\ :ref:`5.2 <§5.2>`.
@@ -55,8 +56,8 @@ Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre:
    b. privo di alcun attributo nel servizio (nessun elemento :code:`<RequestedAttribute>`);
  
    c. contenente almeno un elemento figlio :code:`<ServiceName>`
-    (*namespace* ``md``), valorizzato con il nome del servizio in lingua
-    italiana: “``Sottoscrizione elettronica ex art.20 CAD``”;
+      (*namespace* ``md``), valorizzato con il nome del servizio in lingua
+      italiana: “``Sottoscrizione elettronica ex art.20 CAD``”;
 
  * un elemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
    l’\ *identificativo unico del SP*, :code:`SPuid`, di cui al §\ :ref:`4.2 <§4.2>`
