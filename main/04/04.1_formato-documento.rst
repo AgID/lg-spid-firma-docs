@@ -10,12 +10,9 @@ Inoltre rispetta le seguenti caratteristiche tecniche:
 
    1. il documento non richiede alcun controllo di accesso per essere aperto o modificato;
 
-   2. è consentita la modifica del documento almeno per quanto concerne l’apposizione di sigilli elettronici PAdES;
+   2. 2.	è consentita la modifica del documento esclusivamente per quanto concerne l’apposizione dei previsti sigilli elettronici PAdES;
 
    3. né il contenuto del documento né i suoi metadati sono cifrati;
-
-   4. il documento è predisposto per la firma: il SP non può prevedere che
-      l’IdP debba consentire all’utente di apportare modifiche al documento.
 
 
 .. forum_italia::
