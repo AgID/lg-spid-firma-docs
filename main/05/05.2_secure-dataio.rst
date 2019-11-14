@@ -59,7 +59,10 @@ Interfaccia applicativa
 
 SP e IdP si scambiano evidenze informatiche in formato :ref:`JWS <JWS>`, su canale HTTPS
 (porta 443/TCP) tramite un’interfaccia applicativa che prevede lo scambio di messaggi
-tramite metodo  HTTP *POST*. Le evidenze sono formate mediate la seguente procedura:
+tramite metodo  HTTP *POST*. L’attributo :code:`type` nell’elemento :code:`<FileTransferService>`
+del metadata degli SP di cui al §\ :ref:`4.6 <§4.6>` può non essere presente; se presente,
+è valorizzato con la stringa “``HTTP POST``”.
+Le evidenze sono formate mediate la seguente procedura:
 
 1. predisposizione di una struttura :ref:`JSON <JSON>` contenente sia il **dato**
    (cioè il documento oggetto di sottoscrizione) che i suoi **metadati**, di seguito
