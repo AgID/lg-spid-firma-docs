@@ -19,10 +19,10 @@ La suddetta modalità è costituita da:
        di cui al §\ :ref:`5.2 <§5.2>`.
     
     b. :code:`type` (facoltativo) — identificativo del protocollo, metodo o schema
-       di comunicazione adottato –se previsto dal sistema di cui al §\ :ref:`5.2 <§5.2>`\ –
-       valorizzato come un UUID v4 (come da :RFC:`4122`), ovvero da una stringa
-       composta da un minimo di 3 e un massimo di 16 caratteri ASCII scelti nel
-       sottoinsieme di caratteri
+       di comunicazione adottato (qualora sia previsto dal sistema di cui al
+       §\ :ref:`5.2 <§5.2>` poiché non  esplicabile dall'attributo di cui al punto
+       a); valorizzato come un UUID v4 (si veda :RFC:`4122`), ovvero da una
+       stringa di minimo 3 e massimo 16 caratteri ASCII:
        ``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-``.
 
  * Lelemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
