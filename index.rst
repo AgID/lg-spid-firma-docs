@@ -42,3 +42,7 @@ Versione Data        Determinazione Tipologia modifica
    :maxdepth: 1
 
    attachments/A_codici-errore.rst
+
+.. forum_italia::
+   :topic_id: 12039
+   :scope: document
