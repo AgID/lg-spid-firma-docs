@@ -9,19 +9,19 @@ tra parentesi quadre “``[``” e “``]``”), più alcune parti fisse (in ton
 
 .. code-block::
 
-   SPuid_dataTora[_001].tmp.pdf
+   usID_dataTora[_001].tmp.pdf
    
 Il nome del *documento firmato con SPID*, di cui al §\ :ref:`3.2 <§3.1>` punto 11,
 è derivato dal precedente nome, senza il suffisso ``.tmp``:
 
 .. code-block::
 
-   SPuid_dataTora[_001].pdf
+   usID_dataTora[_001].pdf
 
 In particolare:
 
--  :code:`SPuid` — È l’\ *identificativo unico del SP* che forma il documento,
-   come previsto al §:ref:`4.6 <§4.6>`. È una stringa costituita da un minimo
+-  :code:`usID` — È l’\ *abbreviativo univoco dell’ente* che forma il documento,
+   introdotto nel §:ref:`4.6 <§4.6>`. È una stringa costituita da un minimo
    di 3 a un massimo di 8 caratteri ASCII a scelta tra i seguenti:
    “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ``”.
 
@@ -53,7 +53,7 @@ In particolare:
    medesimo minuto secondo.
 
 A titolo di esempio, il documento predisposto per la firma dall’Agenzia per
-l’Italia Digitale (identificativo unico: “``AgID``”), il 21 marzo 2019 all’ora locale
+l’Italia Digitale (abbreviativo unico: “``AgID``”), il 21 marzo 2019 all’ora locale
 08:34:10, è “``AgID_20190321T083410.tmp.pdf``”. Il nome del corrispondente documento
 firmato con SPID (da una persona fisica presso il proprio IDP), sarà
 “``AgID_20190321T083410.pdf``”.
