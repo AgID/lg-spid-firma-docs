@@ -20,7 +20,7 @@ Il nome del *documento firmato con SPID*, di cui al §\ :ref:`3.2 <§3.1>` punto
 
 In particolare:
 
--  :code:`usID` — È l’\ *abbreviativo univoco dell’ente* che forma il documento,
+-  :code:`usID` — È l’\ *abbreviativo unico dell’ente* che forma il documento,
    introdotto nel §:ref:`4.6 <§4.6>`. È una stringa costituita da un minimo
    di 3 a un massimo di 8 caratteri ASCII a scelta tra i seguenti:
    “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ``”.
