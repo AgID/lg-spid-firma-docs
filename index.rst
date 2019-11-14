@@ -39,11 +39,6 @@ Versione Data        Determinazione Tipologia modifica
    main/09_conservazione.rst
    main/10_transitorio.rst
 
-.. toctree::
-   :maxdepth: 1
-
-   attachments/A_codici-errore.rst
-
 .. forum_italia::
    :topic_id: 12039
    :scope: document
