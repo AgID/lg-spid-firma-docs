@@ -3,9 +3,9 @@
 Convenzioni di nomenclatura dei documenti
 =========================================
 
-Il nome del documento predisposto per la firma, di cui al §:ref:`3.1 <§3.1>` punto 2
+Il nome del documento predisposto per la firma, di cui al §\ :ref:`3.1 <§3.1>` punto 2
 è costituito da tre parti obbligatorie variabili, una parte facoltativa (indicata
-tra parentesi quadre “``[``” e “``]``”), più delle parti fisse (in tondo):
+tra parentesi quadre “``[``” e “``]``”), più alcune parti fisse (in tondo):
 
 .. code-block::
 
@@ -58,16 +58,14 @@ l’Italia Digitale (identificativo unico: “``AgID``”), il 21 marzo 2019 all
 firmato con SPID (da una persona fisica presso il proprio IDP), sarà
 “``AgID_20190321T083410.pdf``”.
 
-Il nome del **documento firmato con SPID** (cfr. §\ :ref:`1 <§1>`) resta immutato.
-
 .. admonition:: example
    :class: admonition-example display-page
    
-   l documento predisposto per la firma dall’Agenzia per l’Italia
-   Digitale (acronimo: “``AgID``”), il 21 marzo 2019 all’ora locale
-   08:34:10, è “``AgID_20190312T083410.tmp.pdf``”. Il nome del
-   corrispondente documento frimato con SPID (da una persona fisica 
-   presso il proprio IdP), sarà “``AgID_20190321T083410.pdf``”
+   A titolo di esempio, il documento predisposto per la firma dall’Agenzia per
+   l’Italia Digitale (identificativo unico: “``AgID``”), il 21 marzo 2019 all’ora locale
+   08:34:10, è “``AgID_20190321T083410.tmp.pdf``”. Il nome del corrispondente documento
+   firmato con SPID (da una persona fisica presso il proprio IDP), sarà
+   “``AgID_20190321T083410.pdf``”.
 
 
 .. forum_italia::
