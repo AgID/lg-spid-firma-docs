@@ -6,14 +6,15 @@ Regole Tecniche circa la sottoscrizione elettronica di documenti tramite SPID ex
    Linee guida ex art. 71 del CAD
 
 .. admonition:: consultation
+
    La consultazione pubblica relativa al presente documento è attiva dal 
-   **13 novembre** al **13 dicembre 2019**. Questo documento raccoglie il
+   **__________** al **__________**. Questo documento raccoglie il
    testo delle Linee guida in oggetto, disponibile per la consultazione pubblica.
 
 .. Note::
 
    La consultazione pubblica relativa al presente documento è attiva dal 
-   **13 novembre** al **13 dicembre 2019**. Questo documento raccoglie il
+   **__________** al **__________**. Questo documento raccoglie il
    testo delle Linee guida in oggetto, disponibile per la consultazione pubblica.
 
 ======== =========== ============== ====================================
