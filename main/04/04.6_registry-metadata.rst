@@ -24,6 +24,9 @@ La suddetta modalità è costituita da:
        l’ente rende disponibile il sistema di trasferimento sicuro dei documenti
        di cui al §\ :ref:`5.2 <§5.2>`.
 
+ * Lelemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
+   l’abbreviativo unico dell’ente, :code:`SPuid`, di cui al §\ :ref:`4.2 <§4.2>`
+
 Si veda a tale scopo il seguente esempio:
 
 .. code-block:: xml
@@ -37,6 +40,7 @@ Si veda a tale scopo il seguente esempio:
              <spid:FileTransferService>
                    type="UUID"
                    Location="https://indirizzo:porta/servizio/DataIO/" />
+             <spid:ShortName>usID</spid:ShortName>
          </spid:SignatureArt20>
      </samlp:Extensions>
      <md:Organization>...</md:Organization>
@@ -47,7 +51,8 @@ Si veda a tale scopo il seguente esempio:
 Qualora l’elemento :code:`<SignatureArt20>` non sia presente nel metadata,
 è da intendersi che l’ente federato *non* offre tale servizio.
 
-Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre: 
+Il metadata dei SP che offrono il servizio in oggetto contiene, all’interno
+dell’\ :code:`<EntityDescriptor>` (*namespace* ``md``):
 
  * Un *Attribute Consuming Service* specifico:
 
@@ -58,9 +63,6 @@ Il metadata dei SP che offrono il servizio in oggetto prevede, inoltre:
    c. contenente almeno un elemento figlio :code:`<ServiceName>`
       (*namespace* ``md``), valorizzato con il nome del servizio in lingua
       italiana: “``Sottoscrizione elettronica ex art.20 CAD``”.
-
- * Un elemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
-   l’\ *identificativo unico del SP*, :code:`SPuid`, di cui al §\ :ref:`4.2 <§4.2>`
 
 Il metadata del SP comprende dunque la seguente struttura:
 
