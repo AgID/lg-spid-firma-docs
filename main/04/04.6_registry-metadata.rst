@@ -13,16 +13,17 @@ La suddetta modalità è costituita da:
 
  * L'elemento :code:`<FileTransferService>` (*namespace* ``spid``) dotato dei
    seguenti attributi obbligatori:
-    
-    a. :code:`type` — identificativo della modalità tecnica, univoca per l’ente
-       federato, valorizzato un UUID v4 (come da specifica :RFC:`4122`), ovvero
-       da una stringa con un minimo di 3 e un massimo di 16 caratteri del
-       sottoinsieme di caratteri ASCII 
-       ``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-``.
        
-    b. :code:`Location` — URL completo (comprensivo del relativo schema) ove
+    a. :code:`Location` (obbligatorio) — URL completo (comprensivo del relativo schema) ove
        l’ente rende disponibile il sistema di trasferimento sicuro dei documenti
        di cui al §\ :ref:`5.2 <§5.2>`.
+    
+    b. :code:`type` (facoltativo) — identificativo del protocollo, metodo o schema
+       di comunicazione adottato –se previsto dal sistema di cui al §\ :ref:`5.2 <§5.2>`\ –
+       valorizzato come un UUID v4 (come da :RFC:`4122`), ovvero da una stringa
+       composta da un minimo di 3 e un massimo di 16 caratteri ASCII scelti nel
+       sottoinsieme di caratteri
+       ``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-``.
 
  * Lelemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
    l’abbreviativo unico dell’ente, :code:`SPuid`, di cui al §\ :ref:`4.2 <§4.2>`
