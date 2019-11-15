@@ -18,5 +18,5 @@ che i dati personali oggetto del servizio e i documenti firmati con SPID
 sono ulteriormente trattati dall’IdP.
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12101
    :scope: document
