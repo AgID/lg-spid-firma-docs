@@ -41,10 +41,6 @@ Viceversa, il SP rimuove dallo storage i file ricevuti per i quali non sia perve
 entro il medesimo tempo limite, la corrispondente richiesta di autenticazione da parte
 dell’IdP.
 
-IDP e SP annullano comunque la procedura se, dopo un tempo limite di 1 minuto dalla
-ricezione, rispettivamente, della richiesta o della risposta di autenticazione, non
-viene completata la ricezione del corrispondente documento.
-
 IdP e SP verificano l’integrità dei documenti ricevuti ricalcolandone l’impronta e
 confrontandola con quella contenuta, rispettivamente, nella richiesta e nella risposta
 di autenticazione che le accompagnano.
@@ -70,14 +66,14 @@ Le evidenze sono formate mediate la seguente procedura:
     a. il nome del documento da inviare, predisposto come da §\ :ref:`4.2 <§4.2>`,
     b. l'impronta del docuento da inviare sigillato elettronicamente,
     c. la funzione di *hash* impiegata al punto 1.b,
-    d. la posizione ove collocare la/le componente/i grafica/he del QSeal
+    d. la posizione ove collocare la/le componente/i grafica/he del :ref:`QSeal <QSeal>`
        (hash §\ :ref:`4.4 <§4.4>`),
     e. l'eventuale obbligatorietà di ciascuna firma.
 
 2. codifica del messaggio di cui al punto 1 in un pacchetto :ref:`JWT <JWT>`;
 
 3. conversione in :ref:`JWS <JWS>` del pacchetto di cui al punto 2, mediante metodo
-   *JWS Compact Serialization* (cfr. :RFC:`7515`), utilizzando il QSeal
+   *JWS Compact Serialization* (cfr. :RFC:`7515`), utilizzando il :ref:`QSeal <QSeal>`
    di cui al §\ :ref:`4.5 <§4.5>`.
 Gli algoritmi crittografici utilizzati lungo l’intera procedura sopra descritta
 sono definiti in §\ :ref:`6 <§6>`. I pacchetti JWS sono caratterizzati dalla
@@ -168,8 +164,8 @@ Nel pacchetto di andata:
    elementi quante sono le sottoscrizioni richieste; ciascun elemento
    dell’*array* è una struttura JSON contenente:
 
-   -  :code:`id` — valorizzato con l’identificativo univoco della firma
-      nell’ambito del processo di firma,
+   -  :code:`id` — valorizzato con l’*identificativo univoco della firma*
+      nell’ambito del processo di firma, cioè una stringa di massimo 40 caratteri;
 
    -  :code:`pag` — valorizzato con il numero della pagina del documento ove
       è richiesto che l’IdP apponga la componente grafica di cui al
