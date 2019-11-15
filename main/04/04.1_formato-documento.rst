@@ -12,9 +12,9 @@ Inoltre rispetta le seguenti caratteristiche tecniche:
 
    2. 2.	è consentita la modifica del documento esclusivamente per quanto concerne l’apposizione dei previsti sigilli elettronici PAdES;
 
-   3. né il contenuto del documento né i suoi metadati sono cifrati;
+   3. né il contenuto del documento né i suoi metadati sono cifrati.
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12094
    :scope: document
