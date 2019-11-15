@@ -19,5 +19,5 @@ prescritto dal Regolamento :ref:`GDPR <GDPR>` e dal D.Lgs. №101/2018.
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12100
    :scope: document
