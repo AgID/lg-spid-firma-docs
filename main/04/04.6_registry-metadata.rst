@@ -11,21 +11,14 @@ l’ente federato espone tale servizio.
 
 La suddetta modalità è costituita da:
 
- * L'elemento :code:`<FileTransferService>` (*namespace* ``spid``) dotato dei
-   seguenti attributi obbligatori:
+ * L'elemento :code:`<FileTransferService>` (*namespace* ``spid``) dotato del
+   seguente attributo:
        
-    a. :code:`Location` (obbligatorio) — URL completo (comprensivo del relativo schema) ove
-       l’ente rende disponibile il sistema di trasferimento sicuro dei documenti
-       di cui al §\ :ref:`5.2 <§5.2>`.
-    
-    b. :code:`type` (facoltativo) — identificativo del protocollo, metodo o schema
-       di comunicazione adottato (qualora sia previsto dal sistema di cui al
-       §\ :ref:`5.2 <§5.2>` poiché non  esplicabile dall'attributo di cui al punto
-       a); valorizzato come un UUID v4 (si veda :RFC:`4122`), ovvero da una
-       stringa di minimo 3 e massimo 16 caratteri ASCII:
-       ``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ-``.
-
- * Lelemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
+    a. :code:`Location` — URL completo (comprensivo del relativo schema HTTPS)
+       ove l’ente rende disponibile il sistema di trasferimento sicuro dei
+       documenti di cui al §\ :ref:`5.2 <§5.2>`.
+ 
+ * L’elemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
    l’abbreviativo unico dell’ente, :code:`SPuid`, di cui al §\ :ref:`4.2 <§4.2>`
 
 Si veda a tale scopo il seguente esempio:
@@ -40,7 +33,7 @@ Si veda a tale scopo il seguente esempio:
          <spid:SignatureArt20>
              <spid:FileTransferService>
                    type="UUID"
-                   Location="https://indirizzo:porta/servizio/DataIO/" />
+                   Location="https://indirizzo/al/DataIO/" />
              <spid:ShortName>usID</spid:ShortName>
          </spid:SignatureArt20>
      </samlp:Extensions>
