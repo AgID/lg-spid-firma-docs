@@ -68,5 +68,5 @@ in tal caso l’IdP appone altrettanti sigilli.
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12107
    :scope: document
