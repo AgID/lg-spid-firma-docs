@@ -15,5 +15,5 @@ almeno fino a 256 caretteri ASCII di lunghezza.
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12106
    :scope: document
