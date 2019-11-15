@@ -69,5 +69,5 @@ firmato con SPID (da una persona fisica presso il proprio IDP), sarà
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12105
    :scope: document
