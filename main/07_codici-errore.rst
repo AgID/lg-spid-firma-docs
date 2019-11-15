@@ -1,7 +1,7 @@
 .. _`§7`:
 
-Codici di errore
-================
+Codici di ritorno applicativo
+=============================
 
 .. highlights:
 
@@ -25,9 +25,9 @@ presso il sito web dell’Agenzia.
 Nel secondo caso, il mittente del documento è informato dal destinatario secondo le indicazioni
 della norma :RFC:`7807`. Il mittente, ricevuto il messaggio di errore, lo notifica all’utente.
 
-La Tabella 2 elenca i possibili errori, veicolati nel pacchetto JWT contenente un oggetto di
-*Content-Type* ``problem+json``.
+La Tabella 2 elenca i possibili codici di ritorno, veicolati nel pacchetto JWT contenente
+un oggetto di *Content-Type* ``problem+json``.
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12097
    :scope: document
