@@ -14,5 +14,5 @@ Gli IDP che offrono servizi di sottoscrizione di cui alle presenti Linee guida, 
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12114
    :scope: document
