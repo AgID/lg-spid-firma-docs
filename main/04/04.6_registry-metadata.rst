@@ -32,7 +32,6 @@ Si veda a tale scopo il seguente esempio:
            xmlns:spid="https://spid.gov.it/saml-extensions">
          <spid:SignatureArt20>
              <spid:FileTransferService>
-                   type="UUID"
                    Location="https://indirizzo/al/DataIO/" />
              <spid:ShortName>usID</spid:ShortName>
          </spid:SignatureArt20>
@@ -91,5 +90,5 @@ sotto:
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12109
    :scope: document
