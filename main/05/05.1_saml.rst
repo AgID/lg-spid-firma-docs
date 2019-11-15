@@ -9,10 +9,13 @@ all’attributo `AttributeConsumingServiceIndex` corrispondente
 all’*Attribute Consuming Service* specifico, di indice “``77``”,
 introdotto al §:ref:`4.6 <4.6>`.
 
-Le richieste e risposte di autenticazione SAML contengono
-ciascuna un’estensione :code:`<Signature>` (*namespace* ``spid``)
-contenuta nella sezione prevista dallo standard per le estentioni
-SAML. I metadati sopra elencati sono realizzati mediante i seguenti
+Le richieste e risposte di autenticazione SAML impiegano
+*session ID*, nei loro rispettivi attributi :code:`ID`, valorizzati
+come stringhe uniche che cominciano con ``sig-``. Le richieste e
+risposte di autenticazione contengono entrambe un’estensione
+:code:`<Signature>` (*namespace* ``spid``) contenuta nella sezione
+prevista dallo standard per le estentioni :ref:`SAML <SAML>`. I
+metadati sopra elencati sono realizzati mediante i seguenti
 elementi:
 
 -  punti a. e d. tramite elemento :code:`<Filename>`
@@ -20,13 +23,13 @@ elementi:
    comprensivo della corretta estensione, composto come descritto in
    §\ :ref:`4.2 <§4.2>`;
 
--  punti b. e e. tramite elemento :code:`<DigestValue>` (*namespace* ``ds``),
-   contenente un’impronta rappresentata applicandole la trasformazione
-   *Base64* (cfr. :RFC:`4648`);
+-  punti b. e e. tramite elemento :code:`<DigestValue>` (*namespace* ``ds``,
+   standard XAdES), contenente un’impronta rappresentata applicandole
+   la trasformazione *Base64* (cfr. :RFC:`4648`);
 
--  punti c. e f. tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``),
-   contenente la codifica W3C della funzione di *hash* utilizzata per il
-   calcolo dell’impronta del documento;
+-  punti c. e f. tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``,
+   standard XAdES), contenente la codifica W3C della funzione di *hash*
+   utilizzata per il calcolo dell’impronta del documento;
 
 -  l’identificativo univoco di sessione è indicato nell’attributo :code:`ID`
    dell’elemento :code:`<AuthnRequest>` per la richiesta di
@@ -44,24 +47,24 @@ in formato PDF predisposto dal SP e successivamente inviato all’IdP per la sot
  <samlp:AuthnRequest 
        AttributeConsumingService="77"
        Destination="https://url-IdP-destinatario"
-       ID="id-SessionId"
+       ID="sig-SessionId"
        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
        xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
        xmlns:spid="https://spid.gov.it/saml-extensions"
        xmlns:enc="http://www.w3.org/2001/04/xmlenc#">
      <saml:Issuer>https://url-SP-inviante</saml:Issuer>
      ...
-     <samlp:Extensions xmlns:spid="https://spid.gov.it/saml-extensions">
+     <samlp:Extensions">
          <spid:Signature>
              <spid:Filename>AgID_YYYYMMDDThhmmss.tmp.pdf</spid:Filename>
              <ds:DigestMethod Algorithm="http://funzione_hash" />
-             <ds:DigestValue>ImprontaDocumento-1</ds:DigestValue>
+             <ds:DigestValue>ImprontaDocumento1</ds:DigestValue>
          </spid:Signature>
          <spid:Signer>
              <saml:Attribute
                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   NameFormat="urn:oasis:...:attrname-format:basic"
+                   NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic"
                    Name="fiscalNumber">
                 <saml:AttributeValue xsi:type="xs:string">
                     CodiceFiscaleFirmatario
@@ -90,12 +93,12 @@ metadati del documento firmato con SPID.
          <spid:Signature>
              <spid:Filename>AgID_YYYYMMDDThhmmss.pdf</spid:Filename>
              <ds:DigestMethod Algorithm="http://funzione_hash" />
-             <ds:DigestValue>ImprontaDocumento-2</ds:DigestValue>
+             <ds:DigestValue>ImprontaDocumento2</ds:DigestValue>
          </spid:Signature>
      </samlp:Extensions>
  </samlp:Response>
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12110
    :scope: document
