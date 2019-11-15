@@ -61,5 +61,5 @@ sottoscrizione, nel pieno rispetto di quanto disposto dal Regolamento
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12104
    :scope: document
