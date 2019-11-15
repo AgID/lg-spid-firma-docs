@@ -1,6 +1,6 @@
 .. _`§4.5`:
 
-Certificati di sigillo elettronico qualificato
+Certificati qualificati di sigillo elettronico
 ==============================================
 
 SP e IdP si dotano, presso un :ref:`QTSP <QTSP>`, di un certificato elettronico
@@ -65,5 +65,5 @@ informazioni aggiuntive:
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12108
    :scope: document
