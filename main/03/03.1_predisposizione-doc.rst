@@ -3,7 +3,7 @@
 Predisposizione alla sottoscrizione (presso il SP)
 ==================================================
 
-Il processo prevede che l'SP conosca il codice fiscale del firmatario; il SP quindi:
+Il processo prevede che il SP conosca il codice fiscale del firmatario; il SP quindi:
 
 .. topic:: Procedura
    :class: procedure
@@ -36,5 +36,5 @@ Il processo prevede che l'SP conosca il codice fiscale del firmatario; il SP qui
 
 
 .. forum_italia::
-   :topic_id: 12093
+   :topic_id: 12103
    :scope: document
