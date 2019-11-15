@@ -19,14 +19,18 @@ certificato qualificato di sigillo elettronico, di cui al §\ :ref:`4.5 <§4.5>`
 sicuro, i cui dettagli sono dati in §\ :ref:`5.2.1 <§5.2.1>`.
 
 Il sistema di trasferimento è, nella sua interezza, protetto da
-misure di sicurezza logica e fisica conformi almeno alle *LL.GG.
-sulle misure minime di sicurezza* (:ref:`cit. <llgg mis min sicurezza>`).
+misure di sicurezza logica, fisica e amministrativa conformi almeno alle
+:ref:`LL.GG. sulle misure minime di sicurezza <llgg mis min sicurezza>`.
 Esso è inoltre adeguatamente protetto logicamente affinché solamente gli enti
 federati possano trasferire file mediante uno dei seguenti due flussi:
+
+.. _`flusso-a`:
 
  A. il sistema dell’IdP è configurato per la sola ricezione di evidenze
     informatiche provenienti dagli SP in modalità *push* (cioè con trasferimenti 
     iniziati in *upstream* dal SP);
+
+.. _`flusso-b`:
 
  B. il sistema del SP è configurato per la sola ricezione di evidenze informatiche
     provenienti dagli IdP in modalità *push* (cioè con trasferimenti iniziati in
@@ -54,7 +58,7 @@ Interfaccia applicativa
 -----------------------
 
 SP e IdP si scambiano evidenze informatiche in formato :ref:`JWS <JWS>`, su canale HTTPS
-(porta 443/TCP) tramite un’interfaccia applicativa che prevede lo scambio di messaggi
+(porta 443/TCP) tramite un’:ref:`API <API>` che prevede lo scambio di messaggi
 tramite metodo  HTTP *POST*. L’attributo :code:`type` nell’elemento :code:`<FileTransferService>`
 del metadata degli SP di cui al §\ :ref:`4.6 <§4.6>` può non essere presente; se presente,
 è valorizzato con la stringa “``HTTP POST``”.
@@ -80,7 +84,7 @@ sono definiti in §\ :ref:`6 <§6>`. I pacchetti JWS sono caratterizzati dalla
 presenza degli identificativi unici di sessione (cfr. §\ :ref:`5 <§5>`).
 
 Le strutture JSON in base alle quali sono prodotti i pacchetti JWS scambiati
-durante i flussi :ref:`A <flusso-A>` e :ref:`B <flusso-B>` sono chiamate,
+durante i flussi :ref:`A <flusso-a>` e :ref:`B <flusso-b>` sono chiamate,
 rispettivamente, **pacchetto di andata** e **pacchetto di ritorno**.
 
 L’intestazione (*header*) comune ai pacchetti di andata e ritorno
@@ -164,8 +168,9 @@ Nel pacchetto di andata:
    elementi quante sono le sottoscrizioni richieste; ciascun elemento
    dell’*array* è una struttura JSON contenente:
 
-   -  :code:`id` — valorizzato con l’*identificativo univoco della firma*
-      nell’ambito del processo di firma, cioè una stringa di massimo 40 caratteri;
+   -  :code:`id` — valorizzato con un *identificativo univoco della firma*
+      nell’ambito del processo di firma, cioè una stringa alfanumerica di
+      massimo 40 caratteri;
 
    -  :code:`pag` — valorizzato con il numero della pagina del documento ove
       è richiesto che l’IdP apponga la componente grafica di cui al
@@ -176,9 +181,9 @@ Nel pacchetto di andata:
       - valorizzati rispettivamente con l'ascissa e l'ordinata del vertice
       inferiore sinistro, l'ascissa e l'ordinata del vertice superiore destro
       di un'area rettangolare definita al §\ :ref:`4.4 <§4.4>`, per il
-      posizionamento della componente grafica del QSeal all’interno della
-      pagina stessa, secondo quanto previsto tecnicamente per la
-      rappresentazione di oggetti PDF *Rectangles*, §4.40 dello standard
+      posizionamento della componente grafica del :ref:`QSeal <§QSeal>`
+      all’interno della pagina stessa, secondo quanto previsto tecnicamente
+      per la rappresentazione di oggetti PDF *Rectangles*, §4.40 dello standard
       `ISO/IEC 32000-1 <http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf>`__;
 
    -  :code:`ref` —booleano per indicare se la firma è facoltativa
@@ -198,12 +203,10 @@ Nel pacchetto di ritorno:
    elemento dell’*array* è una struttura JSON contenente:
 
    -  :code:`id` — l’identificativo univoco della firma contenuto nel pacchetto
-      di andata, valorizzato con la medesima sintassi ammessa per l’attributo
-      ``name`` dell’elemento :code:`<FileTransferService>` definito nel
-      §\ :ref:`4.6 <§4.6>`;
+      di andata;
 
-   -  :code:`signed` — valorizzato con un booleano che conferma
-      l’apposizione (:code:`true`) o meno (:code:`false`) della firma.
+   -  :code:`signed` — il booleano che conferma l’apposizione (:code:`true`)
+      o meno (:code:`false`) della firma.
 
 I pacchetti sono validi se conformi al presente provvedimento e a
 eventuali successive indicazioni dell’:ref:`Agenzia <AgID>`.
@@ -219,7 +222,7 @@ Esempio di pacchetto di andata JSON:
 .. code-block:: json
 
  {
-     "jti" : "UUID1",
+     "jti" : "uuid1",
      "iss" : "https://url-SP-inviante",
      "aud" : "https://url-IdP-ricevente",
      "iat" : 1563235200,
@@ -232,7 +235,7 @@ Esempio di pacchetto di andata JSON:
      },
      "signatures" : [
          {
-             "id"  : "1",
+             "id"  : "sig1",
              "pag" : 3,
              "pos" : {
                  "llx":89.9446,
@@ -243,7 +246,7 @@ Esempio di pacchetto di andata JSON:
              "req" : true
          },
          {
-             "id"  : "2",
+             "id"  : "sig2",
              "pag" : 7,
              "pos" : {
                  "llx":240.734,
@@ -254,7 +257,7 @@ Esempio di pacchetto di andata JSON:
              "req" : false
          }
      ],
-     "payload" : "BlobDocumento1 + […] + codificatoBase64"
+     "payload" : "BlobDocumento1 + [...] + codificatoBase64"
  }
 
 Esempio di pacchetto di ritorno JSON:
@@ -262,7 +265,7 @@ Esempio di pacchetto di ritorno JSON:
 .. code-block:: json
 
  {
-     "jti" : "UUID2",
+     "jti" : "uuid2",
      "iss" : "https://url-IdP-inviante",
      "aud" : "https://url-SP-ricevente",
      "sub" : "Mario Rossi/CF:IT-RSSMR064T30H501H",
@@ -271,23 +274,23 @@ Esempio di pacchetto di ritorno JSON:
      "filename" : "AgID_20190321T083410.pdf",
      "cty" : "pdf",
      "digest" : {
-         "method" : "schema://funzione_hash",
+         "method" : "http://funzione_hash",
          "value" : "ImprontaDocumento2"
      },
      "ref" : [
          {
-             "id"  : "1",
+             "id"  : "sig1",
              "signed" : true
          },
          {
-             "id"  : "2",
+             "id"  : "sig2",
              "signed" : false
          }
      ],
-     "payload" : "BlobDocumento2 + […] + codificatoBase64"
+     "payload" : "BlobDocumento2 + [...] + codificatoBase64"
  }
 
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12111
    :scope: document
