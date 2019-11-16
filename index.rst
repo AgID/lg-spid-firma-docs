@@ -11,12 +11,6 @@ Regole Tecniche circa la sottoscrizione elettronica di documenti tramite SPID ex
    **__________** al **__________**. Questo documento raccoglie il
    testo delle Linee guida in oggetto, disponibile per la consultazione pubblica.
 
-.. Note::
-
-   La consultazione pubblica relativa al presente documento è attiva dal 
-   **__________** al **__________**. Questo documento raccoglie il
-   testo delle Linee guida in oggetto, disponibile per la consultazione pubblica.
-
 ======== =========== ============== ====================================
 Versione Data        Determinazione Tipologia modifica
 ======== =========== ============== ====================================
