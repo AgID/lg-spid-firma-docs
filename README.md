@@ -9,5 +9,5 @@ Le presenti Linee guida regolano le modalità atte a garantire la sicurezza, int
 
 ## Link al documento e consultazione
 
-Link al documento *Docs Italia*	•	\ https://docs.italia.it/AgID/documenti-in-consultazione/lg-spid-firma
-Link per commenti *Forum Italia*	•	\ https://forum.italia.it/c/documenti-in-consultazione/lg-sottoscrizione-documenti-con-spid
+Link al documento *Docs Italia*	•	 https://docs.italia.it/AgID/documenti-in-consultazione/lg-spid-firma
+Link per commenti *Forum Italia*	•	 https://forum.italia.it/c/documenti-in-consultazione/lg-sottoscrizione-documenti-con-spid
