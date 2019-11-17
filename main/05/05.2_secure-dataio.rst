@@ -51,18 +51,19 @@ Il sistema di trasferimento possiede, inoltre, le seguenti caratteristiche:
  4. IdP e SP verificano l’autenticità dei :ref:`QSeal <QSeal>` della controparte e
     l’integrità del documento ricevuto.
 
- 5. L’dDP verifica che il valore del campo ``subjectAltName`` nel certificato qualificato
-    di sigillo di cui al §\ :ref:`4.5 <§4.5>` –utilizzato dal SP, al §\ :ref:`4.3 <§4.3>`,
-    per apporre il QSeal sul documento predisposto per la firma– coincida con il dominio
-    dell’URL dichiarato, mediante l’estensione :code:`<FileTransferService>`, nel metadata
-    del SP (ovvero del suo soggetto aggregatore) da cui proviene la richiesta di
-    autenticazione.
+ 5. L’IdP verifica che vi sia corrispondenza tra le seguenti estensioni –dichiarate
+    nel metadata del SP (ovvero del suo soggetto aggregatore) da cui proviene la richiesta
+    di autenticazione– e i seguenti campi, presenti nel certificato qualificato di sigillo
+    di cui al §\ :ref:`4.5 <§4.5>` (utilizzato dal SP, al §\ :ref:`4.3 <§4.3>`, per apporre
+    il QSeal sul documento predisposto per la firma):
+    
+     a. l’abbreviativo unico del SP, dichiarato mediante l’estensione :code:`<ShortName>`,
+        coincide con il valore del campo :code:`givenName` del certificato;
+     
+     b. l’URL del sistema di trasferimento sicuro del SP, dichiarato mediante l’estensione
+        :code:`<FileTransferService>`, afferisce a un dominio coincidente con quanto
+        valorizzato nel campo :code:`subjectAltName` del certificato.
 
- 6. Dualmente, il SP verifica che il valore del campo ``subjectAltName`` nel certificato
-    qualificato di sigillo –utilizzato dal SP, al §\ :ref:`4.4 <§4.4>`, per apporre il
-    QSeal sul documento firmato con SPID– coincida con il dominio dell’URL dichiarato,
-    mediante l’estensione :code:`<FileTransferService>`, nel metadata dell'IdP cui è stata
-    inviata la richiesta di autenticazione.
 
 .. _`§5.2.1`:
 
