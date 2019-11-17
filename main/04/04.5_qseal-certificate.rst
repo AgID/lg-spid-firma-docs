@@ -7,8 +7,8 @@ SP e IdP si dotano, presso un :ref:`QTSP <QTSP>`, di un certificato elettronico
 qualificato per la creazione di sigilli elettronici.
 
 Detti certificati qualificati sono conformi alle raccomandazioni emanate
-con le *LL.GG. sui certificati elettronici* (:ref:`cit. <llgg certificati>`) e contengono le seguenti
-informazioni aggiuntive:
+con le *LL.GG. sui certificati elettronici* (:ref:`cit. <llgg certificati>`), allo
+standard X.509 versione 3, e contengono le seguenti informazioni aggiuntive:
 
 1. Il campo :code:`SubjectDN`, contenente i seguenti attributi:
 
