@@ -21,10 +21,23 @@ Il nome del *documento firmato con SPID*, di cui al §\ :ref:`3.2 <§3.1>` punto
 In particolare:
 
 -  :code:`usID` — È l’\ *abbreviativo unico dell’ente* che forma il documento,
-   introdotto nel §:ref:`4.6 <§4.6>`. È una stringa costituita da un minimo
-   di 3 a un massimo di 8 caratteri ASCII a scelta tra i seguenti:
-   “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_``”.
+   introdotto nei §§\ :ref:`4.5 <§4.5>` e :ref:`4.6 <§4.6>`. È una stringa
+   costituita da un minimo di 3 a un massimo di 15 caratteri ASCII a scelta tra
+   “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_``” e che
+   consiste nella seguente alternativa a seconda della tipologia di ente federato:
+   
+    a. per gli SP pubblici — l'indice IPA,
 
+    b. per gli SP privati dotati di partita IVA — il numero di partita IVA
+       internazionale (cioè comprensivo del codice a due caratteri del paese),
+
+    c. per gli altri SP privati — il codice fiscale (in caratteri
+       maiuscoli).
+
+    d. per gli IdP — un identificativo scelto dall’ente, purché univoco nella
+       federazione (in questo caso introdotto per omogeneità, ma non realmente
+       utilizzato per gli scopi delle presenti Linee guida).
+    
 -  :code:`data` — È la data di creazione del documento predisposto per la firma
    (rispetto al fuso orario italiano), rappresentata da una stringa di 8
    caratteri numerici così ripartiti:
