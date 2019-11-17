@@ -23,7 +23,7 @@ In particolare:
 -  :code:`usID` — È l’\ *abbreviativo unico dell’ente* che forma il documento,
    introdotto nel §:ref:`4.6 <§4.6>`. È una stringa costituita da un minimo
    di 3 a un massimo di 8 caratteri ASCII a scelta tra i seguenti:
-   “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ``”.
+   “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_``”.
 
 -  :code:`data` — È la data di creazione del documento predisposto per la firma
    (rispetto al fuso orario italiano), rappresentata da una stringa di 8
