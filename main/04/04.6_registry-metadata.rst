@@ -29,21 +29,8 @@ dell’attributo *obbligatorio* :code:`index`. Ciascun elemento
  * l’elemento :code:`<ShortName>` (*namespace* ``spid``), valorizzato
    con l’abbreviativo unico dell’ente (in particolare del SP *aggregato*,
    nel caso sia tratti del metadata di un soggetto aggregatore), ``usID``,
-   già introdotto al §\ :ref:`4.2 <§4.2>` e che consiste nella seguente
-   alternativa a seconda della tipologia di ente federato:
+   introdotto ai §\ :ref:`4.2 <§4.2>` e già utilizzato al §\ :ref:`4.5 <§4.5>`:
 
-    a. per gli IDP — un identificativo scelto dall’ente, purché univoco
-       nella federazione (costituito da un minimo di 3 a un massimo di
-       16 caratteri alfanumerici),
-
-    b. per gli SP pubblici — l'indice IPA,
-
-    c. per gli SP privati dotati di partita IVA — il numero di partita
-       IVA,
-
-    d. per gli altri SP privati — il codice fiscale (in caratteri
-       maiuscoli).
- 
 Si veda a tale scopo il seguente esempio (l’attributo :code:`index`
 è facoltativo per gli IdP, mentre si riferisce all’\ *n*\ -mo 
 *Assertion Consumer Service* per gli SP e i soggetti aggregatori:
