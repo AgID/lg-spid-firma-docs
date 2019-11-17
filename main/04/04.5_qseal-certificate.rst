@@ -12,7 +12,7 @@ standard X.509 versione 3, e contengono le seguenti informazioni aggiuntive:
 
 1. Il campo :code:`SubjectDN`, contenente i seguenti attributi:
 
-   a. :code:`serialNumber` (`ᴏɪᴅ 2.5.4.5 <http://http/oid-info.com/get/2.5.4.5>`__) — contiene
+   a. :code:`serialNumber` (`ᴏɪᴅ 2.5.4.5 <http://oid-info.com/get/2.5.4.5>`__) — contiene
       per gli IdP e i SP, alternativamente, secondo il seguente ordine:
 
       -  la partita IVA indicata con il prefisso ‘``VAT``’, come
@@ -32,31 +32,34 @@ standard X.509 versione 3, e contengono le seguenti informazioni aggiuntive:
          ‘``PA:``’, come prescritto dal §5.1.4 punto 3 della suddetta norma
          (es. “``PA:IT-agid``”).
 
-   b. :code:`commonName` (`ᴏɪᴅ 2.5.4.3 <http://http/oid-info.com/get/2.5.4.3>`__) — contenente,
-      mediante un elemento di tipo :code:`dNSName`, il nome di dominio –
-      privo di qualsiasi carattere *wildcard* – di cui al punto 5.
+   b. :code:`commonName` (`ᴏɪᴅ 2.5.4.3 <http://oid-info.com/get/2.5.4.3>`__) —
+      contenente, mediante un elemento di tipo :code:`dNSName`, il nome di
+      dominio – privo di qualsiasi carattere *wildcard* – di cui al punto 5.
 
-2. Il campo :code:`CertificatePolicies` (`ᴏɪᴅ 2.5.29.32 <http://http/oid-info.com/get/2.5.29.32>`__), contenente i
+   c. :code:`givenName` (`ᴏɪᴅ 2.5.4.42 <http://oid-info.com/get/2.5.4.42>`__) — 
+      contenente l’abbreviativo univoco dell’ente, già introdotto al §\ :ref:`4.2 <§4.2>`.
+
+2. Il campo :code:`CertificatePolicies` (`ᴏɪᴅ 2.5.29.32 <http://oid-info.com/get/2.5.29.32>`__), contenente i
    seguenti attributi:
 
    a. :code:`PolicyIdentifier` — valorizzato come:
 
-      -  :code:`spidSignature` (`ᴏɪᴅ 1.3.76.16.4.11 <http://http/oid-info.com/get/1.3.76.16.4.11>`__);
+      -  :code:`spidSignature` (`ᴏɪᴅ 1.3.76.16.4.11 <http://oid-info.com/get/1.3.76.16.4.11>`__);
 
    b. una limitazione d’uso indicata mediante la presenza di un campo
-      :code:`userNotice` (`ᴏɪᴅ 2.5.29.49 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.49>`__), di tipo
+      :code:`userNotice` (`ᴏɪᴅ 2.5.29.49 <http://oid-info.com/get/𝟸.𝟻.𝟸𝟿.49>`__), di tipo
       :code:`explicitText`, valorizzato con la seguente stringa bilingue:
       “``Certificato usabile solo per il processo di sottoscrizione di cui all'art.20 del CAD/This certificate may be used only for elecrronic signing pursuant to the Italian Digital Administration Code, art.20.``”.
 
-3. :code:`keyUsage` (`ᴏɪᴅ 2.5.29.15 <http://http/oid-info.com/get/𝟸.𝟻.𝟸𝟿.15>`__) — contenente
+3. :code:`keyUsage` (`ᴏɪᴅ 2.5.29.15 <http://oid-info.com/get/𝟸.𝟻.𝟸𝟿.15>`__) — contenente
    i valori :code:`digitalSignature` e :code:`keyEncipherment`, cioè i bit #0 e #2, valorizzati a ``1``,
    come da specifica :RFC:`5280`.
 
-4. :code:`extendedKeyUsage` (`ᴏɪᴅ 2.5.29.16 <http://http/oid-info.com/get/2.5.29.16>`__) — contenente
-   sia l’elemento :code:`id-kp-serverAuth` (`ᴏɪᴅ 1.3.6.1.5.5.7.3.1 <http://http/oid-info.com/get/1.3.6.1.5.5.7.3.1>`__)
-   che l’elemento :code:`id-kp-clientAuth` (`ᴏɪᴅ 1.3.6.1.5.5.7.3.2 <http://http/oid-info.com/get/1.3.6.1.5.5.7.3.2>`__).
+4. :code:`extendedKeyUsage` (`ᴏɪᴅ 2.5.29.16 <http://oid-info.com/get/2.5.29.16>`__) — contenente
+   sia l’elemento :code:`id-kp-serverAuth` (`ᴏɪᴅ 1.3.6.1.5.5.7.3.1 <http://oid-info.com/get/1.3.6.1.5.5.7.3.1>`__)
+   che l’elemento :code:`id-kp-clientAuth` (`ᴏɪᴅ 1.3.6.1.5.5.7.3.2 <http://oid-info.com/get/1.3.6.1.5.5.7.3.2>`__).
 
-5. :code:`subjectAltName` (`ᴏɪᴅ 2.5.29.17 <http://http/oid-info.com/get/2.5.29.17>`__) — valorizzata
+5. :code:`subjectAltName` (`ᴏɪᴅ 2.5.29.17 <http://oid-info.com/get/2.5.29.17>`__) — valorizzata
    con elemento unico di tipo :code:`dNSName` e contenente il dominio
    dell’URL completo (così come riportato nel registro SPID) presso il
    quale l’ente federato rende disponibile, agli enti federati della
