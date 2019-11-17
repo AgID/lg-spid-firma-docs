@@ -29,7 +29,8 @@ In particolare:
     a. per gli SP pubblici — l'indice IPA,
 
     b. per gli SP privati dotati di partita IVA — il numero di partita IVA
-       internazionale (cioè comprensivo del codice a due caratteri del paese),
+       internazionale (cioè comprensivo del codice a due caratteri del paese,
+       es. “``IT12345678901``”).
 
     c. per gli altri SP privati — il codice fiscale (in caratteri
        maiuscoli).
