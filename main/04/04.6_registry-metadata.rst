@@ -3,25 +3,50 @@
 Metadata nel registro SPID
 ==========================
 
-Qualora un IdP o un SP offra il servizio in oggetto, il relativo metadata
-pubblicato nel registro SPID contiene l’estensione :code:`<SignatureArt20>`
-(*namespace* ``spid``) come figlio dell’elemento :code:`<Extensions>` (*namespace*
-``samlp``), al cui interno è specificata la modalità tecnica tramite la quale
-l’ente federato espone tale servizio.
+Qualora un IDP, un SP ovvero un soggetto aggregatore offra il servizio
+in oggetto, il relativo metadata pubblicato nel registro SPID contiene,
+all’interno dell’elemento :code:`<Extensions>` (*namespace* ``samlp``),
+le modalità tecniche tramite le quali l’ente federato espone tale
+servizio.
 
-La suddetta modalità è costituita da:
+Nel metadata dell’IDP è presente una sola estensione :code:`<SignatureArt20>`
+(*namespace* ``spid``), *facoltativamente* dotata dell’attributo
+:code:`index` valorizzato con “``0``”. Per gli SP e i soggetti
+aggregatori sono presenti tante estensioni :code:`<SignatureArt20>`
+quanti sono gli *Assertion Consumer Service* dichiarati nel metadata
+e al cui indice sono associati biunivocamente mediante valorizzazione
+dell’attributo *obbligatorio* :code:`index`. Ciascun elemento
+:code:`<SignatureArt20>` contiene dunque:
 
- * L'elemento :code:`<FileTransferService>` (*namespace* ``spid``) dotato del
-   seguente attributo:
-       
-    a. :code:`Location` — URL completo (comprensivo del relativo schema HTTPS)
-       ove l’ente rende disponibile il sistema di trasferimento sicuro dei
-       documenti di cui al §\ :ref:`5.2 <§5.2>`.
+ * l’elemento :code:`<FileTransferService>` (*namespace* ``spid``),
+   contenente il seguente attributo:
+   
+    * :code:`Location` (*obbligatorio*) —  valorizzato con l’URL
+      completo (comprensivo di schema) ove l’ente rende disponibile
+      il sistema di trasferimento sicuro dei documenti di cui al
+      §\ :ref:`5.2 <§5.2>`;
+
+ * l’elemento :code:`<ShortName>` (*namespace* ``spid``), valorizzato
+   con l’abbreviativo unico dell’ente (in particolare del SP *aggregato*,
+   nel caso sia tratti del metadata di un soggetto aggregatore), ``usID``,
+   già introdotto al §\ :ref:`4.2 <§4.2>` e che consiste nella seguente
+   alternativa a seconda della tipologia di ente federato:
+
+    a. per gli IDP — un identificativo scelto dall’ente, purché univoco
+       nella federazione (costituito da un minimo di 3 a un massimo di
+       16 caratteri alfanumerici),
+
+    b. per gli SP pubblici — l'indice IPA,
+
+    c. per gli SP privati dotati di partita IVA — il numero di partita
+       IVA,
+
+    d. per gli altri SP privati — il codice fiscale (in caratteri
+       maiuscoli).
  
- * L’elemento :code:`<ShortName>` (*namespace* ``spid``) valorizzato con
-   l’abbreviativo unico dell’ente, :code:`SPuid`, di cui al §\ :ref:`4.2 <§4.2>`
-
-Si veda a tale scopo il seguente esempio:
+Si veda a tale scopo il seguente esempio (l’attributo :code:`index`
+è facoltativo per gli IdP, mentre si riferisce all’\ *n*\ -mo 
+*Assertion Consumer Service* per gli SP e i soggetti aggregatori:
 
 .. code-block:: xml
 
@@ -30,8 +55,8 @@ Si veda a tale scopo il seguente esempio:
      ...
      <samlp:Extensions
            xmlns:spid="https://spid.gov.it/saml-extensions">
-         <spid:SignatureArt20>
-             <spid:FileTransferService>
+         <spid:SignatureArt20 index="n">
+             <spid:FileTransferService
                    Location="https://indirizzo/al/DataIO/" />
              <spid:ShortName>usID</spid:ShortName>
          </spid:SignatureArt20>
@@ -40,6 +65,12 @@ Si veda a tale scopo il seguente esempio:
      ...
  </md:EntityDescriptor>
 
+Mediante la struttura appena descritta, tra le altre cose, il metadata
+di un soggetto aggregatore può dichiarare i sistemi di trasferimento
+sicuro di tutti gli enti che, fra i suoi aggregati, rendono disponibile
+il servizio di firma con SPID: sia i SP che gestiscono il sistema
+autonomamente, sia quelli che si appoggiano al medesimo sistema di
+trasferimento file fornitogli dall’ente aggregatore.
 
 Qualora l’elemento :code:`<SignatureArt20>` non sia presente nel metadata,
 è da intendersi che l’ente federato *non* offre tale servizio.
