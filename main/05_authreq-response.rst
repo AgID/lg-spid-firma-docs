@@ -15,7 +15,7 @@ aggiuntivi:
 a. il nome del file del documento;
 
 b. l’impronta dell’:ref:`evidenza informatica <payload>` ottenuta
-   calcolando l’:ref:`hash <hash>` del file di cui al punto a,
+   calcolando l’impronta grittografica del file di cui al punto a,
    calcolata dal SP conformemente a quanto indicato al §\ :ref:`6 <§6>`;
 
 c. l’identificativo della funzione di *hash* crittografico utilizzato al
@@ -29,7 +29,7 @@ obbligatoriamente i seguenti metadati:
 d. il nome del file del documento firmato con SPID;
 
 e. l’impronta dell’:ref:`evidenza informatica <payload>` ottenuta
-   calcolando l’:ref:`hash <hash>` del file di cui al punto e,
+   calcolando l’impronta crittografica del file di cui al punto e,
    calcolata dal SP conformemente a quanto indicato al §\ :ref:`6 <§6>`;
 
 f. l’identificativo della funzione di *hash* crittografico utilizzato al
