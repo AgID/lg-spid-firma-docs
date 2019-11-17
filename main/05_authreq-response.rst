@@ -12,11 +12,10 @@ La **richiesta di autenticazione** per la firma SPID, introdotta al
 punto 4 della procedura di cui al §\ :ref:`3 <§3>`, contiene i seguenti metadati
 aggiuntivi:
 
-a. il nome del file del documento;
+a. il nome del file del documento predisposto per la firma;
 
-b. l’impronta dell’:ref:`evidenza informatica <payload>` ottenuta
-   calcolando l’impronta grittografica del file di cui al punto a,
-   calcolata dal SP conformemente a quanto indicato al §\ :ref:`6 <§6>`;
+b. l’impronta crittografica calcolata dal SP, conformemente a
+   quanto indicato al §\ :ref:`6 <§6>`, sul file di cui al punto a,
 
 c. l’identificativo della funzione di *hash* crittografico utilizzato al
    punto b;
@@ -26,18 +25,17 @@ d. il codice fiscale del soggetto che deve apporre la firma.
 La **risposta di autenticazione** per la firma SPID contiene
 obbligatoriamente i seguenti metadati:
 
-d. il nome del file del documento firmato con SPID;
+e. il nome del file del documento firmato con SPID;
 
-e. l’impronta dell’:ref:`evidenza informatica <payload>` ottenuta
-   calcolando l’impronta crittografica del file di cui al punto e,
-   calcolata dal SP conformemente a quanto indicato al §\ :ref:`6 <§6>`;
+f. l’impronta crittografica calcolata dall’IdP, conformemente a
+   quanto indicato al §\ :ref:`6 <§6>`, sul file di cui al punto e,
 
-f. l’identificativo della funzione di *hash* crittografico utilizzato al
+g. l’identificativo della funzione di *hash* crittografico utilizzato al
    punto f.
 
 L’identificativo unico della sessione di autenticazione (*session ID*),
 sempre presente in ogni richiesta e risposta di autenticazione, associa
-in modo univoco il documento informatico scambiato tra SP, IDP e vice
+in modo univoco il documento informatico scambiato tra SP, IDP e, vice
 versa, ad un’unica autenticazione di firma con SPID.
 
 La durata delle sessioni di autenticazione descritte nell’ambito del
