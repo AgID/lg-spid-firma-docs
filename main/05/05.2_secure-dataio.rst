@@ -36,21 +36,33 @@ federati possano trasferire file mediante uno dei seguenti due flussi:
     provenienti dagli IdP in modalità *push* (cioè con trasferimenti iniziati in
     *upstream* dall’IDP).
 
-SP e IdP controllano che ogni file creato presso il proprio storage soddisfi quanto
-prescritto nel §\ :ref:`4.2 <§4.2>`. Non sono permessi file non conformi a quanto prescritto.
+Il sistema di trasferimento possiede, inoltre, le seguenti caratteristiche:
 
-L’IdP rimuove dallo storage i file ricevuti per i quali non sia pervenuta, entro un
-tempo limite di **10 secondi**, una richiesta di autenticazione proveniente dal SP.
-Viceversa, il SP rimuove dallo storage i file ricevuti per i quali non sia pervenuta,
-entro il medesimo tempo limite, la corrispondente richiesta di autenticazione da parte
-dell’IdP.
+ 1. SP e IdP controllano che ogni file creato presso il proprio storage soddisfi quanto
+    prescritto nel §\ :ref:`4.2 <§4.2>`. Non sono permessi file non conformi a quanto prescritto.
 
-IdP e SP verificano l’integrità dei documenti ricevuti ricalcolandone l’impronta e
-confrontandola con quella contenuta, rispettivamente, nella richiesta e nella risposta
-di autenticazione che le accompagnano.
+ 2. L’IdP rimuove dallo storage i file ricevuti per i quali non sia pervenuta, entro un
+    tempo limite di **10 secondi**, una richiesta di autenticazione proveniente dal SP.
 
-IdP e SP verificano l’autenticità dei :ref:`QSeal <QSeal>` della controparte e
-l’integrità del documento ricevuto.
+ 3. IdP e SP verificano l’integrità dei documenti ricevuti ricalcolandone l’impronta e
+    confrontandola con quella contenuta, rispettivamente, nella richiesta e nella risposta
+    di autenticazione che le accompagnano.
+
+ 4. IdP e SP verificano l’autenticità dei :ref:`QSeal <QSeal>` della controparte e
+    l’integrità del documento ricevuto.
+
+ 5. L’dDP verifica che il valore del campo ``subjectAltName`` nel certificato qualificato
+    di sigillo di cui al §\ :ref:`4.5 <§4.5>` –utilizzato dal SP, al §\ :ref:`4.3 <§4.3>`,
+    per apporre il QSeal sul documento predisposto per la firma– coincida con il dominio
+    dell’URL dichiarato, mediante l’estensione :code:`<FileTransferService>`, nel metadata
+    del SP (ovvero del suo soggetto aggregatore) da cui proviene la richiesta di
+    autenticazione.
+
+ 6. Dualmente, il SP verifica che il valore del campo ``subjectAltName`` nel certificato
+    qualificato di sigillo –utilizzato dal SP, al §\ :ref:`4.4 <§4.4>`, per apporre il
+    QSeal sul documento firmato con SPID– coincida con il dominio dell’URL dichiarato,
+    mediante l’estensione :code:`<FileTransferService>`, nel metadata dell'IdP cui è stata
+    inviata la richiesta di autenticazione.
 
 .. _`§5.2.1`:
 
