@@ -23,13 +23,13 @@ elementi:
    comprensivo della corretta estensione, composto come descritto in
    §\ :ref:`4.2 <§4.2>`;
 
--  punti b. e e. tramite elemento :code:`<DigestValue>` (*namespace* ``ds``,
-   standard XAdES), contenente un’impronta rappresentata applicandole
-   la trasformazione *Base64* (cfr. :RFC:`4648`);
+-  punti b. e e. tramite elemento :code:`<DigestValue>` (*namespace* ``ds``),
+   contenente un’impronta rappresentata applicandole la trasformazione
+   *Base64* (cfr. :RFC:`4648`);
 
--  punti c. e f. tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``,
-   standard XAdES), contenente la codifica W3C della funzione di *hash*
-   utilizzata per il calcolo dell’impronta del documento;
+-  punti c. e f. tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``),
+   contenente la codifica W3C della funzione di *hash* utilizzata per
+   il calcolo dell’impronta del documento;
 
 -  l’identificativo univoco di sessione è indicato nell’attributo :code:`ID`
    dell’elemento :code:`<AuthnRequest>` per la richiesta di
