@@ -1,5 +1,5 @@
-Regole Tecniche circa la sottoscrizione elettronica di documenti tramite SPID ex art. 20 del CAD
-================================================================================================
+ Tecniche per la sottoscrizione elettronica di documenti ai sensi dell’art. 20 del CAD
+======================================================================================
 
 .. highlights::
 
@@ -11,11 +11,16 @@ Regole Tecniche circa la sottoscrizione elettronica di documenti tramite SPID ex
    **__________** al **__________**. Questo documento raccoglie il
    testo delle Linee guida in oggetto, disponibile per la consultazione pubblica.
 
-======== =========== ============== ====================================
-Versione Data        Determinazione Tipologia modifica
-======== =========== ============== ====================================
-1.4      11/nov/2019                Prima versione pubblica delle LL.GG.
-======== =========== ============== ====================================
+======== =========== =============================================
+Versione Data        Tipologia modifica
+======== =========== =============================================
+0.6      03/dic/2018 Prima versione interna delle LL.GG.
+0.9      23/lug/2018 Priva versione post Gruppo di Lavoro
+1.0      14/ott/2018 Prima bozza per la consultazione pubblica
+1.4      11/nov/2019 Miglioramenti circa la sicurezza del processo
+1.5      13/nov/2019 Revisioni sul metadata SAML di IdP e SP
+1.6      18/nov/2019 Prima versione pubblica delle LL.GG.
+======== =========== =============================================
 
 .. toctree::
    :numbered:
@@ -31,7 +36,8 @@ Versione Data        Determinazione Tipologia modifica
    main/07_codici-errore.rst
    main/08_obblighi.rst
    main/09_conservazione.rst
-   main/10_transitorio.rst
+   main/10_convalida-documenti.rst
+   main/11_transitorio.rst
 
 .. forum_italia::
    :topic_id: 12039
