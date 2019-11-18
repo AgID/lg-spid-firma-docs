@@ -1,4 +1,4 @@
-# Regole Tecniche circa la sottoscrizione elettronica di documenti tramite SPID ex art. 20 del CAD
+# Regole Tecniche per la sottoscrizione elettronica di documenti ai sendi dell’art. 20 del CAD
 ## Linee Guida AgID ex art. 71 del CAD
 
 L’articolo 20 del CAD dispone il soddisfacimento del requisito della forma scritta e l’efficacia prevista dall’articolo 2702 del Codice Civile del documento informatico formato previa identificazione informatica del suo autore,
