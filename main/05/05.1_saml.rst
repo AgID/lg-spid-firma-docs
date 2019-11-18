@@ -23,11 +23,11 @@ elementi:
    comprensivo della corretta estensione, composto come descritto in
    §\ :ref:`4.2 <§4.2>`;
 
--  punti b. e e. tramite elemento :code:`<DigestValue>` (*namespace* ``ds``),
+-  punti b. e f. tramite elemento :code:`<DigestValue>` (*namespace* ``ds``),
    contenente un’impronta rappresentata applicandole la trasformazione
    *Base64* (cfr. :RFC:`4648`);
 
--  punti c. e f. tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``),
+-  punti c. e g. tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``),
    contenente la codifica W3C della funzione di *hash* utilizzata per
    il calcolo dell’impronta del documento;
 
