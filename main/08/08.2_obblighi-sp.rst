@@ -8,11 +8,6 @@ del presente provvedimento, hanno l’obbligo improrogabile di
 consentire agli utenti la sottoscrizione con firma elettronica
 qualificata.
 
-Gli aggregatori di servizi SPID possono offrire ai soggetti
-aggregati soluzioni per la realizzazione del servizio in oggetto
-includendo, negli specifici accordi contrattuali, le clausole in
-merito alla contitolarità del trattamento dei dati personali.
-
 .. forum_italia::
    :topic_id: 12168
    :scope: document
