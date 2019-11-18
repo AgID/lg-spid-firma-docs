@@ -18,6 +18,8 @@ manifesta e inequivoca, la sua riconducibilità all’autore.
 
 Destinatari delle Linee guida sono i fornitori di servizi e i gestori dell'identità che intendono realizzare quanto previsto dal sopracitato articolo 20; gli utenti in qualità di fruitori del servizio.
 
+Le presenti Linee guida sono applicabili anche dai *soggetti aggregatori*.
+
 
 Natura vincolante delle Linee Guida
 -----------------------------------
