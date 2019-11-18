@@ -14,8 +14,9 @@ aggiuntivi:
 
 a. il nome del file del documento predisposto per la firma;
 
-b. l’impronta crittografica calcolata dal SP, conformemente a
-   quanto indicato al §\ :ref:`6 <§6>`, sul file di cui al punto a,
+b. l’impronta dell’evidenza informatica ottenuta calcolando l’\ :ref:`hash <hash>`
+   del file di cui al punto a, calcolata dal SP conformemente a quanto
+   indicato al §\ :ref:`6 <§6>`;
 
 c. l’identificativo della funzione di *hash* crittografico utilizzato al
    punto b;
@@ -27,8 +28,9 @@ obbligatoriamente i seguenti metadati:
 
 e. il nome del file del documento firmato con SPID;
 
-f. l’impronta crittografica calcolata dall’IdP, conformemente a
-   quanto indicato al §\ :ref:`6 <§6>`, sul file di cui al punto e,
+b. l’impronta dell’evidenza informatica ottenuta calcolando l’\ :ref:`hash <hash>`
+   del file di cui al punto e, calcolata dall’IdP conformemente a quanto
+   indicato al §\ :ref:`6 <§6>`;
 
 g. l’identificativo della funzione di *hash* crittografico utilizzato al
    punto f.
