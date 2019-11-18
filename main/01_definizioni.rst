@@ -54,8 +54,6 @@ e del DPCM 24 ottobre 2014 *Definizione delle caratteristiche del sistema pubbli
 
 -  **sottoscrizione**: il processo di cui all’articolo 20, comma 1-bis del CAD;
 
--  **titolare della piattaforma**: il soggetto pubblico o privato che, in qualità di SP, rende possibile a un firmatario la formazione di un documento informatico per via telematica, al fine di conferirgli il valore e l’efficacia previsti dall’articolo 20 del CAD.
-
 Sono anche utilizzati i seguenti acronimi o abbreviazioni:
 
 .. _`API`:
@@ -87,7 +85,7 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
    versione 2.0, pubblicato da OASIS;
 
 .. _`SP`:
--  **SP**: fornitore di servizi nella federazione SPID, ovvero *service provider* nel contesto SAML, ovvero *relying party* nel contesto OIDC;
+-  **SP**: fornitore di servizi nella federazione SPID;
 
 .. _`SPID`:
 -  **SPID**: il Sistema Pubblico di Identità Digitale, introdotto con il DPCM del 24 ottobre 2014, pubblicato sulla *G.U.* Serie Generale №285 del 9 dicembre 2014.
