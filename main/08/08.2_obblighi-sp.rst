@@ -14,5 +14,5 @@ includendo, negli specifici accordi contrattuali, le clausole in
 merito alla contitolarità del trattamento dei dati personali.
 
 .. forum_italia::
-   :topic_id: 6
+   :topic_id: 12168
    :scope: document
