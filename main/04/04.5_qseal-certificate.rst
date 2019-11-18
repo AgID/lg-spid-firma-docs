@@ -36,9 +36,6 @@ standard X.509 versione 3, e contengono le seguenti informazioni aggiuntive:
       contenente, mediante un elemento di tipo :code:`dNSName`, il nome di
       dominio – privo di qualsiasi carattere *wildcard* – di cui al punto 5.
 
-   c. :code:`givenName` (`ᴏɪᴅ 2.5.4.42 <http://oid-info.com/get/2.5.4.42>`__) — 
-      contenente l’abbreviativo univoco dell’ente, già introdotto al §\ :ref:`4.2 <§4.2>`.
-
 2. Il campo :code:`CertificatePolicies` (`ᴏɪᴅ 2.5.29.32 <http://oid-info.com/get/2.5.29.32>`__), contenente i
    seguenti attributi:
 
