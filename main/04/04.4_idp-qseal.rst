@@ -63,10 +63,6 @@ guida.
 La richiesta del SP può prevedere più firme dello stesso soggetto sul documento;
 in tal caso l’IdP appone altrettanti sigilli.
 
-La richiesta del SP può prevedere più firme dello stesso soggetto sul documento;
-in tal caso l’IdP appone altrettanti sigilli.
-
-
 .. forum_italia::
    :topic_id: 12107
    :scope: document
