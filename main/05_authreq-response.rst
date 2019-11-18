@@ -28,7 +28,7 @@ obbligatoriamente i seguenti metadati:
 
 e. il nome del file del documento firmato con SPID;
 
-b. l’impronta dell’evidenza informatica ottenuta calcolando l’\ :ref:`hash <hash>`
+f. l’impronta dell’evidenza informatica ottenuta calcolando l’\ :ref:`hash <hash>`
    del file di cui al punto e, calcolata dall’IdP conformemente a quanto
    indicato al §\ :ref:`6 <§6>`;
 
