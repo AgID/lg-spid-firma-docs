@@ -12,9 +12,10 @@ possono essere utilizzate esclusivamente le identità digitali della
 persona fisica e le identità digitali per uso professionale (quest'ultime regolamentate
 dalle :ref:`LL.GG. identità digitali ad uso professionale <llgg_uso_professionale>`).
 
-Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto.
+Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto delle
+presenti Linee guida.
 
-I metadati SPID indicano se l’IdP offre il servizio in oggetto o meno
+I metadati SPID indicano se l’ente federato offre il servizio in oggetto o meno
 (cfr. §\ :ref:`4.6 <§4.6>`).
 
 Il servizio di sottoscrizione oggetto delle presenti Linee guida è
