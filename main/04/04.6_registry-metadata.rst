@@ -3,13 +3,16 @@
 Metadata nel registro SPID
 ==========================
 
-Qualora un IDP, un SP ovvero un soggetto aggregatore offra il servizio
-in oggetto, il relativo metadata pubblicato nel registro SPID contiene,
-all’interno dell’elemento :code:`<Extensions>` (*namespace* ``samlp``),
-le modalità tecniche tramite le quali l’ente federato espone tale
-servizio.
+Qualora un IdP, un SP ovvero un soggetto aggregatore offra il servizio
+in oggetto, il relativo metadata pubblicato nel registro SPID contiene
+l’estensione :code:`<SignatureArt20>` (*namespace* ``spid``) come figlio
+dell’elemento :code:`<Extensions>` (*namespace* ``samlp``), al cui
+interno è specificata la modalità tecnica tramite la quale l’ente
+federato espone tale servizio.
 
-Nel metadata dell’IDP è presente una sola estensione :code:`<SignatureArt20>`
+La suddetta modalità è costituita da:
+
+Nel metadata dell’IdP è presente una sola 
 (*namespace* ``spid``), *facoltativamente* dotata dell’attributo
 :code:`index` valorizzato con “``0``”. Per gli SP e i soggetti
 aggregatori sono presenti tante estensioni :code:`<SignatureArt20>`
@@ -19,21 +22,13 @@ dell’attributo *obbligatorio* :code:`index`. Ciascun elemento
 :code:`<SignatureArt20>` contiene dunque:
 
  * l’elemento :code:`<FileTransferService>` (*namespace* ``spid``),
-   contenente il seguente attributo:
+   dotato del seguente attributo:
    
-    * :code:`Location` (*obbligatorio*) —  valorizzato con l’URL
-      completo (comprensivo di schema) ove l’ente rende disponibile
-      il sistema di trasferimento sicuro dei documenti di cui al
-      §\ :ref:`5.2 <§5.2>`;
+    * :code:`Location` —  URL completo (comprensivo del relativo schema
+      HTTPS) ove l’ente rende disponibile il sistema di trasferimento
+      sicuro dei documenti di cui al §\ :ref:`5.2 <§5.2>`.
 
- * l’elemento :code:`<ShortName>` (*namespace* ``spid``), valorizzato
-   con l’abbreviativo unico dell’ente (in particolare del SP *aggregato*,
-   nel caso sia tratti del metadata di un soggetto aggregatore), ``usID``,
-   introdotto ai §\ :ref:`4.2 <§4.2>` e già utilizzato al §\ :ref:`4.5 <§4.5>`:
-
-Si veda a tale scopo il seguente esempio (l’attributo :code:`index`
-è facoltativo per gli IdP, mentre si riferisce all’\ *n*\ -mo 
-*Assertion Consumer Service* per gli SP e i soggetti aggregatori:
+Si veda a tale scopo il seguente esempio:
 
 .. code-block:: xml
 
@@ -42,22 +37,14 @@ Si veda a tale scopo il seguente esempio (l’attributo :code:`index`
      ...
      <samlp:Extensions
            xmlns:spid="https://spid.gov.it/saml-extensions">
-         <spid:SignatureArt20 index="n">
+         <spid:SignatureArt20>
              <spid:FileTransferService
                    Location="https://indirizzo/al/DataIO/" />
-             <spid:ShortName>usID</spid:ShortName>
          </spid:SignatureArt20>
      </samlp:Extensions>
      <md:Organization>...</md:Organization>
      ...
  </md:EntityDescriptor>
-
-Mediante la struttura appena descritta, tra le altre cose, il metadata
-di un soggetto aggregatore può dichiarare i sistemi di trasferimento
-sicuro di tutti gli enti che, fra i suoi aggregati, rendono disponibile
-il servizio di firma con SPID: sia i SP che gestiscono il sistema
-autonomamente, sia quelli che si appoggiano al medesimo sistema di
-trasferimento file fornitogli dall’ente aggregatore.
 
 Qualora l’elemento :code:`<SignatureArt20>` non sia presente nel metadata,
 è da intendersi che l’ente federato *non* offre tale servizio.
