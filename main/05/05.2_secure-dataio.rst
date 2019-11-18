@@ -34,12 +34,12 @@ federati possano trasferire file mediante uno dei seguenti due flussi:
 
  B. il sistema del SP è configurato per la sola ricezione di evidenze informatiche
     provenienti dagli IdP in modalità *push* (cioè con trasferimenti iniziati in
-    *upstream* dall’IDP).
+    *upstream* dall’IdP).
 
 Il sistema di trasferimento possiede, inoltre, le seguenti caratteristiche:
 
  1. SP e IdP controllano che ogni file creato presso il proprio storage soddisfi quanto
-    prescritto nel §\ :ref:`4.2 <§4.2>`. Non sono permessi file non conformi a quanto prescritto.
+    prescritto nel §\ :ref:`4.2 <§4.2>`.
 
  2. L’IdP rimuove dallo storage i file ricevuti per i quali non sia pervenuta, entro un
     tempo limite di **10 secondi**, una richiesta di autenticazione proveniente dal SP.
@@ -50,20 +50,6 @@ Il sistema di trasferimento possiede, inoltre, le seguenti caratteristiche:
 
  4. IdP e SP verificano l’autenticità dei :ref:`QSeal <QSeal>` della controparte e
     l’integrità del documento ricevuto.
-
- 5. L’IdP verifica che vi sia corrispondenza tra le seguenti estensioni –dichiarate
-    nel metadata del SP (ovvero del suo soggetto aggregatore) da cui proviene la richiesta
-    di autenticazione– e i seguenti campi, presenti nel certificato qualificato di sigillo
-    di cui al §\ :ref:`4.5 <§4.5>` (utilizzato dal SP, al §\ :ref:`4.3 <§4.3>`, per apporre
-    il QSeal sul documento predisposto per la firma):
-    
-     a. l’abbreviativo unico del SP, dichiarato mediante l’estensione :code:`<ShortName>`,
-        coincide con il valore del campo :code:`givenName` del certificato;
-     
-     b. l’URL del sistema di trasferimento sicuro del SP, dichiarato mediante l’estensione
-        :code:`<FileTransferService>`, afferisce a un dominio coincidente con quanto
-        valorizzato nel campo :code:`subjectAltName` del certificato.
-
 
 .. _`§5.2.1`:
 
@@ -92,6 +78,7 @@ Le evidenze sono formate mediate la seguente procedura:
 3. conversione in :ref:`JWS <JWS>` del pacchetto di cui al punto 2, mediante metodo
    *JWS Compact Serialization* (cfr. :RFC:`7515`), utilizzando il :ref:`QSeal <QSeal>`
    di cui al §\ :ref:`4.5 <§4.5>`.
+
 Gli algoritmi crittografici utilizzati lungo l’intera procedura sopra descritta
 sono definiti in §\ :ref:`6 <§6>`. I pacchetti JWS sono caratterizzati dalla
 presenza degli identificativi unici di sessione (cfr. §\ :ref:`5 <§5>`).
