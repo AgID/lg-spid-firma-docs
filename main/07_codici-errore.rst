@@ -46,27 +46,19 @@ un oggetto di *Content-Type* ``problem+json``.
 .. table:: Codici di ritorno del sistema di trasferimento sicuro dei documenti.
    :name: tabella02
    
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
-   | HTTP Status Code | code | title                             | detail                                                                                           |
-   +==================+======+===================================+==================================================================================================+
-   | 201              |      | *created*                         | Errore nella richiesta: Pacchetto malformato.                                                    |
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
-   | 400              | 1    | JWS malformato                    | Errore nella richiesta: Pacchetto malformato.                                                    |
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
-   | 400              | 2    | nome del file invalido            | Errore nella richiesta: Nome del file non valido.                                                |
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
-   | 400              | 3    | file corrotto                     | Errore nella richiesta: Documento corrotto.                                                      |
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
-   | 400              | 4    | documento malformato              | Errore nella richiesta: Documento malformato.                                                    |
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
-   | 400              | 5    | formato del file invalido         | Errore nella richiesta: Formato del file non previsto.                                           |
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
-   | 400              | 6    | *hash* del documento non corretto | Errore nella richiesta: L’impronta crittografica del file non corrisponde con quella dichiarata. |
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
-   | 401              |      | QSeal invalido                    | Errore nella richiesta: Certificato di sigillo elettronico non valido.                           |
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
-   | 503              |      | servizio non disponibile          | Servizio temporaneamente non disponibile.                                                        |
-   +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
+   ================  ====  =================================  =================================================================================================
+   HTTP Status Code  code  title                              detail                                                                                           
+   ================  ====  =================================  =================================================================================================
+   201                     *created*                          Errore nella richiesta: Pacchetto malformato.                                                    
+   400               1     JWS malformato                     Errore nella richiesta: Pacchetto malformato.                                                    
+   400               2     nome del file invalido             Errore nella richiesta: Nome del file non valido.                                                
+   400               3     file corrotto                      Errore nella richiesta: Documento corrotto.                                                      
+   400               4     documento malformato               Errore nella richiesta: Documento malformato.                                                    
+   400               5     formato del file invalido          Errore nella richiesta: Formato del file non previsto.                                           
+   400               6     *hash* del documento non corretto  Errore nella richiesta: L’impronta crittografica del file non corrisponde con quella dichiarata. 
+   401                     QSeal invalido                     Errore nella richiesta: Certificato di sigillo elettronico non valido.                           
+   503                     servizio non disponibile           Servizio temporaneamente non disponibile.                                                        
+   ================  ====  =================================  =================================================================================================
 
 
 .. forum_italia::
