@@ -42,6 +42,7 @@ della norma :RFC:`7807`. Il mittente, ricevuto il messaggio di errore, lo notifi
 
 La :ref:`Tabella 2 <tabella02>` elenca i possibili codici di ritorno, veicolati nel pacchetto JWT contenente
 un oggetto di *Content-Type* ``problem+json``.
+
 .. table:: Codici di ritorno del sistema di trasferimento sicuro dei documenti.
    :name: tabella02
    
@@ -67,7 +68,7 @@ un oggetto di *Content-Type* ``problem+json``.
    | 503              |      | servizio non disponibile          | Servizio temporaneamente non disponibile.                                                        |
    +------------------+------+-----------------------------------+--------------------------------------------------------------------------------------------------+
 
-d
+
 .. forum_italia::
    :topic_id: 12097
    :scope: document
