@@ -15,7 +15,7 @@ federato verso tutti gli enti federati, mediante l’URL che l’ente
 medesimo pubblica nel metadata SPID e il cui dominio è contestualmente
 riportato nei campi :code:`commonName` e :code:`subjectAltName` del proprio
 certificato qualificato di sigillo elettronico, di cui al §\ :ref:`4.5 <§4.5>`, punti
-14.b e 5. Tale URL indica esplicitamente il protocollo di comunicazione
+1.b e 5. Tale URL indica esplicitamente il protocollo di comunicazione
 sicuro, i cui dettagli sono dati in §\ :ref:`5.2.1 <§5.2.1>`.
 
 Il sistema di trasferimento è, nella sua interezza, protetto da
@@ -58,9 +58,7 @@ Interfaccia applicativa
 
 SP e IdP si scambiano evidenze informatiche in formato :ref:`JWS <JWS>`, su canale HTTPS
 (porta 443/TCP) tramite un’:ref:`API <API>` che prevede lo scambio di messaggi
-tramite metodo  HTTP *POST*. L’attributo :code:`type` nell’elemento :code:`<FileTransferService>`
-del metadata degli SP di cui al §\ :ref:`4.6 <§4.6>` può non essere presente; se presente,
-è valorizzato con la stringa “``HTTP POST``”.
+tramite metodo  HTTP *POST*.
 Le evidenze sono formate mediate la seguente procedura:
 
 1. predisposizione di una struttura :ref:`JSON <JSON>` contenente sia il **dato**
@@ -70,7 +68,7 @@ Le evidenze sono formate mediate la seguente procedura:
     b. l'impronta del docuento da inviare sigillato elettronicamente,
     c. la funzione di *hash* impiegata al punto 1.b,
     d. la posizione ove collocare la/le componente/i grafica/he del :ref:`QSeal <QSeal>`
-       (hash §\ :ref:`4.4 <§4.4>`),
+       (§\ :ref:`4.4 <§4.4>`),
     e. l'eventuale obbligatorietà di ciascuna firma.
 
 2. codifica del messaggio di cui al punto 1 in un pacchetto :ref:`JWT <JWT>`;
@@ -127,9 +125,9 @@ parametri obbligatori:
    dell’ente federato destinatario; coincide con il valore
    dell’attributo ``Destination``, rispettivamente, dell’elemento :ref:`SAML <SAML>`:
 
-   -  :code:`<AuthnRequest>` per il pacchetto di andata (flusso :ref:`a <flusso-a>`), *ovvero*
+   -  :code:`<AuthnRequest>` per il pacchetto di andata (flusso :ref:`A <flusso-a>`), *ovvero*
 
-   -  :code:`<Response>` per il pacchetto di ritorno (flusso :ref:`b <flusso-b>`).
+   -  :code:`<Response>` per il pacchetto di ritorno (flusso :ref:`B <flusso-b>`).
 
 -  :code:`iat` — valorizzato con l’orario in cui il messaggio è generato e
    inviato (rispetto al fuso orario italiano), codificato come campo
@@ -139,9 +137,9 @@ parametri obbligatori:
    richiesta di autenticazione per firma SPID – coincide con il valore che, nei
    pacchetti di andata e di ritorno, si trova rispettivamente nell’attributo:
 
-   -  :code:`ID` dell’elemento SAML :code:`<AuthnRequest>` per il flusso :ref:`a <flusso-a>` (andata), *ovvero*
+   -  :code:`ID` dell’elemento SAML :code:`<AuthnRequest>` per il flusso :ref:`A <flusso-a>` (andata), *ovvero*
 
-   -  :code:`InResponseTo` dell’elemento SAML :code:`<Response>` per il flusso :ref:`b <flusso-b>` (ritorno).
+   -  :code:`InResponseTo` dell’elemento SAML :code:`<Response>` per il flusso :ref:`B <flusso-b>` (ritorno).
 
 -  :code:`filename` — valorizzato con il nome del file del documento
    inviato; coincide con il valore dell’elemento :code:`<Filename>`
@@ -190,7 +188,7 @@ Nel pacchetto di andata:
       (:code:`false`) ovvero obbligatoria (:code:`true`) per il SP richiedente.
       Se il firmatario non accetta di apporre anche solo una firma
       obbligatoria, l’intero processo di sottoscrizione termina senza
-      successo e l’IdP non restituisce il documento al SP, informandolo
+      successo (cfr. §\ :ref:`7 <§7>`)e l’IdP non restituisce il documento al SP, informandolo
       della mancanza di volontà del firmatario.
 
 Nel pacchetto di ritorno:
@@ -198,7 +196,7 @@ Nel pacchetto di ritorno:
 -  :code:`sub` — valorizzato con la stringa ``%firmatario%``
    identificativa del firmatario, come definita nel §\ :ref:`4.4 <§4.4>`;
 
--  :code:`ref` — valorizzato con un *array* JSON contenente tanti elementi
+-  :code:`signatures` — valorizzato con un *array* JSON contenente tanti elementi
    quante sono le firme richieste nel pacchetto di andata; ciascun
    elemento dell’*array* è una struttura JSON contenente:
 
@@ -223,8 +221,8 @@ Esempio di pacchetto di andata JSON:
 
  {
      "jti" : "uuid1",
-     "iss" : "https://url-SP-inviante",
-     "aud" : "https://url-IdP-ricevente",
+     "iss" : "https://entityId-SP-inviante",
+     "aud" : "https://entityId-IdP-ricevente",
      "iat" : 1563235200,
      "sessionID": "sig-sessionID",
      "filename" : "AgID_20190321T083410.tmp.pdf",
@@ -266,8 +264,8 @@ Esempio di pacchetto di ritorno JSON:
 
  {
      "jti" : "uuid2",
-     "iss" : "https://url-IdP-inviante",
-     "aud" : "https://url-SP-ricevente",
+     "iss" : "https://entityId-IdP-inviante",
+     "aud" : "https://entityId-SP-ricevente",
      "sub" : "Mario Rossi/CF:IT-RSSMR064T30H501H",
      "iat" : 1563235220,
      "sessionID": "sig-sessionID",
