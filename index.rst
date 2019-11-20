@@ -11,16 +11,16 @@ Regole Tecniche per la sottoscrizione elettronica di documenti ai sensi dell’a
    **20 novembre** al **20 dicembre 2019**. Questo documento raccoglie il
    testo delle Linee guida in oggetto, disponibile per la consultazione pubblica.
 
-========== =========== =============================================
-Versione   Data        Tipologia modifica
-========== =========== =============================================
-0.6α       03/dic/2018 Prima versione interna delle LL.GG.
-0.9α       23/lug/2018 Priva versione post Gruppo di Lavoro
-1.0β       14/ott/2018 Prima bozza per la consultazione pubblica
-1.4β       11/nov/2019 Miglioramenti circa la sicurezza del processo
-1.5β       13/nov/2019 Revisioni sul metadata SAML di IdP e SP
-1.0 (1.6β) 18/nov/2019 Prima versione pubblica delle LL.GG.
-========== =========== =============================================
+========== =========== ==========================================
+Versione   Data        Tipologia modifica                        
+========== =========== ==========================================
+0.6α       03/dic/2018 Prima versione interna delle LL.GG.       
+0.9α       23/lug/2018 Priva versione post Gruppo di Lavoro      
+1.0β       14/ott/2018 Prima bozza per la consultazione pubblica 
+1.4β       11/nov/2019 Miglioramenti del processo                
+1.5β       13/nov/2019 Minori revisioni metadata SAML di SP e IdP
+1.0 (1.6β) 18/nov/2019 Prima versione pubblica delle LL.GG.      
+========== =========== ==========================================
 
 .. toctree::
    :numbered:
