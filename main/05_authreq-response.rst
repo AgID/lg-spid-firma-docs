@@ -37,7 +37,7 @@ g. l’identificativo della funzione di *hash* crittografico utilizzato al
 
 L’identificativo unico della sessione di autenticazione (*session ID*),
 sempre presente in ogni richiesta e risposta di autenticazione, associa
-in modo univoco il documento informatico scambiato tra SP, IDP e, vice
+in modo univoco il documento informatico scambiato tra SP, IdP e vice
 versa, ad un’unica autenticazione di firma con SPID.
 
 La durata delle sessioni di autenticazione descritte nell’ambito del
