@@ -7,14 +7,14 @@ Il nome del documento predisposto per la firma, di cui al §\ :ref:`3.1 <§3.1>`
 è costituito da tre parti obbligatorie variabili, una parte facoltativa (indicata
 tra parentesi quadre “``[``” e “``]``”), più alcune parti fisse (in tondo):
 
-.. code-block::
+::
 
    usID_dataTora[_001].tmp.pdf
    
 Il nome del *documento firmato con SPID*, di cui al §\ :ref:`3.2 <§3.1>` punto 11,
 è derivato dal precedente nome, senza il suffisso ``.tmp``:
 
-.. code-block::
+::
 
    usID_dataTora[_001].pdf
 
