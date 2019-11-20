@@ -7,7 +7,7 @@ La richiesta di autenticazione :ref:`SAML <SAML>` si riferisce,
 nell’elemento :code:`<AuthnRequest>` (*namespace* ``samlp``),
 all’attributo `AttributeConsumingServiceIndex` corrispondente
 all’*Attribute Consuming Service* specifico, di indice “``77``”,
-introdotto al §:ref:`4.6 <4.6>`.
+introdotto al §\ :ref:`4.6 <4.6>`.
 
 Le richieste e risposte di autenticazione SAML impiegano
 *session ID*, nei loro rispettivi attributi :code:`ID`, valorizzati
@@ -38,7 +38,7 @@ elementi:
    corrispondete risposta di autenticazione.
 
 Qui sotto è riportato un esempio di richiesta di autenticazione SAML, comprensiva
-dell’\ Attribute Consuming Service* specifica e dell’elemento :code:`<Signature>`
+dell’\ *Attribute Consuming Service* specifica e dell’elemento :code:`<Signature>`
 (*namespace* ``spid``) per la richiesta di autenticazione relativa a un documento
 in formato PDF predisposto dal SP e successivamente inviato all’IdP per la sottoscrizione.
 
@@ -47,14 +47,14 @@ in formato PDF predisposto dal SP e successivamente inviato all’IdP per la sot
  <samlp:AuthnRequest 
        AttributeConsumingService="77"
        Destination="https://url-IdP-destinatario"
-       ID="sig-SessionId"
+       ID="sig-SessionID"
        xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
        xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
        xmlns:spid="https://spid.gov.it/saml-extensions"
        xmlns:enc="http://www.w3.org/2001/04/xmlenc#">
      <saml:Issuer>https://url-SP-inviante</saml:Issuer>
      ...
-     <samlp:Extensions">
+     <samlp:Extensions>
          <spid:Signature>
              <spid:Filename>AgID_YYYYMMDDThhmmss.tmp.pdf</spid:Filename>
              <ds:DigestMethod Algorithm="http://funzione_hash" />
@@ -85,7 +85,7 @@ metadati del documento firmato con SPID.
        xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
        Destination="https://url-SP-destinatario"
        ID="_ResponseID"
-       InResponseTo="id-SessionID">
+       InResponseTo="sig-SessionID">
      <saml:Issuer>https://url-IdP-inviante</saml:Issuer>
      ...
      <samlp:Extensions
