@@ -63,7 +63,7 @@ firmato con SPID (da una persona fisica presso il proprio IDP), sarà
    A titolo di esempio, il documento predisposto per la firma dall’Agenzia per
    l’Italia Digitale (identificativo unico: “``AgID``”), il 21 marzo 2019 all’ora locale
    08:34:10, è “``AgID_20190321T083410.tmp.pdf``”. Il nome del corrispondente documento
-   firmato con SPID (da una persona fisica presso il proprio IDP), sarà
+   firmato con SPID (da una persona fisica presso il proprio IdP), sarà
    “``AgID_20190321T083410.pdf``”.
 
 
