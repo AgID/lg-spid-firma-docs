@@ -1,5 +1,5 @@
- Tecniche per la sottoscrizione elettronica di documenti ai sensi dell’art. 20 del CAD
-======================================================================================
+Regole Tecniche per la sottoscrizione elettronica di documenti ai sensi dell’art. 20 del CAD
+============================================================================================
 
 .. highlights::
 
@@ -8,7 +8,7 @@
 .. admonition:: consultation
 
    La consultazione pubblica relativa al presente documento è attiva dal 
-   **__________** al **__________**. Questo documento raccoglie il
+   **10 novembre** al **10 dicembre 2019**. Questo documento raccoglie il
    testo delle Linee guida in oggetto, disponibile per la consultazione pubblica.
 
 ========== =========== =============================================
