@@ -12,15 +12,6 @@ federato espone tale servizio.
 
 La suddetta modalità è costituita da:
 
-Nel metadata dell’IdP è presente una sola 
-(*namespace* ``spid``), *facoltativamente* dotata dell’attributo
-:code:`index` valorizzato con “``0``”. Per gli SP e i soggetti
-aggregatori sono presenti tante estensioni :code:`<SignatureArt20>`
-quanti sono gli *Assertion Consumer Service* dichiarati nel metadata
-e al cui indice sono associati biunivocamente mediante valorizzazione
-dell’attributo *obbligatorio* :code:`index`. Ciascun elemento
-:code:`<SignatureArt20>` contiene dunque:
-
  * l’elemento :code:`<FileTransferService>` (*namespace* ``spid``),
    dotato del seguente attributo:
    
