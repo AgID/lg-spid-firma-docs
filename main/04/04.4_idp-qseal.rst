@@ -5,7 +5,7 @@ Apposizione del QSeal dell’Identity Provider
 
 A completamento del processo di firma, l’IdP appone il proprio :ref:`QSeal <QSeal>` nel
 documento che è, per ciascuna firma, graficamente localizzato nello spazio
-previsto dal SP e indicato nella richiesta di utenticazione (cfr. :ref:`5 <§5>`).
+previsto dal SP e indicato nella richiesta di autenticazione (cfr. §\ :ref:`5 <§5>`).
 La componente visibile del sigillo contiene il seguente testo:
 
  ``Il %data% alle %ora%, %firmatario% ha confermato la volonta' di apporre qui la propria sottoscrizione ai sensi dell'art. 20, comma 1-bis del CAD.``
@@ -29,7 +29,7 @@ Dove:
       seguito da un identificativo unico *dell’organizzazione* (privo di spazi in
       testa e in coda), valorizzato seguendo le alternative proposte nel
       §\ :ref:`4.5 <§4.5>`, punto 1.a. Ad esempio, nel caso di Mario Rossi che
-      utilizza l'identotà digitale  uso professionale della persona giuridica
+      utilizza l'identità digitale  uso professionale della persona giuridica
       ‘Agenzia per l'Italia Digitale’:
       “``Mario Rossi/Agenzia per l'Italia Digitale/TINIT-97735020584``”.
 
@@ -51,9 +51,9 @@ Dove:
    -  due cifre per l’ora nell’arco delle ventiquattrore (da
       “``00``” per la mezzanotte a “``23``”),
 
-   -  due cifre per il minuto primo (da “``01``” a “``59``”),
+   -  due cifre per il minuto primo (da “``00``” a “``59``”),
 
-   -  due cifre per il minuto secondo (da “``01``” a “``59``”).
+   -  due cifre per il minuto secondo (da “``00``” a “``59``”).
 
 Il documento può contenere già una o più firme elettroniche qualificate
 o sigilli elettronici qualificati, o può già essere stato oggetto di
