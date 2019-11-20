@@ -67,7 +67,7 @@ Il metadata del SP comprende dunque la seguente struttura:
          </md:AttributeConsumingService>
      ...
      </md:SPSSODescriptor>
- </samlp:Response>
+ </md:EntityDescriptor>
 
 
 Tutte le evidenze informatiche SAML che si riferiscono al servizio in
