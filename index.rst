@@ -8,7 +8,7 @@ Regole Tecniche per la sottoscrizione elettronica di documenti ai sensi dell’a
 .. admonition:: consultation
 
    La consultazione pubblica relativa al presente documento è attiva dal 
-   **10 novembre** al **10 dicembre 2019**. Questo documento raccoglie il
+   **20 novembre** al **20 dicembre 2019**. Questo documento raccoglie il
    testo delle Linee guida in oggetto, disponibile per la consultazione pubblica.
 
 ========== =========== =============================================
