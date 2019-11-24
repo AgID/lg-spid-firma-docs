@@ -8,7 +8,7 @@ Il processo prevede che il SP conosca il codice fiscale del firmatario; il SP qu
 .. topic:: Procedura
    :class: procedure
 
-   1. Presente all’utente il bottone  “**Firma con SPID**”, alla cui selezione il SP
+   1. Presenta all’utente il bottone  “**Firma con SPID**”, alla cui selezione il SP
       mostra l’elenco degli IdP che offrono il servizio di firma. L’utente seleziona
       il proprio IdP. Qualora l’utente sia già autenticato presso il SP, con l’identità
       digitale di un IdP che offre il servizio di firma con SPID, la selezione
