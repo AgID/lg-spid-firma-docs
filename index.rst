@@ -21,6 +21,7 @@ Versione Data        Tipologia modifica
 1.5β     13/nov/2019 Minori revisioni metadata SAML di SP e IdP
 1.6β     18/nov/2019 Revisioni minori pre-consultazion
 1.0      20/nov/2019 Versione stabile in consultazione pubblica
+1.1      29/nov/2019 Proroga per la consultazione pubblica
 ======== =========== ==========================================
 
 .. toctree::
