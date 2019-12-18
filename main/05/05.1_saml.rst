@@ -82,7 +82,7 @@ metadati del documento firmato con SPID.
 .. code-block:: xml
 
  <samlp:Response 
-       xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+       xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
        Destination="https://url-SP-destinatario"
        ID="_ResponseID"
        InResponseTo="sig-SessionID">
