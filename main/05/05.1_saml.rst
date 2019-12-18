@@ -7,7 +7,7 @@ La richiesta di autenticazione :ref:`SAML <SAML>` si riferisce,
 nell’elemento :code:`<AuthnRequest>` (*namespace* ``samlp``),
 all’attributo `AttributeConsumingServiceIndex` corrispondente
 all’*Attribute Consuming Service* specifico, di indice “``77``”,
-introdotto al §\ :ref:`4.6 <4.6>`.
+introdotto al §\ :ref:`4.6 <§4.6>`.
 
 Le richieste e risposte di autenticazione SAML impiegano
 *session ID*, nei loro rispettivi attributi :code:`ID`, valorizzati
