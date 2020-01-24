@@ -31,7 +31,7 @@ Dove:
       §\ :ref:`4.5 <§4.5>`, punto 1.a. Ad esempio, nel caso di Mario Rossi che
       utilizza l'identità digitale  uso professionale della persona giuridica
       ‘Agenzia per l'Italia Digitale’:
-      “``Mario Rossi/Agenzia per l'Italia Digitale/TINIT-97735020584``”.
+      “``Mario Rossi/Agenzia per l'Italia Digitale/VATIT-97735020584``”.
 
 -  La parte variabile ``%data%`` contiene la data di sottoscrizione,
    espressa come una stringa di 8 caratteri numerici separati in tre
