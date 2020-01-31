@@ -11,7 +11,7 @@ tra parentesi quadre “``[``” e “``]``”), più alcune parti fisse (in ton
 
    usID_dataTora[_001].tmp.pdf
    
-Il nome del *documento firmato con SPID*, di cui al §\ :ref:`3.2 <§3.1>` punto 11,
+Il nome del *documento firmato con SPID*, di cui al §\ :ref:`3.2 <§3.2>` punto 11,
 è derivato dal precedente nome, senza il suffisso ``.tmp``:
 
 ::
@@ -30,7 +30,7 @@ In particolare:
 
    -  quattro cifre per l’anno solare (da “``2019``” in poi),
 
-   -  due cifre per il mese dell’anno (da “``01``” per gennaio a “``12``” per dicmebre),
+   -  due cifre per il mese dell’anno (da “``01``” per gennaio a “``12``” per dicembre),
 
    -  due cifre per il giorno del mese (da “``01``” a “``31``”);
 
@@ -47,14 +47,14 @@ In particolare:
 
 -  ``num`` — È un numero incrementale di 3 cifre che può essere facoltativamente
    utilizzato dal SP per differenziare più documenti che sono predisposti nell’arco
-   del medesimo minuto secondo È facoltà del SP scegliere se usare sempre il campo
+   del medesimo minuto secondo. È facoltà del SP scegliere se usare sempre il campo
    aggiuntivo “``_001``” ovvero solo a partire dal secondo documento predisposto nel
    medesimo minuto secondo.
 
 A titolo di esempio, il documento predisposto per la firma dall’Agenzia per
 l’Italia Digitale (abbreviativo unico: “``AgID``”), il 21 marzo 2019 all’ora locale
 08:34:10, è “``AgID_20190321T083410.tmp.pdf``”. Il nome del corrispondente documento
-firmato con SPID (da una persona fisica presso il proprio IDP), sarà
+firmato con SPID (da una persona fisica presso il proprio IdP), sarà
 “``AgID_20190321T083410.pdf``”.
 
 .. admonition:: example
