@@ -23,7 +23,7 @@ c. l’identificativo della funzione di *hash* crittografico utilizzato al
 
 d. il codice fiscale del soggetto che deve apporre la firma.
 
-La **risposta di autenticazione** per la firma SPID contiene
+La **risposta di autenticazione** per la firma con SPID contiene
 obbligatoriamente i seguenti metadati:
 
 e. il nome del file del documento firmato con SPID;
@@ -41,7 +41,7 @@ in modo univoco il documento informatico scambiato tra SP, IdP e vice
 versa, ad un’unica autenticazione di firma con SPID.
 
 La durata delle sessioni di autenticazione descritte nell’ambito del
-processo di sottoscrizione di cui alle presenti Linee guida è estesa
+processo di sottoscrizione di cui alle presenti linee guida è estesa
 adeguatamente per permettere lo svolgimento dell’intera procedura di
 sottoscrizione.
 
@@ -54,7 +54,3 @@ sintassi descritta nei seguenti paragrafi.
   05/05.1_saml.rst
   05/05.2_secure-dataio.rst
 
-
-.. forum_italia::
-   :topic_id: 6
-   :scope: document
