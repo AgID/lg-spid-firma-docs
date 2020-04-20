@@ -3,17 +3,12 @@
 Apposizione del QSeal del Service Provider
 ==========================================
 
-Il SP appone il proprio :ref:`QSeal <QSeal>` mediante firma elettronica di tipo PAdES,
+Il SP appone il proprio :ref:`QSeal <QSeal>` mediante sigillo elettronico di tipo PAdES,
 non visibile (senza alcuna componente grafica), nei formati previsti dal
 Regolamento :ref:`eIDAS <eIDAS>` e dalle conseguenti Decisioni di Esecuzione (UE).
 
 Prima di apporre il proprio QSeal, il SP predispone il documento
 prevedendo adeguato spazio per contenere la componente grafica (o più
 componenti se richiede più firme) del QSeal che verrà apposto dall’IdP,
-il cui testo (cfr. §\ :ref:`4.5 <§4.5>`) deve essere agevolmente leggibile,
+il cui testo (cfr. §\ :ref:`4.4 <§4.4>`) deve essere agevolmente leggibile,
 almeno fino a 256 caretteri ASCII di lunghezza.
-
-
-.. forum_italia::
-   :topic_id: 12106
-   :scope: document
