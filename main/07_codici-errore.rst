@@ -3,19 +3,15 @@
 Codici di ritorno applicativo
 =============================
 
-.. highlights:
-
-   Elenco dei messaggi di stato (ed errrore) restituiti al termine della procedura.
-
 Possono presentarsi errori in due fasi distinte del processo di sottoscrizione:
 
- 1. durante l’autenticazione SAML per la firma cn SPID di cui al §\ :ref:`5.1 <§5.1>`; ovvero
+ 1. durante l’autenticazione :ref:`SAML <SAML>` per la firma con SPID di cui al §\ :ref:`5.1 <§5.1>`; ovvero
  
  2. durante il trasferimento sicuro dei documenti di cui al §\ :ref:`5.2 <§5.2>`.
 
 Nel primo caso, gli errori sono notificati dall’IdP al SP con la risposta di autenticazione
 (secondo quanto previsto dal protocollo SAML). Contestualmente, l’utente è visivamente
-notificato dell’errore presso l’interfaccia dell’IDP.
+notificato dell’errore presso l’interfaccia dell’IdP.
 
 La :ref:`Tabella 1 <tabella01>` qui sotto elenca soltanto gli errori specifici alla procedura di
 sottoscrizione, potendo venire notificati anche quelli già previsti dalle Regole Tecniche
@@ -60,7 +56,3 @@ un oggetto di *Content-Type* ``problem+json``.
    503                     servizio non disponibile           Servizio temporaneamente non disponibile.                                                        
    ================  ====  =================================  =================================================================================================
 
-
-.. forum_italia::
-   :topic_id: 12097
-   :scope: document
