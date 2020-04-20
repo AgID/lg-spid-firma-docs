@@ -3,18 +3,13 @@
 Formato del documento
 =====================
 
-Il documento predisposto dal SP per il processo di firma rispetta le
-specifiche PDF versione 1.7 o successive, profilo PDF/A-2a, secondo lo standard
-`ISO/IEC 32000-1 <http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf>`__.
-Inoltre rispetta le seguenti caratteristiche tecniche:
+Il documento predisposto per la firma dal dal SP rispetta le specifiche PDF versione 1.7
+o successive, profilo PDF/A-2a, secondo lo standard
+`ISO/IEC 32000-1 <http://wwwimages.adobe.com/www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/PDF32000_2008.pdf>`__
+rispertando, in particolare, le seguenti caratteristiche tecniche:
 
    1. il documento non richiede alcun controllo di accesso per essere aperto o modificato;
 
    2. è consentita la modifica del documento esclusivamente per quanto concerne l’apposizione dei previsti sigilli elettronici PAdES;
 
    3. né il contenuto del documento né i suoi metadati sono cifrati.
-
-
-.. forum_italia::
-   :topic_id: 12094
-   :scope: document
