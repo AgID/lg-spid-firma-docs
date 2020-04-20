@@ -12,7 +12,7 @@ Il processo prevede che il SP conosca il codice fiscale del firmatario; il SP qu
       mostra l’elenco degli IdP che offrono il servizio di firma. L’utente seleziona
       il proprio IdP. Qualora l’utente sia già autenticato presso il SP, con l’identità
       digitale di un IdP che offre il servizio di firma con SPID, la selezione
-      dell’IdP può essere saltata
+      dell’IdP può essere saltata.
    
    2. Il SP predispone il documento (*documento predisposto per la firma*), apponendovi
       un proprio :ref:`sigillo elettronico qualificato <QSeal>`, secondo quanto
@@ -21,7 +21,7 @@ Il processo prevede che il SP conosca il codice fiscale del firmatario; il SP qu
       piattaforma, all’utente affinché possa essere visionato, eventualmente scaricato
       e conservato.
    
-   3. Il SP rendendo manifesto all’utente che il processo prevede l’invio del documento
+   3. Il SP rende manifesto all’utente che il processo prevede l’invio del documento
       all’IdP prescelto, acquisendone il consenso esplicito (*opt-in*). L’utente è anche
       avvisato in modo chiaro e manifesto che tale documento gli sarà reso successivamente
       disponibile dal proprio IdP e gli viene consigliato di leggerlo nuovamente in tale
@@ -33,8 +33,3 @@ Il processo prevede che il SP conosca il codice fiscale del firmatario; il SP qu
       “*firma con SPID*”, conforme alle caratteristiche tecniche di cui al §\ :ref:`5 <§5>`
       e con le modalità descritte nel §\ :ref:`5.2 <§5.2>`. Tale richiesta contiene
       il codice fiscale del soggetto che deve apporre la firma, acquisito al punto 1.
-
-
-.. forum_italia::
-   :topic_id: 12103
-   :scope: document
