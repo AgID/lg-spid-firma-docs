@@ -36,7 +36,7 @@ In particolare:
 
 -  :code:`ora` — È l’ora di creazione del documento predisposto per la firma,
    rispetto all’orario di sistema del SP, *riportato al fuso orario italiano*.
-   È una stringa di 6 caratteri numerici così ripartiti:
+   È una stringa di 6 numeri così ripartiti:
 
    -  due cifre per l’ora nell’arco delle ventiquattrore (da
       “``00``” per la mezzanotte alle “``23``”),
@@ -51,12 +51,6 @@ In particolare:
    aggiuntivo “``_001``” ovvero solo a partire dal secondo documento predisposto nel
    medesimo minuto secondo.
 
-A titolo di esempio, il documento predisposto per la firma dall’Agenzia per
-l’Italia Digitale (abbreviativo unico: “``AgID``”), il 21 marzo 2019 all’ora locale
-08:34:10, è “``AgID_20190321T083410.tmp.pdf``”. Il nome del corrispondente documento
-firmato con SPID (da una persona fisica presso il proprio IdP), sarà
-“``AgID_20190321T083410.pdf``”.
-
 .. admonition:: example
    :class: admonition-example display-page
    
@@ -65,8 +59,3 @@ firmato con SPID (da una persona fisica presso il proprio IdP), sarà
    08:34:10, è “``AgID_20190321T083410.tmp.pdf``”. Il nome del corrispondente documento
    firmato con SPID (da una persona fisica presso il proprio IdP), sarà
    “``AgID_20190321T083410.pdf``”.
-
-
-.. forum_italia::
-   :topic_id: 12105
-   :scope: document
