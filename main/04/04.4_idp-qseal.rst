@@ -34,7 +34,7 @@ Dove:
       “``Mario Rossi/Agenzia per l'Italia Digitale/VATIT-97735020584``”.
 
    Per i caratteri del campo ``%firmatario%`` sono ammessi solo quelli del
-   sottoinsieme ASCOO
+   sottoinsieme ASII “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '.‐_``”.
    
 
 -  La parte variabile ``%data%`` contiene la data di sottoscrizione,
@@ -63,6 +63,5 @@ Il documento può contenere già una o più firme elettroniche qualificate
 o sigilli elettronici qualificati, o può già essere stato oggetto di
 altri processi di sottoscrizione come previsti dalle presenti Linee
 guida.
-
 La richiesta del SP può prevedere più firme dello stesso soggetto sul documento;
 in tal caso l’IdP appone altrettanti sigilli.
