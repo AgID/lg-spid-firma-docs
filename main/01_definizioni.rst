@@ -12,9 +12,9 @@ e del DPCM 24 ottobre 2014 *Definizione delle caratteristiche del sistema pubbli
 .. _`CAD`:
 -  **CAD**: `D.Lgs. 7 marzo 2005 №82 <https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/>`__, *Codice dell’Amministrazione Digitale*, e sue successive modificazioni;
 
--  **documento firmato con SPID**: il documento sottoscritto ai sensi delle presenti Linee guida;
+-  **documento firmato con SPID**: il documento sottoscritto ai sensi delle presenti linee guida;
 
--  **documento predisposto per la firma**: il documento preparato dal SP per essere sottoscritto ai sensi delle presenti Linee guida;
+-  **documento predisposto per la firma**: il documento preparato dal SP per essere sottoscritto ai sensi delle presenti linee guida;
 
 -  **ente federato**: gestore di identità digitali ovvero fornitore di servizi della federazione SPID;
 
@@ -23,9 +23,9 @@ e del DPCM 24 ottobre 2014 *Definizione delle caratteristiche del sistema pubbli
 -  **firmatario**: la persona fisica che, utilizzando la propria identità digitale SPID di livello 2 o superiore, conferisce al documento informatico il valore e l’efficacia previsti dall’articolo 20 del CAD attraverso il processo di firma di cui al presente provvedimento;
 
 .. _`hash`:
--  **hash**: cfr. impronta crittografica;
+-  **hash**: cfr. impronta;
 
--  **impronta**: impronta crittografica, risultante dell’applicazione di una funzione di hash crittografica a un’evidenza informatica;
+-  **impronta**: impronta crittografica, risultante dell’applicazione di una funzione di *hash* crittografica a un’evidenza informatica;
 
 .. _`payload`:
 -  **evidenza informatica**: sequenza finita di bit che può essere elaborata da una procedura informatica;
@@ -89,8 +89,3 @@ Sono anche utilizzati i seguenti acronimi o abbreviazioni:
 
 .. _`SPID`:
 -  **SPID**: il Sistema Pubblico di Identità Digitale, introdotto con il DPCM del 24 ottobre 2014, pubblicato sulla *G.U.* Serie Generale №285 del 9 dicembre 2014.
-
-
-.. forum_italia::
-   :topic_id: 12091
-   :scope: document
