@@ -7,8 +7,8 @@ SP e IdP si dotano, presso un :ref:`QTSP <QTSP>`, di un certificato elettronico
 qualificato per la creazione di sigilli elettronici.
 
 Detti certificati qualificati sono conformi alle raccomandazioni emanate
-con le *LL.GG. sui certificati elettronici* (:ref:`cit. <llgg certificati>`), allo
-standard X.509 versione 3, e contengono le seguenti informazioni aggiuntive:
+con le *LL.GG. sui certificati elettronici* (:ref:`cit. <llgg certificati>`)
+e contengono le seguenti informazioni aggiuntive:
 
 1. Il campo :code:`SubjectDN`, contenente i seguenti attributi:
 
@@ -23,7 +23,7 @@ standard X.509 versione 3, e contengono le seguenti informazioni aggiuntive:
       -  il codice fiscale indicato con il prefisso ‘``CF:``’, come
          prescritto dal §5.1.4 punto 3 della suddetta norma (es. “``CF:IT-01234567890``”);
 
-      -  il numero assegnato dal Registro Imprese, indicato con il
+      -  il numero assegnato dal Registro Imprese indicato con il
          prefisso ‘``NTR``’, come prescritto dal §5.1.4 punto 2 della suddetta norma
          (es. “``NTRIT-1234567890``”);
 
@@ -44,11 +44,11 @@ standard X.509 versione 3, e contengono le seguenti informazioni aggiuntive:
       -  :code:`spidSignature` (`ᴏɪᴅ 1.3.76.16.4.11 <http://oid-info.com/get/1.3.76.16.4.11>`__);
 
    b. una limitazione d’uso indicata mediante la presenza di un campo
-      :code:`userNotice` (`ᴏɪᴅ 2.5.29.49 <http://oid-info.com/get/𝟸.𝟻.𝟸𝟿.49>`__), di tipo
-      :code:`explicitText`, valorizzato con la seguente stringa bilingue:
+      :code:`userNotice` (`ᴏɪᴅ 2.5.29.49 <http://oid-info.com/get/2.5.29.49>`__), di tipo
+      :code:`explicitText`, valorizzato con il seguente testo bilingue:
       “``Certificato usabile solo per il processo di sottoscrizione di cui all'art.20 del CAD/This certificate may be used only for elecrronic signing pursuant to the Italian Digital Administration Code, art.20.``”.
 
-3. :code:`keyUsage` (`ᴏɪᴅ 2.5.29.15 <http://oid-info.com/get/𝟸.𝟻.𝟸𝟿.15>`__) — contenente
+3. :code:`keyUsage` (`ᴏɪᴅ 2.5.29.15 <http://oid-info.com/get/2.5.29.15>`__) — contenente
    i valori :code:`digitalSignature` e :code:`keyEncipherment`, cioè i bit #0 e #2, valorizzati a ``1``,
    come da specifica :RFC:`5280`.
 
@@ -62,8 +62,3 @@ standard X.509 versione 3, e contengono le seguenti informazioni aggiuntive:
    quale l’ente federato rende disponibile, agli enti federati della
    tipologia opposta, il servizio di trasferimento sicuro di cui al
    §\ :ref:`5.2 <§5.2>`.
-
-
-.. forum_italia::
-   :topic_id: 12108
-   :scope: document
