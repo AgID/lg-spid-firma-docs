@@ -4,7 +4,7 @@ Sistema di trasferimento sicuro dei documenti
 =============================================
 
 Ogni ente federato si dota di un sistema di trasferimento dedicato ai
-documenti oggetto delle presenti Linee guida, costituito da uno storage
+documenti oggetto delle presenti linee guida, costituito da uno storage
 dedicato, un protocollo di comunicazione sicura che garantisce un
 adeguato livello di confidenzialità, integrità e disponibilità, e da un
 sistema di gestione dei file ricevuti.
@@ -58,7 +58,7 @@ Interfaccia applicativa
 
 SP e IdP si scambiano evidenze informatiche in formato :ref:`JWS <JWS>`, su canale HTTPS
 (porta 443/TCP) tramite un’:ref:`API <API>` che prevede lo scambio di messaggi
-tramite metodo  HTTP *POST*.
+tramite metodo HTTP *POST*.
 Le evidenze sono formate mediate la seguente procedura:
 
 1. predisposizione di una struttura :ref:`JSON <JSON>` contenente sia il **dato**
@@ -74,7 +74,7 @@ Le evidenze sono formate mediate la seguente procedura:
 2. codifica del messaggio di cui al punto 1 in un pacchetto :ref:`JWT <JWT>`;
 
 3. conversione in :ref:`JWS <JWS>` del pacchetto di cui al punto 2, mediante metodo
-   *JWS Compact Serialization* (cfr. :RFC:`7515`), utilizzando il :ref:`QSeal <QSeal>`
+   *Compact Serialization* (cfr. :RFC:`7515`), utilizzando il :ref:`QSeal <QSeal>`
    di cui al §\ :ref:`4.5 <§4.5>`.
 
 Gli algoritmi crittografici utilizzati lungo l’intera procedura sopra descritta
@@ -116,18 +116,22 @@ Un esempio di intestazione sopra definita è:
 Il *payload* dei pacchetti di andata e ritorno contiene i seguenti
 parametri obbligatori:
 
--  :code:`jti` — valorizzato con identificativo unico del pacchetto :ref:`JWT <JWT>`;
+-  :code:`jti` — valorizzato con identificativo unico del pacchetto JWT;
 
 -  :code:`iss` — valorizzato con l’:code:`entityId`: (URL con schema HTTPS)
    dell’ente federato inviante; coincide con il valore dell’elemento :code:`<Issuer>`:
 
--  ``aud`` — valorizzato con l’``entityId`` (URL con schema HTTPS)
+-  :code:`aud` — valorizzato con l’``entityId`` (URL con schema HTTPS)
    dell’ente federato destinatario; coincide con il valore
    dell’attributo ``Destination``, rispettivamente, dell’elemento :ref:`SAML <SAML>`:
 
    -  :code:`<AuthnRequest>` per il pacchetto di andata (flusso :ref:`A <flusso-a>`), *ovvero*
 
    -  :code:`<Response>` per il pacchetto di ritorno (flusso :ref:`B <flusso-b>`).
+
+-  :code:`sub` — valorizzato con la stringa ``%firmatario%``
+   identificativa del firmatario (atteso o effettivo, a seconda dei flussi),
+   come definita nel §\ :ref:`4.4 <§4.4>`;
 
 -  :code:`iat` — valorizzato con l’orario in cui il messaggio è generato e
    inviato (rispetto al fuso orario italiano), codificato come campo
@@ -151,20 +155,20 @@ parametri obbligatori:
 -  :code:`payload` — valorizzato con l’evidenza del documento informatico da
    trasferire, codificato in *Base64* (cfr. :RFC:`6848`);
 
--  :code:`hash` — valorizzato con una struttura JSON così costituita:
+-  :code:`digest` — valorizzato con una struttura JSON così costituita:
 
    -  :code:`method` — valorizzato con la codifica W3C della funzione di
       *hash* utilizzata per il calcolo delle impronte dei documenti e
       coincidente con il valore dell’emento SAML :code:`<DigestMethod>`,
 
-   -  :code:`digest` — valorizzato con l’impronta del documento trasferito e
+   -  :code:`value` — valorizzato con l’impronta del documento trasferito e
       coincidente con il valore dell’elemento SAML :code:`<DigestValue>`.
 
 Nel pacchetto di andata:
 
 -  :code:`signatures` — valorizzato con un *array* JSON contenente tanti
-   elementi quante sono le sottoscrizioni richieste; ciascun elemento
-   dell’*array* è una struttura JSON contenente:
+   elementi quante sono le sottoscrizioni richieste; gli elementi
+   sono strutture contenenti:
 
    -  :code:`id` — valorizzato con un *identificativo univoco della firma*
       nell’ambito del processo di firma, cioè una stringa alfanumerica di
@@ -178,7 +182,7 @@ Nel pacchetto di andata:
       tipo *number* – :code:`llx`, :code:`lly`, :code:`urx` e :code:`ury`
       - valorizzati rispettivamente con l'ascissa e l'ordinata del vertice
       inferiore sinistro, l'ascissa e l'ordinata del vertice superiore destro
-      di un'area rettangolare definita al §\ :ref:`4.4 <§4.4>`, per il
+      di un’area rettangolare definita al §\ :ref:`4.4 <§4.4>`, per il
       posizionamento della componente grafica del :ref:`QSeal <§QSeal>`
       all’interno della pagina stessa, secondo quanto previsto tecnicamente
       per la rappresentazione di oggetti PDF *Rectangles*, §4.40 dello standard
@@ -188,17 +192,14 @@ Nel pacchetto di andata:
       (:code:`false`) ovvero obbligatoria (:code:`true`) per il SP richiedente.
       Se il firmatario non accetta di apporre anche solo una firma
       obbligatoria, l’intero processo di sottoscrizione termina senza
-      successo (cfr. §\ :ref:`7 <§7>`)e l’IdP non restituisce il documento al SP, informandolo
+      successo e l’IdP non restituisce il documento al SP, informandolo
       della mancanza di volontà del firmatario.
 
 Nel pacchetto di ritorno:
 
--  :code:`sub` — valorizzato con la stringa ``%firmatario%``
-   identificativa del firmatario, come definita nel §\ :ref:`4.4 <§4.4>`;
-
--  :code:`signatures` — valorizzato con un *array* JSON contenente tanti elementi
-   quante sono le firme richieste nel pacchetto di andata; ciascun
-   elemento dell’*array* è una struttura JSON contenente:
+-  :code:`ref` — valorizzato con un *array* JSON contenente tanti elementi
+   quante sono le firme richieste nel pacchetto di andata. L’elemento è
+   una struttura contenente:
 
    -  :code:`id` — l’identificativo univoco della firma contenuto nel pacchetto
       di andata;
@@ -223,6 +224,7 @@ Esempio di pacchetto di andata JSON:
      "jti" : "uuid1",
      "iss" : "https://entityId-SP-inviante",
      "aud" : "https://entityId-IdP-ricevente",
+     "sub" : "Mario Rossi/CF:IT-RSSMR064T30H501H",
      "iat" : 1563235200,
      "sessionID": "sig-sessionID",
      "filename" : "AgID_20190321T083410.tmp.pdf",
@@ -289,6 +291,3 @@ Esempio di pacchetto di ritorno JSON:
  }
 
 
-.. forum_italia::
-   :topic_id: 12111
-   :scope: document
