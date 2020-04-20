@@ -23,8 +23,8 @@ L’IdP:
    
    3.  Consente all’utente di visionare il documento e scaricarlo.
    
-   4.  Propone all’utente di procedere con la sottoscrizione, raccogliendone il consenso.
-       Il dissenso alla sottoscrizione da parte dell’utente comporta l’invio di una
+   4.  Propone all’utente di procedere con la sottoscrizione. Il dissenso
+       alla sottoscrizione da parte dell’utente comporta l’invio di una
        risposta di autenticazione con esito negativo al SP e il termine del
        processo.
    
@@ -48,7 +48,7 @@ L’IdP:
        nel §\ :ref:`5.2 <§5.2>`:.
    
    10. Invia al SP la risposta di autenticazione della firma SPID recante
-       l’esito positivo della procedura reindirizzando l’utente presso il
+       l’esito positivo della procedura, reindirizzando l’utente presso il
        SP. Nel caso in cui il punto precedente non abbia successo, l’IdP
        informa l’SP e l’utente in merito al mancato successo del processo
        di firma.
@@ -60,8 +60,3 @@ scelto di avvalersi dei servizi di conservazione dei documenti firmati
 (cfr. §\ :ref:`9 <§9>`), l’IdP rimuove dai propri sistemi il documento oggetto della
 sottoscrizione, nel pieno rispetto di quanto disposto dal Regolamento
 :ref:`GDPR <GDPR>`.
-
-
-.. forum_italia::
-   :topic_id: 12104
-   :scope: document
