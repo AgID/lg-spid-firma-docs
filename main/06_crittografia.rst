@@ -25,9 +25,6 @@ Gli algoritmi crittografici utilizzati per i pacchetti :ref:`JWS <JWS>`
 cono conformi a quanto previsto dal presente capitolo e i loro riferimenti
 tecnici sono pubblicati nella norma :RFC:`7518`.
 
-Gli algoritmi e i metodi crittografici contenuti nel presente capitolo possono
-essere sostituiti, rimossi o integrati con altri mediante pubblicazione di
-Avvisi sul sito web istituzionale dell’Agenzia.
 
 .. important::
    Gli algoritmi e i metodi crittografici contenuti nel presente
