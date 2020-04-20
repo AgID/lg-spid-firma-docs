@@ -30,8 +30,3 @@ seppur di natura tecnica, con la conseguenza che esse sono pienamente azionabili
 amministrativo in caso di violazione delle prescrizioni ivi contenute. Nelle ipotesi in cui la violazione sia posta in
 essere da parte dei soggetti di cui all’articolo 2, comma 2 del CAD, è altresì possibile presentare apposita segnalazione al
 difensore civico, ai sensi dell’articolo 17 del CAD, istituito presso l'AgID.
-
-
-.. forum_italia::
-   :topic_id: 12092
-   :scope: document
