@@ -33,6 +33,10 @@ Dove:
       ‘Agenzia per l'Italia Digitale’:
       “``Mario Rossi/Agenzia per l'Italia Digitale/VATIT-97735020584``”.
 
+   Per i caratteri del campo ``%firmatario%`` sono ammessi solo quelli del
+   sottoinsieme ASCOO
+   
+
 -  La parte variabile ``%data%`` contiene la data di sottoscrizione,
    espressa come una stringa di 8 caratteri numerici separati in tre
    gruppi da uno *slash* ascendente ‘``/``’ e ripartiti come:
@@ -62,7 +66,3 @@ guida.
 
 La richiesta del SP può prevedere più firme dello stesso soggetto sul documento;
 in tal caso l’IdP appone altrettanti sigilli.
-
-.. forum_italia::
-   :topic_id: 12107
-   :scope: document
