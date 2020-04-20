@@ -3,8 +3,8 @@
 SAML
 ====
 
-La richiesta di autenticazione :ref:`SAML <SAML>` si riferisce,
-nell’elemento :code:`<AuthnRequest>` (*namespace* ``samlp``),
+La richiesta di autenticazione :ref:`SAML <SAML>` per la firma
+con SPID si riferisce, nell’elemento :code:`<AuthnRequest>` (*namespace* ``samlp``),
 all’attributo `AttributeConsumingServiceIndex` corrispondente
 all’*Attribute Consuming Service* specifico, di indice “``77``”,
 introdotto al §\ :ref:`4.6 <§4.6>`.
@@ -14,22 +14,21 @@ Le richieste e risposte di autenticazione SAML impiegano
 come stringhe uniche che cominciano con ``sig-``. Le richieste e
 risposte di autenticazione contengono entrambe un’estensione
 :code:`<Signature>` (*namespace* ``spid``) contenuta nella sezione
-prevista dallo standard per le estentioni :ref:`SAML <SAML>`. I
-metadati sopra elencati sono realizzati mediante i seguenti
-elementi:
+prevista dallo standard per le estentioni SAML. I metadati sopra
+elencati sono realizzati mediante i seguenti elementi:
 
 -  punti a. e d. tramite elemento :code:`<Filename>`
    (*namespace* ``spid``), contenente il nome del file del documento,
    comprensivo della corretta estensione, composto come descritto in
    §\ :ref:`4.2 <§4.2>`;
 
--  punti b. e f. tramite elemento :code:`<DigestValue>` (*namespace* ``ds``),
-   contenente un’impronta rappresentata applicandole la trasformazione
-   *Base64* (cfr. :RFC:`4648`);
+-  punti b. e f. tramite elemento :code:`<DigestValue>` (*namespace* ``ds``,
+   standard XAdES), contenente un’impronta rappresentata applicandole la
+   trasformazione *Base64* (cfr. :RFC:`4648`);
 
--  punti c. e g. tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``),
-   contenente la codifica W3C della funzione di *hash* utilizzata per
-   il calcolo dell’impronta del documento;
+-  punti c. e g. tramite elemento :code:`<DigestMethod>` (*namespace* ``ds``,
+   standard XAdES), contenente la codifica W3C della funzione di *hash*
+   utilizzata per il calcolo dell’impronta del documento;
 
 -  l’identificativo univoco di sessione è indicato nell’attributo :code:`ID`
    dell’elemento :code:`<AuthnRequest>` per la richiesta di
@@ -39,7 +38,7 @@ elementi:
 
 Qui sotto è riportato un esempio di richiesta di autenticazione SAML, comprensiva
 dell’\ *Attribute Consuming Service* specifica e dell’elemento :code:`<Signature>`
-(*namespace* ``spid``) per la richiesta di autenticazione relativa a un documento
+(*namespace* ``spid``) per la richiesta di autenticazione, relativa a un documento
 in formato PDF predisposto dal SP e successivamente inviato all’IdP per la sottoscrizione.
 
 .. code-block:: xml
@@ -56,7 +55,7 @@ in formato PDF predisposto dal SP e successivamente inviato all’IdP per la sot
      ...
      <samlp:Extensions>
          <spid:Signature>
-             <spid:Filename>AgID_YYYYMMDDThhmmss.tmp.pdf</spid:Filename>
+             <spid:Filename>AgID_20190321T083410.tmp.pdf</spid:Filename>
              <ds:DigestMethod Algorithm="http://funzione_hash" />
              <ds:DigestValue>ImprontaDocumento1</ds:DigestValue>
          </spid:Signature>
@@ -91,14 +90,9 @@ metadati del documento firmato con SPID.
      <samlp:Extensions
            xmlns:spid="https://spid.gov.it/saml-extensions">
          <spid:Signature>
-             <spid:Filename>AgID_YYYYMMDDThhmmss.pdf</spid:Filename>
+             <spid:Filename>AgID_20190321T083410.pdf</spid:Filename>
              <ds:DigestMethod Algorithm="http://funzione_hash" />
              <ds:DigestValue>ImprontaDocumento2</ds:DigestValue>
          </spid:Signature>
      </samlp:Extensions>
  </samlp:Response>
-
-
-.. forum_italia::
-   :topic_id: 12110
-   :scope: document
