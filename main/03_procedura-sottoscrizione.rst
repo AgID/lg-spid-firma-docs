@@ -13,7 +13,7 @@ persona fisica e le identità digitali per uso professionale (quest'ultime regol
 dalle :ref:`LL.GG. identità digitali ad uso professionale <llgg_uso_professionale>`).
 
 Tutti i SP interessati hanno il diritto di avvalersi del servizio in oggetto delle
-presenti Linee guida.
+presenti linee guida.
 
 I metadati SPID indicano se l’ente federato offre il servizio in oggetto o meno
 (cfr. §\ :ref:`4.6 <§4.6>`).
@@ -29,8 +29,3 @@ documento, in tempi e con sessioni di autenticazione SPID distinte.
 
   03/03.1_predisposizione-doc.rst
   03/03.2_consenso-sottoscrizione.rst
-
-
-.. forum_italia::
-   :topic_id: 12093
-   :scope: document
