@@ -5,13 +5,6 @@ Regole Tecniche per la sottoscrizione elettronica di documenti ai sensi dell’a
 
    Linee guida ex art. 71 del CAD
 
-.. admonition:: consultation
-
-   La consultazione pubblica relativa al presente documento è attiva fino 
-   al **20 dicembre 2019** (termine prorogato al 28 dicembre). Questo documento
-   raccoglie il testo delle Linee guida in oggetto, disponibile per la
-   consultazione pubblica.
-
 ======== =========== ==========================================
 Versione Data        Tipologia modifica                        
 ======== =========== ==========================================
@@ -23,6 +16,7 @@ Versione Data        Tipologia modifica
 1.6β     18/nov/2019 Revisioni minori pre-consultazion
 1.0      20/nov/2019 Versione stabile in consultazione pubblica
 1.1      29/nov/2019 Proroga per la consultazione pubblica
+2.0      21/apr/2020 Pubblicata con Determina AgID N.157/2020  
 ======== =========== ==========================================
 
 .. toctree::
@@ -41,7 +35,3 @@ Versione Data        Tipologia modifica
    main/09_conservazione.rst
    main/10_convalida-documenti.rst
    main/11_transitorio.rst
-
-.. forum_italia::
-   :topic_id: 12039
-   :scope: document
