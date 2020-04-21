@@ -3,16 +3,12 @@
 Obblighi in capo agli Identity Provider
 =======================================
 
-Gli IDP che offrono servizi di sottoscrizione di cui alle presenti Linee guida, si impegnano:
+Gli IdP che offrono servizi di sottoscrizione di cui alle presenti linee guida, si impegnano:
 
  * a rendere disponibile ai SP il proprio servizio e garantirne tutte
    le caratteristiche di confidenzialità, integrità e disponibilità;
    
- * salvo quanto previsto al §9, a *non* conservare i documenti oggetto
-   della firma con SPID che sono depositati presso i propri sistemi,
-   rimuovendoli in modo sicuro al termine del trattamento.
+ * salvo quanto previsto al §\ :ref:`9 <§9>`, a *non* conservare i
+   documenti oggetto della firma con SPID che sono depositati presso i
+   propri sistemi, rimuovendoli in modo sicuro al termine del trattamento.
 
-
-.. forum_italia::
-   :topic_id: 12114
-   :scope: document
