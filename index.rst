@@ -16,7 +16,7 @@ Versione Data        Tipologia modifica
 1.6β     18/nov/2019 Revisioni minori pre-consultazion
 1.0      20/nov/2019 Versione stabile in consultazione pubblica
 1.1      29/nov/2019 Proroga per la consultazione pubblica
-2.0      21/apr/2020 Pubblicata con Determina AgID N.157/2020  
+2.0      21/apr/2020 Pubblicata con Determinaz. AgID №157/2020
 ======== =========== ==========================================
 
 .. toctree::
