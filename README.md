@@ -5,10 +5,3 @@ L’articolo 20 del CAD dispone il soddisfacimento del requisito della forma scr
 > attraverso un processo avente i requisiti fissati dall’AgID ai sensi dell’articolo 71 con modalità tali da garantire la sicurezza, integrità e immodificabilità del documento e, in maniera manifesta e inequivoca, la sua riconducibilità all’autore.
 
 Le presenti Linee guida regolano le modalità atte a garantire la sicurezza, integrità e immodificabilità del documento e, in maniera manifesta e inequivoca, la sua riconducibilità all’autore.
-
-
-## Link al documento e consultazione
-
-Link al documento *Docs Italia*	•	 https://docs.italia.it/AgID/documenti-in-consultazione/lg-spid-firma-docs/it/stabile/
-
-Link per commenti *Forum Italia*	•	 https://forum.italia.it/c/documenti-in-consultazione/lg-spid-firma-docs/
