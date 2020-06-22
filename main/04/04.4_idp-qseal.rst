@@ -34,7 +34,7 @@ Dove:
       “``Mario Rossi/Agenzia per l'Italia Digitale/VATIT-97735020584``”.
 
    Per i caratteri del campo ``%firmatario%`` sono ammessi solo quelli del
-   sottoinsieme ASII “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '.‐_``”.
+   sottoinsieme ACSII “``01234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ '.‐_``”.
    
 
 -  La parte variabile ``%data%`` contiene la data di sottoscrizione,
