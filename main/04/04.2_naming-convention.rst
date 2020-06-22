@@ -3,9 +3,9 @@
 Convenzioni di nomenclatura dei documenti
 =========================================
 
-Il nome del documento predisposto per la firma, di cui al §\ :ref:`3.1 <§3.1>` punto 2
+Il nome del *documento predisposto per la firma*, di cui al §\ :ref:`3.1 <§3.1>` punto 2
 è costituito da tre parti obbligatorie variabili, una parte facoltativa (indicata
-tra parentesi quadre “``[``” e “``]``”), più alcune parti fisse (in tondo):
+tra parentesi quadre “``[``” e “``]``”), più alcune parti fisse (le occorrenze dei caratteri “``_``”, “``T``” e l'estensione del file “``.tmp.pdf``”):
 
 ::
 
