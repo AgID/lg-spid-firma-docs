@@ -3,11 +3,11 @@
 Metadata nel registro SPID
 ==========================
 
-Qualora un IdP, un SP offra il servizio in oggetto, il relativo metadata
+Per un IdP e un SP che offra il servizio in oggetto, il relativo metadata
 pubblicato nel registro SPID contiene l’estensione :code:`<SignatureArt20>`
 (*namespace* ``spid``) come figlio dell’elemento :code:`<Extensions>`
 (*namespace* ``samlp``), al cui interno è specificata la modalità tecnica
-tramite la quale l’entefederato espone tale servizio.
+tramite la quale l’ente federato espone tale servizio.
 
 La suddetta modalità è costituita da:
 
@@ -25,11 +25,9 @@ Si veda a tale scopo il seguente esempio:
  <md:EntityDescriptor>
      <ds:Signature>...</ds:Signature>
      ...
-     <samlp:Extensions
-           xmlns:spid="https://spid.gov.it/saml-extensions">
+     <samlp:Extensions xmlns:spid="https://spid.gov.it/saml-extensions">
          <spid:SignatureArt20>
-             <spid:FileTransferService
-                   Location="https://indirizzo/al/DataIO/" />
+             <spid:FileTransferService Location="https://indirizzo/al/DataIO/"/>
          </spid:SignatureArt20>
      </samlp:Extensions>
      <md:Organization>...</md:Organization>
@@ -59,22 +57,24 @@ Il metadata del SP comprende dunque la seguente struttura:
  <md:EntityDescriptor>
      ...
      <md:SPSSODescriptor>
+         ...
          <md:AttributeConsumingService index="77">
              <md:ServiceName xml:lang="it">
                  Sottoscrizione elettronica ex art.20 CAD
              </md:ServiceName>
          </md:AttributeConsumingService>
-     ...
+         ...
      </md:SPSSODescriptor>
+     ...
  </md:EntityDescriptor>
 
 
 Tutte le evidenze informatiche SAML che si riferiscono al servizio in
 oggetto (descritte sia qui che al §\ :ref:`5.1 <§5.1>`) indicano il
 riferimento URN https://spid.gov.it/saml-extensions al *namespace* XML
-dell’Agenzia riservato a SPID — nel proprio elemento radice, ovvero in
-tutti i singoli elementi interessati (qui genericamente indicati come
-:code:`<Element>` di *namespace* ``ns``), come riportato nell’esempio
+dell’Agenzia riservato a SPID — una sola volta nel proprio elemento radice,
+ovvero in tutti i singoli elementi interessati (qui genericamente indicati
+come :code:`<Element>` di *namespace* ``ns``), come riportato nell’esempio
 sotto:
 
 .. code-block:: xml
